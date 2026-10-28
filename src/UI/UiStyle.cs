@@ -30,6 +30,19 @@ public static class UiStyle
         ContentMarginBottom = 10,
     };
 
+    /// <summary>A panel docked to a window edge: opaque, square, with the border only on its inner side.</summary>
+    public static StyleBoxFlat Dock(bool left)
+    {
+        var box = Box(Panel with { A = 1f }, radius: 0);
+        box.BorderWidthLeft = left ? 0 : 2;
+        box.BorderWidthRight = left ? 2 : 0;
+        box.BorderWidthTop = 0;
+        box.BorderWidthBottom = 0;
+        box.ContentMarginTop = 14;
+        box.ContentMarginBottom = 14;
+        return box;
+    }
+
     public static Label Label(string text, int size, Color? color = null, HorizontalAlignment align = HorizontalAlignment.Left, bool wrap = false)
     {
         var label = new Label { Text = text, HorizontalAlignment = align, AutowrapMode = wrap ? TextServer.AutowrapMode.WordSmart : TextServer.AutowrapMode.Off };

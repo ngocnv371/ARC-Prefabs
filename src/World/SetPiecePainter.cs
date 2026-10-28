@@ -23,6 +23,8 @@ public partial class SetPiecePainter : Node3D
     private const float ScaleStep = 1.08f;
     private const float Snap = 0.5f;
     private const float PanelWidth = 320f;
+    private const float NewPieceClear = 12f; // the circle a new piece's view fits, about a typical piece's
+    private const float FitMargin = 1.08f; // a little ground beyond the clear circle
     private static readonly Vector2I PropThumb = new(168, 168); // drawn at half size, sharp on high-DPI
     private static readonly Color PropBackground = new(0.13f, 0.11f, 0.2f);
 
@@ -85,7 +87,7 @@ public partial class SetPiecePainter : Node3D
             NoDepthTest = true,
         };
         AddChild(_lines);
-        _rig = new CameraRig { Name = "CameraRig", Target = _cursor, LeadAmount = 0f, Distance = 26f };
+        _rig = new CameraRig { Name = "CameraRig", Target = _cursor, LeadAmount = 0f, Distance = 26f, ZoomLimit = 80f };
         AddChild(_rig);
         _studio = new ThumbnailStudio { Name = "Thumbnails", Map = Map };
         AddChild(_studio);
@@ -100,6 +102,35 @@ public partial class SetPiecePainter : Node3D
             _name.Text = Open ?? "";
             ShowBiome(_biome);
         }
+        FitCamera();
+        GetViewport().SizeChanged += FitCamera;
+    }
+
+    public override void _ExitTree() => GetViewport().SizeChanged -= FitCamera;
+
+    /// <summary>
+    /// Zooms so the piece's clear circle (a typical one for an empty piece) just fits the paint
+    /// area between the panels, seen from the rig's pitch with its vertical field of view.
+    /// </summary>
+    private void FitCamera()
+    {
+        var radius = (_props.Count > 0 ? SetPiece.Footprint(_props) : NewPieceClear) * FitMargin;
+        var size = GetViewport().GetVisibleRect().Size;
+        var halfWidth = Mathf.Max(size.X - 2f * PanelWidth, 1f) / size.X; // the paint area's share of the screen
+        var tanV = Mathf.Tan(Mathf.DegToRad(_rig.Camera.Fov / 2f));
+        var tanH = tanV * size.X / size.Y;
+        var pitch = Mathf.DegToRad(_rig.Pitch);
+        var distance = 0f;
+        for (var i = 0; i < 64; i++)
+        {
+            // A ground point (x, z) about the centre sits at depth d - z·cos(pitch) from a camera d away.
+            var p = Vector2.FromAngle(i * Mathf.Tau / 64f) * radius;
+            // It shows when that depth times the half-view's tangent (scaled to the paint area) covers it.
+            var nearer = p.Y * Mathf.Cos(pitch);
+            distance = Mathf.Max(distance, nearer + Mathf.Abs(p.X) / (tanH * halfWidth));
+            distance = Mathf.Max(distance, nearer + Mathf.Abs(p.Y) * Mathf.Sin(pitch) / tanV);
+        }
+        _rig.Distance = Mathf.Clamp(distance, CameraRig.MinDistance, _rig.ZoomLimit);
     }
 
     private void Load(SetPiece piece)
@@ -113,6 +144,7 @@ public partial class SetPiecePainter : Node3D
         _props.AddRange(piece.Props);
         _undo.Clear();
         Rebuild();
+        FitCamera();
         _dirty = false;
         _message = $"opened {piece.Id}";
     }
@@ -529,6 +561,7 @@ public partial class SetPiecePainter : Node3D
             _weight = 1f;
             _dirty = false;
             _message = "new piece";
+            FitCamera();
         }));
         actions.AddChild(Button("Undo", Undo));
         actions.AddChild(Button("Save", Save));
@@ -543,28 +576,22 @@ public partial class SetPiecePainter : Node3D
 
         _browser = new SetPieceBrowser { Name = "Browser", Map = Map, Studio = _studio };
         _browser.Opened += OpenFromBrowser;
-        // With the list hidden the column shrinks to its controls instead of running to the bottom.
-        _browser.VisibilityChanged += () =>
-        {
-            _piecePanel.AnchorBottom = _browser.Visible ? 1f : 0f;
-            _piecePanel.OffsetBottom = _browser.Visible ? -12f : 12f;
-        };
         piece.AddChild(_browser);
     }
 
-    /// <summary>A full-height side panel, 12 px in from the window's edges.</summary>
+    /// <summary>A full-height side panel docked to the window's edge; the paint area is between the two.</summary>
     private static PanelContainer Panel(string name, Control.LayoutPreset side)
     {
         var panel = new PanelContainer { Name = name };
         panel.SetAnchorsPreset(side);
         var left = side == Control.LayoutPreset.LeftWide;
-        panel.OffsetLeft = left ? 12f : -12f - PanelWidth;
-        panel.OffsetRight = left ? 12f + PanelWidth : -12f;
-        panel.OffsetTop = 12f;
-        panel.OffsetBottom = -12f;
+        panel.OffsetLeft = left ? 0f : -PanelWidth;
+        panel.OffsetRight = left ? PanelWidth : 0f;
+        panel.OffsetTop = 0f;
+        panel.OffsetBottom = 0f;
         if (!left)
             panel.GrowHorizontal = Control.GrowDirection.Begin; // widen inward, never off screen
-        panel.AddThemeStyleboxOverride("panel", UiStyle.Box(UiStyle.Panel));
+        panel.AddThemeStyleboxOverride("panel", UiStyle.Dock(left));
         return panel;
     }
 

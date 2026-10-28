@@ -6,7 +6,7 @@ namespace ArcPrefabs.World;
 /// <summary>
 /// The fixed-yaw, tilted follow camera: about 55° down, smoothed, leading a little in the
 /// direction the target is moving. The mouse wheel, +/- or the shoulder buttons zoom between
-/// <see cref="MinDistance"/> and <see cref="MaxDistance"/>; the choice is kept across restarts.
+/// <see cref="MinDistance"/> and <see cref="ZoomLimit"/>; the choice is kept across restarts.
 /// </summary>
 public partial class CameraRig : Node3D
 {
@@ -27,6 +27,9 @@ public partial class CameraRig : Node3D
 
     /// <summary>The distance the camera eases toward; set from the command line or by zooming.</summary>
     public float Distance { get; set; } = _kept ?? DefaultDistance;
+
+    /// <summary>How far out zooming may go (the painter looks at whole set pieces from further).</summary>
+    public float ZoomLimit { get; init; } = MaxDistance;
     public float LeadAmount { get; set; } = 0.35f;
     public float Smoothing { get; set; } = 6f;
 
@@ -69,7 +72,7 @@ public partial class CameraRig : Node3D
         if (step == 0f)
             return;
         // Zooming can leave the command line's close-up range, but not go further out.
-        Distance = Mathf.Clamp(Distance * step, Mathf.Min(MinDistance, Distance), MaxDistance);
+        Distance = Mathf.Clamp(Distance * step, Mathf.Min(MinDistance, Distance), ZoomLimit);
         _kept = Distance;
         GetViewport().SetInputAsHandled();
     }
