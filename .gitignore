@@ -1,0 +1,7 @@
+/.godot/
+/.vs/
+/bin/
+/obj/
+*.user
+# Synty source assets may not be redistributed: tools/fetch_synty.py rebuilds them from your packs.
+/assets/synty/

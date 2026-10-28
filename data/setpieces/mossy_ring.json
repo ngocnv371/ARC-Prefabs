@@ -1,0 +1,30 @@
+{
+  "biomes": ["pinewood"],
+  "weight": 1,
+  "turn": true,
+  "props": [
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_01.fbx", "x": 5.543, "z": 2.296, "rot": 85.667, "scale": 1.618, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -5.543, "z": 2.296, "rot": 133.184, "scale": 1.642, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_01.fbx", "x": -5.543, "z": -2.296, "rot": 225.259, "scale": 1.426, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -2.296, "z": -5.543, "rot": 4.74, "scale": 1.735, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_01.fbx", "x": 2.296, "z": -5.543, "rot": 93.367, "scale": 1.494, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": 5.543, "z": -2.296, "rot": 358.432, "scale": 1.588, "block": 0.4 },
+    { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": 0, "z": 6.2, "rot": 0, "scale": 1.8, "block": 0.3 },
+    { "mesh": "nature/SM_Prop_Pillar_Arch_Broken_Moss_01.fbx", "x": 0, "z": 6.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_02.fbx", "x": 1.17, "z": -1.937, "rot": 83.492, "scale": 1.061, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_01.fbx", "x": 1.736, "z": -0.873, "rot": 241.708, "scale": 1.026, "block": 0 },
+    { "mesh": "nature/SM_Plant_Mushrooms_04.fbx", "x": 0.139, "z": -2.683, "rot": 280.828, "scale": 1.329, "block": 0 },
+    { "mesh": "nature/SM_Plant_Mushrooms_05.fbx", "x": -0.329, "z": 2.68, "rot": 257.087, "scale": 1.368, "block": 0 },
+    { "mesh": "nature/SM_Plant_Mushrooms_05.fbx", "x": -2.736, "z": 2.123, "rot": 347.074, "scale": 1.054, "block": 0 },
+    { "mesh": "nature/SM_Plant_Mushrooms_05.fbx", "x": -0.42, "z": 0.473, "rot": 78.115, "scale": 1.386, "block": 0 },
+    { "mesh": "nature/SM_Plant_Mushrooms_04.fbx", "x": -2.595, "z": 1.1, "rot": 151.613, "scale": 1.333, "block": 0 },
+    { "mesh": "adventure/SM_Env_TreePine_02.fbx", "x": 11.063, "z": 0.328, "rot": 210.331, "scale": 0.886, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_02.fbx", "x": 8.505, "z": 8.263, "rot": 356.756, "scale": 0.851, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_04.fbx", "x": -7.388, "z": 9.366, "rot": 204.879, "scale": 0.857, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_04.fbx", "x": -10.427, "z": 5.226, "rot": 96.151, "scale": 0.769, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_02.fbx", "x": -10.625, "z": -3.781, "rot": 31.867, "scale": 0.87, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_02.fbx", "x": -5.467, "z": -8.731, "rot": 153.771, "scale": 0.812, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_01.fbx", "x": 0.248, "z": -11.207, "rot": 136.01, "scale": 0.838, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_TreePine_02.fbx", "x": 9.226, "z": -7.427, "rot": 181.951, "scale": 0.9, "block": 0.45 }
+  ]
+}

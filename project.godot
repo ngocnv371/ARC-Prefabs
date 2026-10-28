@@ -1,0 +1,38 @@
+; Engine configuration file.
+; ARC Prefabs: the set piece painter for ARC-rendered games (split out of Rogue Guys). Rendering
+; follows the game (Mobile renderer with the Compatibility fallback, MSAA 2x, ARC's unshaded shaders)
+; so a piece looks here as it will in a run.
+
+config_version=5
+
+[application]
+
+config/name="ARC Prefabs"
+config/description="Paint set pieces for ARC games."
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.7", "C#", "Mobile")
+boot_splash/bg_color=Color(0.02, 0.015, 0.04, 1)
+boot_splash/show_image=false
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[dotnet]
+
+project/assembly_name="ArcPrefabs"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_2d=0
+anti_aliasing/quality/msaa_3d=2
+environment/defaults/default_clear_color=Color(0.02, 0.015, 0.04, 1)
+limits/global_shader_variables/buffer_size=262144
