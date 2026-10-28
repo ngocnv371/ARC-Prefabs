@@ -1,4 +1,5 @@
 using Godot;
+using ArcPrefabs.Render;
 using ArcPrefabs.World;
 
 namespace ArcPrefabs.Core;
@@ -40,5 +41,13 @@ public partial class Prefabs : Node3D
             Open = paint is { Length: > 0 } ? paint : null,
             Biome = values.GetValueOrDefault("biome"),
         });
+    }
+
+    // The model prototypes and shared materials live outside the tree; without this they
+    // outlive the engine and Godot reports them all as leaked at exit.
+    public override void _ExitTree()
+    {
+        SyntyModels.Release();
+        ArcMaterials.Release();
     }
 }
