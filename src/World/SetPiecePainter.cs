@@ -433,10 +433,12 @@ public partial class SetPiecePainter : Node3D
         }
         DirAccess.MakeDirRecursiveAbsolute(ProjectSettings.GlobalizePath(SetPieces.Folder));
         var props = _props.ToArray();
-        new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props).Write(SetPieces.Folder + name + ".json");
+        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props);
+        piece.Write(SetPieces.Folder + name + ".json");
+        _ = _studio.SavePiece(piece, _biome, SetPieces.Folder + name + ".png", ThumbnailStudio.PieceImage);
         _name.Text = name;
         _dirty = false;
-        _message = $"saved data/setpieces/{name}.json";
+        _message = $"saved data/setpieces/{name}.json and .png";
         _browser.Current = name;
         _browser.Refresh();
     }

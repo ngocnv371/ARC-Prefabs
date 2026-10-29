@@ -5,3 +5,5 @@
 *.user
 # Synty source assets may not be redistributed: tools/fetch_synty.py rebuilds them from your packs.
 /assets/synty/
+# Godot imports the set piece pictures when the editor scans; the PNGs are for other tools.
+/data/setpieces/*.import

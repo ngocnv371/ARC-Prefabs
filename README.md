@@ -18,7 +18,10 @@ Set `GODOT` to use another Godot 4.7 .NET editor and `PREFABS_NOBUILD=1` to skip
 The project has its own data and nothing points at a game:
 
 - `data/biomes.json` lists the biomes, their ground and the props each may use (the palette).
-- `data/setpieces/*.json` are the pieces. Saving writes `data/setpieces/name.json` here.
+- `data/setpieces/*.json` are the pieces. Saving writes `data/setpieces/name.json` here, and
+  beside it `name.png`, a 1024×768 picture from the game camera's angle on the biome's
+  ground, so tools without Godot can see what a piece looks like. `run.cmd --render` redraws
+  every picture (`--render=name` one) and quits.
 
 A game takes pieces by copying the JSON files into its own `data/setpieces` by hand. When a
 game changes its biomes or props, copy its `biomes.json` here so the palette and ground match.
