@@ -43,6 +43,13 @@ marks the piece's centre and the ring its clear circle. The list shows every pie
 with a thumbnail, prop count, clear radius and weight (B hides it); click one to open it
 (twice if the open piece is unsaved).
 
+Walls (the Dungeon pack's `SM_Env_Wall_*`) need two things the painter does not do for you.
+Obstacles in the game are circles, so a wall blocks nothing itself: line it with
+`SM_Env_Brick_Rubble_05` (0.26 m, blocking 0.5), which hides in a wall's thickness, about every
+0.8 m, leaving doorways open. And only a wall's front face has bricks, so pair it with a twin
+turned round over the same span (the two broken edges are each other's mirror). A wall's pivot
+is at one end, as is a paving tile's at a corner.
+
 ## Code
 
 `src/World/SetPiecePainter.cs` is the painter, `SetPieceBrowser.cs` its list and

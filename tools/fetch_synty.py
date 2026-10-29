@@ -41,6 +41,9 @@ NATURE_MESHES = [
     "SM_Terrain_DustPile_Long_01", "SM_Terrain_DustPile_Small_01", "SM_Terrain_DustPile_Small_02",
     "SM_Terrain_Rubble_Pebbles_01", "SM_Terrain_Rubble_Pebbles_02", "SM_Terrain_Rubble_Pebbles_03",
     "SM_Rock_Boulder_01",
+    # Ruined cities: low field walls. (The pack's beige pillars and arches clash with the Dungeon
+    # pack's grey stone, and its rock tiles are cliff-sized.)
+    "SM_Prop_StoneWall_01", "SM_Prop_StoneWall_02", "SM_Prop_StoneWall_03",
 ]
 
 # The snowfield and the trees the Nature pack only has with leaf cards, from the Adventure pack
@@ -54,6 +57,9 @@ ADVENTURE_MESHES = [
     "SM_Env_Rock_03_Snow", "SM_Env_Rock_04_Snow", "SM_Env_Rock_05_Snow",
     *(f"SM_Env_SnowPile_0{i}" for i in range(1, 4)),
     *(f"SM_Env_Ice_0{i}" for i in range(1, 4)),
+    # Ruined cities: a well. (The pack's roads and floor tiles lie flat at ground level and
+    # flicker against the field's ground.)
+    "SM_Bld_Well_01",
 ]
 
 # Bones and broken rock for the cinder waste, from the Dungeon pack (Dungeons_Texture_01).
@@ -63,6 +69,19 @@ DUNGEON_MESHES = [
     *(f"SM_Env_BonePile_0{i}" for i in range(1, 4)),
     "SM_Env_Bone_Ribcage_01", "SM_Env_Bone_Skull_01",
     "SM_Env_Rune_Pillar_01", "SM_Env_Rune_Pillar_02",
+    # Ruined cities: broken walls and pillars, statues, a fountain, rubble, 5 m paving tiles.
+    "SM_Env_Wall_01", "SM_Env_Wall_Half_01", "SM_Env_Wall_Quarter_01",
+    "SM_Env_Wall_Broken_Edge_01", "SM_Env_Wall_Broken_Edge_02",
+    "SM_Env_Wall_Archway_01", "SM_Env_Wall_Window_01", "SM_Env_Wall_DoorFrame_Round_01",
+    "SM_Env_Pillar_Round_01", "SM_Env_Pillar_Broken_01", "SM_Env_Pillar_Broken_02",
+    "SM_Env_Pillar_Broken_Pile_01", "SM_Env_Pillar_Broken_Pile_02",
+    *(f"SM_Env_Statue_0{i}" for i in range(1, 5)),
+    "SM_Env_Stone_Fountain_01", "SM_Env_Stone_Lantern_01", "SM_Env_Stairs_Broken_01",
+    *(f"SM_Env_Brick_Rubble_0{i}" for i in range(1, 7)),
+    *(f"SM_Env_Rubble_0{i}" for i in range(1, 4)),
+    *(f"SM_Prop_Bricks_0{i}" for i in range(1, 5)),
+    *(f"SM_Prop_Vase_Broken_0{i}" for i in range(1, 4)),
+    "SM_Env_Tiles_01", "SM_Env_Tiles_02", "SM_Env_Tiles_03",
 ]
 
 # (zip, path inside the zip, destination under assets/synty)
