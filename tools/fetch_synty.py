@@ -68,6 +68,10 @@ ADVENTURE_MESHES = [
     "SM_Prop_Sack_01", "SM_Prop_Sack_02", "SM_Prop_Sack_03",
     "SM_Bld_Fence_01", "SM_Bld_Fence_02", "SM_Bld_FencePost_01", "SM_Bld_Village_HangingCloth_01",
     "SM_Prop_Crate_01", "SM_Prop_Barrel_01", "SM_Prop_Stall_Table_01",
+    # Taverns: an inn, its walled yard and the casks; the snowed-in lodge.
+    "SM_Bld_Village_01", "SM_Bld_Village_06", "SM_Bld_Wall_01", "SM_Bld_Wall_02",
+    "SM_Bld_Hut_01_Snow", "SM_Bld_Fence_01_Snow",
+    "SM_Prop_Barrel_02", "SM_Prop_RoadSign_01", "SM_Prop_Chest_01", "SM_Prop_Crate_02",
 ]
 
 # Bones and broken rock for the cinder waste, from the Dungeon pack (Dungeons_Texture_01).
@@ -105,6 +109,10 @@ DUNGEON_MESHES = [
     "SM_Prop_Bench_01", "SM_Prop_Cauldron_01", "SM_Prop_TorchStick_01", "SM_Prop_Table_01",
     "SM_Wep_Banner_02", "SM_Wep_Banner_03",  # (Banner_01's cloth does not draw on the ARC shader)
     "SM_Prop_Skeleton_Cage_01", "SM_Env_Wood_Platform_01", "SM_Prop_Bed_01",
+    # Taverns: kegs on their stands, a cask the size of a shed, tables and stools.
+    "SM_Prop_Barrel_02", "SM_Prop_Barrel_03", "SM_Prop_Barrel_Large_01",
+    "SM_Prop_Table_Round_01", "SM_Prop_Table_Round_Broken_01", "SM_Prop_Stool_03",
+    "SM_Prop_Candle_Stand_01", "SM_Prop_Crate_Wood_04",
 ]
 
 # (zip, path inside the zip, destination under assets/synty)
