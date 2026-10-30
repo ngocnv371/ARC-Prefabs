@@ -41,6 +41,8 @@ NATURE_MESHES = [
     "SM_Terrain_DustPile_Long_01", "SM_Terrain_DustPile_Small_01", "SM_Terrain_DustPile_Small_02",
     "SM_Terrain_Rubble_Pebbles_01", "SM_Terrain_Rubble_Pebbles_02", "SM_Terrain_Rubble_Pebbles_03",
     "SM_Rock_Boulder_01",
+    # Camps.
+    "SM_Prop_Skull_01", "SM_Prop_Fence_01", "SM_Prop_Fence_02",
     # Ruined cities: low field walls. (The pack's beige pillars and arches clash with the Dungeon
     # pack's grey stone, and its rock tiles are cliff-sized.)
     "SM_Prop_StoneWall_01", "SM_Prop_StoneWall_02", "SM_Prop_StoneWall_03",
@@ -60,6 +62,12 @@ ADVENTURE_MESHES = [
     # Ruined cities: a well. (The pack's roads and floor tiles lie flat at ground level and
     # flicker against the field's ground.)
     "SM_Bld_Well_01",
+    # Camps.
+    "SM_Env_CampFire_01", "SM_Bld_Hut_01", "SM_Prop_Cart_01", "SM_Prop_Cart_02", "SM_Prop_Cart_03",
+    "SM_Prop_Logpile_01", "SM_Prop_Loghalf_01", "SM_Prop_Basket_01",
+    "SM_Prop_Sack_01", "SM_Prop_Sack_02", "SM_Prop_Sack_03",
+    "SM_Bld_Fence_01", "SM_Bld_Fence_02", "SM_Bld_FencePost_01", "SM_Bld_Village_HangingCloth_01",
+    "SM_Prop_Crate_01", "SM_Prop_Barrel_01", "SM_Prop_Stall_Table_01",
 ]
 
 # Bones and broken rock for the cinder waste, from the Dungeon pack (Dungeons_Texture_01).
@@ -82,6 +90,21 @@ DUNGEON_MESHES = [
     *(f"SM_Prop_Bricks_0{i}" for i in range(1, 5)),
     *(f"SM_Prop_Vase_Broken_0{i}" for i in range(1, 4)),
     "SM_Env_Tiles_01", "SM_Env_Tiles_02", "SM_Env_Tiles_03",
+    # Camps: the goblins' tents, palisades and spits, and the junk any camp gathers.
+    *(f"SM_Prop_Goblin_Tent_0{i}" for i in range(1, 4)),
+    "SM_Prop_Goblin_Fence_01", "SM_Prop_Goblin_Fence_02", "SM_Prop_Goblin_Tower_01",
+    *(f"SM_Prop_Goblin_Spikes_0{i}" for i in range(1, 5)),
+    "SM_Prop_Goblin_Rotisserie_01", "SM_Prop_Goblin_Rotisserie_Meat_01", "SM_Prop_Goblin_Drum_01",
+    *(f"SM_Prop_Goblin_Branch_0{i}" for i in range(1, 4)),
+    "SM_Prop_Goblin_Meat_01", "SM_Prop_Bonfire_01",
+    "SM_Prop_Log_Spike_01", "SM_Prop_Log_Spike_05", "SM_Prop_Log_Spike_Large_01",
+    "SM_Prop_Barrel_01", "SM_Prop_Barrel_Broken_01", "SM_Prop_Barrel_Broken_02",
+    "SM_Prop_Crate_Wood_01", "SM_Prop_Crate_Wood_02", "SM_Prop_Crate_Wood_03",
+    "SM_Prop_Stool_01", "SM_Prop_Stool_02", "SM_Prop_Plank_01", "SM_Prop_Plank_02",
+    *(f"SM_Env_Rubble_Plank_0{i}" for i in range(1, 4)),
+    "SM_Prop_Bench_01", "SM_Prop_Cauldron_01", "SM_Prop_TorchStick_01", "SM_Prop_Table_01",
+    "SM_Wep_Banner_02", "SM_Wep_Banner_03",  # (Banner_01's cloth does not draw on the ARC shader)
+    "SM_Prop_Skeleton_Cage_01", "SM_Env_Wood_Platform_01", "SM_Prop_Bed_01",
 ]
 
 # (zip, path inside the zip, destination under assets/synty)
