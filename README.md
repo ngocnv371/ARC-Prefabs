@@ -39,7 +39,14 @@ holds the piece's name, New, Undo and Save, and below them the list of saved pie
 WASD pans and the wheel zooms; click places, shift-drag paints, right-click or right-drag
 erases, alt-click picks up a placed prop; Q/E turn, Z/X scale, R toggles a random turn and
 scale after each placement, G snaps to half a metre; ctrl+Z undoes and ctrl+S saves. The cross
-marks the piece's centre and the ring its clear circle. The list shows every piece by biome
+marks the piece's centre and the ring its clear circle.
+
+Tab (or the Select button) switches to selecting placed props. Click a prop anywhere on it,
+shift-click to add or drop one, or drag a box over open ground to take every prop whose centre
+is inside (a wall and its hidden blockers together). Drag the selection to move it (G snaps),
+Q/E turn it 15° (with shift 1°) and Z/X scale it; a group turns and scales about its middle.
+Delete removes it, ctrl+D copies it a metre over, Esc drops it, and ctrl+Z undoes each step.
+Selected props are outlined in blue. The list shows every piece by biome
 with a thumbnail, prop count, clear radius and weight (B hides it); click one to open it
 (twice if the open piece is unsaved).
 
