@@ -94,7 +94,7 @@
     { "mesh": "nature/SM_Plant_Grass_03.fbx", "x": -4.743, "z": -4.014, "rot": 186.502, "scale": 0.9, "block": 0 },
     { "mesh": "nature/SM_Plant_Grass_02.fbx", "x": 8.943, "z": -4.425, "rot": 74.439, "scale": 1.27, "block": 0 },
     { "mesh": "nature/SM_Plant_Grass_03.fbx", "x": -8.512, "z": 6.061, "rot": 142.47, "scale": 1.157, "block": 0 },
-    { "mesh": "nature/SM_Plant_Grass_02.fbx", "x": 1.055, "z": 10.283, "rot": 42.154, "scale": 0.967, "block": 0 },
+    { "mesh": "nature/SM_Plant_Grass_02.fbx", "x": -2.386, "z": 7.958, "rot": 42.154, "scale": 0.967, "block": 0 },
     { "mesh": "nature/SM_Plant_Grass_02.fbx", "x": 9.624, "z": -0.108, "rot": 342.503, "scale": 1.062, "block": 0 },
     { "mesh": "nature/SM_Plant_Grass_02.fbx", "x": -4.914, "z": -8.923, "rot": 210.492, "scale": 1.061, "block": 0 },
     { "mesh": "nature/SM_Plant_Grass_03.fbx", "x": -4.681, "z": 7.082, "rot": 33.904, "scale": 1.204, "block": 0 },
@@ -114,6 +114,9 @@
     { "mesh": "nature/SM_Plant_Flowers_01.fbx", "x": -5.421, "z": -3.104, "rot": 91.668, "scale": 1.065, "block": 0 },
     { "mesh": "nature/SM_Tree_Round_05.fbx", "x": -3.8, "z": -10.6, "rot": 112.76, "scale": 1, "block": 0.45 },
     { "mesh": "nature/SM_Tree_Round_01.fbx", "x": 4.6, "z": -10.4, "rot": 341.532, "scale": 1, "block": 0.45 },
-    { "mesh": "nature/SM_Tree_Round_01.fbx", "x": 10.6, "z": 3.4, "rot": 286.713, "scale": 1, "block": 0.45 }
+    { "mesh": "nature/SM_Tree_Round_01.fbx", "x": 10.6, "z": 3.4, "rot": 286.713, "scale": 1, "block": 0.45 },
+    { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0.129, "z": 9.89, "rot": 0, "scale": 0.933, "block": 0.6 },
+    { "mesh": "adventure/SM_Prop_Cart_03.fbx", "x": 4.315, "z": 10.903, "rot": 90, "scale": 0.949, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 0.34, "z": 13.894, "rot": 180, "scale": 0.996, "block": 0.8 }
   ]
 }
