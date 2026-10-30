@@ -12,9 +12,20 @@ if not exist "%GODOT%" (
     exit /b 1
 )
 
-if not exist "%~dp0assets\synty\nature" python "%~dp0tools\fetch_synty.py" || exit /b 1
+rem Copy any Synty files the fetch list names that aren't here yet (all of them the first time),
+rem and import when some came: a pulled commit can add meshes.
+set "FRESH="
+if not exist "%~dp0.godot" set "FRESH=1"
+for /f "delims=" %%F in ('python "%~dp0tools\fetch_synty.py" --missing') do (
+    echo fetched %%F
+    set "FRESH=1"
+)
 if not defined PREFABS_NOBUILD dotnet build "%~dp0ArcPrefabs.csproj" -nologo -v:q || exit /b 1
-if not exist "%~dp0.godot" "%GODOT%" --headless --path "%~dp0." --import
+rem A first import of new meshes can leave some unimported, so a second pass picks them up.
+if defined FRESH (
+    "%GODOT%" --headless --path "%~dp0." --import >nul 2>&1
+    "%GODOT%" --headless --path "%~dp0." --import >nul 2>&1
+)
 
 echo.%* | findstr /c:"--render" >nul && goto render
 

@@ -3,7 +3,10 @@
 Synty source files may not be redistributed, so assets/synty/ is gitignored and rebuilt from
 your own copy of the packs (the meshes data/biomes.json names, on the atlases it names):
 
-    python tools/fetch_synty.py [--packs D:/dev/puchased-assets]
+    python tools/fetch_synty.py [--packs D:/dev/puchased-assets] [--missing]
+
+run.cmd runs it with --missing on every launch, so meshes added here (or by a pulled commit)
+arrive without rebuilding the folder, and imports them when any came.
 """
 
 import argparse
@@ -129,12 +132,16 @@ FILES = [
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--packs", default="D:/dev/puchased-assets", type=pathlib.Path)
+    parser.add_argument("--missing", action="store_true",
+                        help="copy only files not in assets/synty yet (run.cmd does this each launch)")
     args = parser.parse_args()
 
     archives: dict[str, zipfile.ZipFile] = {}
     for name, inner, dest in FILES:
-        archive = archives.get(name) or archives.setdefault(name, zipfile.ZipFile(args.packs / name))
         target = OUT / dest
+        if args.missing and target.exists():
+            continue
+        archive = archives.get(name) or archives.setdefault(name, zipfile.ZipFile(args.packs / name))
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(archive.read(inner))
         print(f"{dest}")
