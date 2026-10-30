@@ -58,9 +58,11 @@ public partial class ThumbnailStudio : Node
         var view = Stage(piece, biome, size);
         view.RenderTargetUpdateMode = SubViewport.UpdateMode.Always;
         Frame(view, piece);
-        // A few frames, so the first draw's shader compiles have settled.
+        // Draw a few frames ourselves, so the first draw's shader compiles have settled: a
+        // minimised window (run.cmd --render) only rarely draws on its own.
+        await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
         for (var i = 0; i < 3; i++)
-            await ToSignal(RenderingServer.Singleton, RenderingServer.SignalName.FramePostDraw);
+            RenderingServer.ForceDraw(false);
         var error = view.GetTexture().GetImage().SavePng(ProjectSettings.GlobalizePath(path));
         if (error != Error.Ok)
             GD.PushWarning($"could not write {path}: {error}");

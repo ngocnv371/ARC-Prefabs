@@ -7,3 +7,5 @@
 /assets/synty/
 # Godot imports the set piece pictures when the editor scans; the PNGs are for other tools.
 /data/setpieces/*.import
+# run.cmd --render writes this while it renders (a minimised, unfocusable window).
+/override.cfg
