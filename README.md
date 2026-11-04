@@ -59,9 +59,9 @@ shows) and tag filters narrow (a piece needs every chosen tag); each filter show
 pieces it would leave. Click a card to open it in the painter (twice if the open piece is
 unsaved).
 
-Tags in use: kind (`camp`, `ruin`, `shrine`, `grove`, `remains`, `ritual`, `tavern`), what's
-in it (`building`, `walls`, `pillars`, `paving`, `gate`, `statue`, `tents`, `bones`, `water`,
-`goblins`, `graveyard`) and shape (`ring`, laid out round a centre). Reuse these before making
+Tags in use: kind (`camp`, `ruin`, `shrine`, `grove`, `remains`, `ritual`, `tavern`, `fort`),
+what's in it (`building`, `walls`, `pillars`, `paving`, `gate`, `statue`, `tents`, `bones`,
+`water`, `goblins`, `graveyard`, `tower`, `palisade`, `arcane`) and shape (`ring`, laid out round a centre). Reuse these before making
 new ones.
 
 Walls (the Dungeon pack's `SM_Env_Wall_*`) need two things the painter does not do for you.

@@ -116,6 +116,17 @@ DUNGEON_MESHES = [
     "SM_Prop_Barrel_02", "SM_Prop_Barrel_03", "SM_Prop_Barrel_Large_01",
     "SM_Prop_Table_Round_01", "SM_Prop_Table_Round_Broken_01", "SM_Prop_Stool_03",
     "SM_Prop_Candle_Stand_01", "SM_Prop_Crate_Wood_04",
+    # Defences: a round tower drum and its stair, square and round tower posts, a gatehouse and its
+    # portcullis, iron spike fences, stakes, a lookout's ladder and deck; and the mage's crystals,
+    # orb lamps, braziers and books.
+    "SM_Env_Wall_Round_01", "SM_Env_SpiralStairs_02",
+    "SM_Env_Wall_Pillar_Large_01", "SM_Env_Wall_Pillar_Large_Round_01", "SM_Env_Wall_Pillar_Large_Round_01_Base",
+    "SM_Env_Wall_DoorFrame_Double_Round_01", "SM_Env_Portcullis_01",
+    "SM_Env_SpikeFence_01", "SM_Env_SpikeFence_02",
+    "SM_Prop_Log_Spike_02", "SM_Prop_Log_Spike_03", "SM_Prop_Log_Spike_Large_02",
+    "SM_Prop_Ladder_01", "SM_Env_Wood_Platform_02",
+    "SM_Prop_Tech_Crystal_01", "SM_Env_GlowingOrb_03", "SM_Env_Gem_Spike_01", "SM_Env_Gem_Spike_02",
+    "SM_Prop_Brazier_01", "SM_Prop_Bookcase_01", "SM_Item_BookPile_01",
 ]
 
 # (zip, path inside the zip, destination under assets/synty)
