@@ -2,6 +2,7 @@
   "biomes": ["fen"],
   "weight": 1,
   "turn": true,
+  "tags": ["tavern", "building", "walls"],
   "props": [
     { "mesh": "adventure/SM_Bld_Village_06.fbx", "x": -0.082, "z": -5.035, "rot": 0, "scale": 1, "block": 3.4 },
     { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -2.83, "z": -7.23, "rot": 0, "scale": 2, "block": 0.5 },

@@ -7,7 +7,7 @@ namespace ArcPrefabs.Core;
 /// <summary>
 /// Opens the <see cref="SetPiecePainter"/>. Options (after <c>--</c>): <c>--paint=name</c>
 /// (open data/setpieces/name.json), <c>--biome=id</c> (start a new piece in that biome),
-/// <c>--seed=N</c> (which map to find regions on), <c>--render[=name]</c> (write the pictures
+/// <c>--seed=N</c> (which map to find regions on), <c>--browse</c> (start on the Browse tab), <c>--render[=name]</c> (write the pictures
 /// next to the pieces' JSON, or one piece's, and quit).
 /// </summary>
 public partial class Prefabs : Node3D
@@ -47,6 +47,7 @@ public partial class Prefabs : Node3D
             Map = map,
             Open = paint is { Length: > 0 } ? paint : null,
             Biome = values.GetValueOrDefault("biome"),
+            Browse = values.ContainsKey("browse"),
         });
     }
 

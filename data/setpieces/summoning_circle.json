@@ -2,6 +2,7 @@
   "biomes": ["cinder"],
   "weight": 1,
   "turn": true,
+  "tags": ["ritual", "ring", "bones"],
   "props": [
     { "mesh": "dungeon/SM_Env_Bone_Skull_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 0.26, "block": 4 },
     { "mesh": "nature/SM_Terrain_DustPile_Long_01.fbx", "x": 0.318, "z": 5.52, "rot": 75.227, "scale": 0.996, "block": 0 },

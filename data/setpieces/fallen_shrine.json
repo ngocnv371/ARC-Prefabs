@@ -2,6 +2,7 @@
   "biomes": ["meadow"],
   "weight": 1,
   "turn": true,
+  "tags": ["shrine", "ruin", "pillars"],
   "props": [
     { "mesh": "dungeon/SM_Env_CrackedRock_01.fbx", "x": -2.675, "z": -2.849, "rot": 0, "scale": 0.55, "block": 0 },
     { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -3, "z": -3, "rot": 341.498, "scale": 1.774, "block": 0.3 },

@@ -2,6 +2,7 @@
   "biomes": ["fen"],
   "weight": 1,
   "turn": true,
+  "tags": ["grove", "water"],
   "props": [
     { "mesh": "nature/SM_Tree_Swamp_Stump_02.fbx", "x": -1.473, "z": -0.645, "rot": 108.987, "scale": 0.918, "block": 0.7 },
     { "mesh": "nature/SM_Tree_Swamp_Stump_02.fbx", "x": -0.368, "z": -1.727, "rot": 68.874, "scale": 0.98, "block": 0.7 },

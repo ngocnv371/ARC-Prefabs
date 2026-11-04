@@ -2,6 +2,7 @@
   "biomes": ["cinder"],
   "weight": 1,
   "turn": true,
+  "tags": ["ritual", "bones", "graveyard"],
   "props": [
     { "mesh": "dungeon/SM_Env_Rune_Pillar_01.fbx", "x": -6.6, "z": -5.6, "rot": 49.686, "scale": 1.131, "block": 0.5 },
     { "mesh": "dungeon/SM_Env_Rune_Pillar_02.fbx", "x": 6.6, "z": -5.6, "rot": 310.314, "scale": 1.004, "block": 0.5 },

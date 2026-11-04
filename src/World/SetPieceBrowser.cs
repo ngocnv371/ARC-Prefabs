@@ -4,25 +4,38 @@ using ArcPrefabs.UI;
 namespace ArcPrefabs.World;
 
 /// <summary>
-/// The painter's catalogue of data/setpieces, under the piece controls in its right column
-/// (B collapses it): every piece grouped by biome, each
-/// with a thumbnail rendered from the game's camera angle on its biome's grass, its prop count,
-/// clear radius, weight and whether it turns (a piece for several biomes is listed under each).
-/// A biome filter narrows the list; clicking a piece opens it in the painter.
+/// The painter's Browse tab: every piece in data/setpieces as a card in a grid filling the
+/// window (its picture from the game's camera, biome, prop count, clear radius, weight and tags),
+/// with a search box and biome and tag filters at the side. Biomes add up (a piece in any chosen
+/// biome shows); tags narrow (a piece needs every chosen tag); the search matches a name or a
+/// tag. Each tag shows how many pieces the other filters leave it. Clicking a card asks
+/// <see cref="Open"/> to open it in the painter.
 /// </summary>
-public partial class SetPieceBrowser : VBoxContainer
+public partial class SetPieceBrowser : PanelContainer
 {
-    private static readonly Vector2I Thumb = new(136, 100);
+    private static readonly Vector2I Thumb = new(288, 216);
+    private const int Gap = 12;
 
-    private readonly VBoxContainer _rows = new();
-    private readonly OptionButton _filter = new() { FocusMode = FocusModeEnum.None };
+    private readonly GridContainer _grid = new();
+    private readonly ScrollContainer _scroll = new() { SizeFlagsHorizontal = SizeFlags.ExpandFill, SizeFlagsVertical = SizeFlags.ExpandFill, HorizontalScrollMode = ScrollContainer.ScrollMode.Disabled };
+    private readonly HFlowContainer _biomeChips = new();
+    private readonly HFlowContainer _tagChips = new();
+    private readonly LineEdit _search = new() { PlaceholderText = "search names and tags", ClearButtonEnabled = true };
     private readonly Label _count = UiStyle.Label("", 13, UiStyle.Dim);
+    private readonly Label _notice = UiStyle.Label("", 13, UiStyle.Accent, wrap: true);
+    private readonly HashSet<string> _biomes = [];
+    private readonly HashSet<string> _tags = [];
+    private readonly Dictionary<string, (DateTime Stamp, Texture2D Texture)> _pictures = [];
     private IReadOnlyList<SetPiece> _pieces = [];
+    private string? _current;
 
     public required WorldMap Map { get; init; }
     public required ThumbnailStudio Studio { get; init; }
 
-    /// <summary>The piece open in the painter, highlighted in the list.</summary>
+    /// <summary>Opens a piece in the painter: null when it did, otherwise why not (shown above the grid).</summary>
+    public required Func<SetPiece, string?> Open { get; init; }
+
+    /// <summary>The piece open in the painter, outlined in the grid.</summary>
     public string? Current
     {
         get => _current;
@@ -34,103 +47,174 @@ public partial class SetPieceBrowser : VBoxContainer
         }
     }
 
-    private string? _current;
-
-    public event Action<SetPiece>? Opened;
-
     public override void _Ready()
     {
-        SizeFlagsVertical = SizeFlags.ExpandFill;
-        AddThemeConstantOverride("separation", 6);
-        var column = this;
+        var panel = UiStyle.Box(UiStyle.Panel with { A = 1f }, radius: 0, borderWidth: 0);
+        panel.ContentMarginTop = 56; // under the Paint | Browse tabs
+        panel.ContentMarginLeft = panel.ContentMarginRight = 20;
+        AddThemeStyleboxOverride("panel", panel);
+        var split = new HBoxContainer();
+        split.AddThemeConstantOverride("separation", 18);
+        AddChild(split);
+
+        var side = new VBoxContainer { CustomMinimumSize = new Vector2(260f, 0f) };
+        side.AddThemeConstantOverride("separation", 8);
+        split.AddChild(side);
         var header = new HBoxContainer();
-        var title = UiStyle.Label("SET PIECES  (B)", 16, UiStyle.Accent);
+        var title = UiStyle.Label("SET PIECES", 16, UiStyle.Accent);
         title.SizeFlagsHorizontal = SizeFlags.ExpandFill;
         header.AddChild(title);
         header.AddChild(_count);
-        column.AddChild(header);
+        side.AddChild(header);
+        _search.TextChanged += _ => Fill();
+        _search.TextSubmitted += _ => _search.ReleaseFocus();
+        side.AddChild(_search);
+        side.AddChild(UiStyle.Label("BIOMES", 13, UiStyle.Dim));
+        side.AddChild(_biomeChips);
+        side.AddChild(UiStyle.Label("TAGS", 13, UiStyle.Dim));
+        side.AddChild(_tagChips);
+        var clear = new Button { Text = "Clear filters", FocusMode = FocusModeEnum.None };
+        clear.Pressed += () =>
+        {
+            _biomes.Clear();
+            _tags.Clear();
+            _search.Text = "";
+            Fill();
+        };
+        side.AddChild(clear);
+        side.AddChild(UiStyle.Label("Click a piece to open it in the painter.\nB or Esc goes back to painting.", 12, UiStyle.Dim, wrap: true));
 
-        _filter.AddItem("Every biome");
-        foreach (var biome in Map.Biomes)
-            _filter.AddItem(biome.Name);
-        _filter.ItemSelected += _ => Fill();
-        column.AddChild(_filter);
-
-        var scroll = new ScrollContainer { SizeFlagsVertical = SizeFlags.ExpandFill, HorizontalScrollMode = ScrollContainer.ScrollMode.Disabled };
-        _rows.SizeFlagsHorizontal = SizeFlags.ExpandFill;
-        _rows.AddThemeConstantOverride("separation", 4);
-        scroll.AddChild(_rows);
-        column.AddChild(scroll);
+        var main = new VBoxContainer { SizeFlagsHorizontal = SizeFlags.ExpandFill };
+        split.AddChild(main);
+        main.AddChild(_notice);
+        _grid.AddThemeConstantOverride("h_separation", Gap);
+        _grid.AddThemeConstantOverride("v_separation", Gap);
+        _scroll.AddChild(_grid);
+        _scroll.Resized += FitColumns;
+        main.AddChild(_scroll);
         Refresh();
     }
 
-    /// <summary>Rereads the folder (after a save) and redraws thumbnails of pieces that changed.</summary>
+    /// <summary>Rereads the folder (after a save) and forgets pictures of pieces that are gone.</summary>
     public void Refresh()
     {
         var before = _pieces;
         _pieces = DirAccess.DirExistsAbsolute(SetPieces.Folder) ? SetPieces.ReadAll() : [];
         foreach (var gone in before.Where(old => _pieces.All(p => p.Id != old.Id)))
+        {
             Studio.ForgetPiece(gone.Id);
+            _pictures.Remove(gone.Id);
+        }
+        _notice.Text = "";
         Fill();
+    }
+
+    private bool Matches(SetPiece piece, bool tags = true, bool biomes = true)
+    {
+        if (biomes && _biomes.Count > 0 && !piece.Biomes.Any(_biomes.Contains))
+            return false;
+        if (tags && !_tags.All(piece.Tags.Contains))
+            return false;
+        var search = _search.Text.Trim().ToLowerInvariant();
+        return search.Length == 0 || piece.Id.Contains(search) || piece.Tags.Any(t => t.Contains(search));
     }
 
     private void Fill()
     {
-        foreach (var row in _rows.GetChildren())
-            row.QueueFree();
+        foreach (var child in _grid.GetChildren())
+            child.QueueFree();
+        foreach (var child in _biomeChips.GetChildren().Concat(_tagChips.GetChildren()))
+            child.QueueFree();
 
-        var only = _filter.Selected > 0 ? Map.Biomes[_filter.Selected - 1] : null;
-        var shown = new HashSet<string>(); // a piece for several biomes counts once
         foreach (var biome in Map.Biomes)
         {
-            if (only != null && biome != only)
-                continue;
-            var pieces = _pieces.Where(p => p.Biomes.Contains(biome.Id)).ToArray();
-            if (pieces.Length == 0)
-                continue;
-            _rows.AddChild(UiStyle.Label(biome.Name.ToUpperInvariant(), 13, UiStyle.Dim));
-            foreach (var piece in pieces)
-            {
-                _rows.AddChild(Row(piece, biome));
-                shown.Add(piece.Id);
-            }
+            var count = _pieces.Count(p => p.Biomes.Contains(biome.Id) && Matches(p, biomes: false));
+            _biomeChips.AddChild(Chip($"{biome.Name} {count}", _biomes.Contains(biome.Id), count > 0, () => Toggle(_biomes, biome.Id)));
         }
-        if (shown.Count == 0)
-            _rows.AddChild(UiStyle.Label("No set pieces here yet. Paint one and press ctrl+S.", 13, UiStyle.Dim, wrap: true));
-        _count.Text = $"{shown.Count} of {_pieces.Count}";
+        foreach (var tag in _pieces.SelectMany(p => p.Tags).Distinct().Order())
+        {
+            // How many pieces would show with this tag added to the others.
+            var count = _pieces.Count(p => p.Tags.Contains(tag) && Matches(p));
+            _tagChips.AddChild(Chip($"{tag} {count}", _tags.Contains(tag), count > 0, () => Toggle(_tags, tag)));
+        }
+
+        int Order(SetPiece p) => Map.Biomes.ToList().FindIndex(b => p.Biomes.Contains(b.Id)) is var i and >= 0 ? i : int.MaxValue;
+        var shown = _pieces.Where(p => Matches(p)).OrderBy(Order).ThenBy(p => p.Id).ToArray();
+        foreach (var piece in shown)
+            _grid.AddChild(Card(piece));
+        if (shown.Length == 0)
+            _grid.AddChild(UiStyle.Label(_pieces.Count == 0 ? "No set pieces yet. Paint one and press ctrl+S." : "Nothing matches these filters.", 14, UiStyle.Dim));
+        _count.Text = $"{shown.Length} of {_pieces.Count}";
+        FitColumns();
     }
 
-    private Button Row(SetPiece piece, Biome biome)
+    private void Toggle(HashSet<string> set, string value)
+    {
+        if (!set.Remove(value))
+            set.Add(value);
+        Fill();
+    }
+
+    private void FitColumns() => _grid.Columns = Mathf.Max(1, (int)((_scroll.Size.X - 16f + Gap) / (Thumb.X + 16 + Gap)));
+
+    private static Button Chip(string text, bool on, bool any, Action toggle)
+    {
+        static StyleBoxFlat Box(Color fill, Color border)
+        {
+            var box = UiStyle.Box(fill, border, 10, 1);
+            box.ContentMarginLeft = box.ContentMarginRight = 9;
+            box.ContentMarginTop = box.ContentMarginBottom = 3;
+            return box;
+        }
+        var chip = new Button { Text = text, ToggleMode = true, ButtonPressed = on, FocusMode = FocusModeEnum.None, Disabled = !any && !on };
+        chip.AddThemeFontSizeOverride("font_size", 13);
+        chip.AddThemeStyleboxOverride("normal", Box(UiStyle.Panel.Lightened(0.06f), UiStyle.Border with { A = 0.35f }));
+        chip.AddThemeStyleboxOverride("hover", Box(UiStyle.Panel.Lightened(0.14f), UiStyle.Accent));
+        chip.AddThemeStyleboxOverride("pressed", Box(UiStyle.Accent with { A = 0.3f }, UiStyle.Accent));
+        chip.AddThemeStyleboxOverride("hover_pressed", Box(UiStyle.Accent with { A = 0.4f }, UiStyle.Accent));
+        chip.AddThemeStyleboxOverride("disabled", Box(UiStyle.Panel, UiStyle.Border with { A = 0.15f }));
+        chip.Toggled += _ => toggle();
+        return chip;
+    }
+
+    /// <summary>A card: a button filling it, under the picture and text, which let the mouse through to it.</summary>
+    private Control Card(SetPiece piece)
     {
         var current = piece.Id == Current;
-        var button = new Button { FocusMode = FocusModeEnum.None, CustomMinimumSize = new Vector2(0f, Thumb.Y + 12f), TooltipText = $"Open {piece.Id}" };
-        button.AddThemeStyleboxOverride("normal", UiStyle.Box(UiStyle.Panel.Lightened(0.05f), current ? UiStyle.Accent : UiStyle.Border with { A = 0.3f }, 6, current ? 2 : 1));
-        button.AddThemeStyleboxOverride("hover", UiStyle.Box(UiStyle.Panel.Lightened(0.12f), UiStyle.Accent, 6, 1));
-        button.AddThemeStyleboxOverride("pressed", UiStyle.Box(UiStyle.Panel.Lightened(0.2f), UiStyle.Accent, 6, 2));
-        button.Pressed += () => Opened?.Invoke(piece);
+        var biome = Map.Biomes.FirstOrDefault(b => piece.Biomes.Contains(b.Id)) ?? Map.Biomes[0];
+        var holder = new PanelContainer();
+        holder.AddThemeStyleboxOverride("panel", new StyleBoxEmpty());
+        var card = new Button { FocusMode = FocusModeEnum.None, TooltipText = $"Open {piece.Id} in the painter" };
+        holder.AddChild(card);
+        card.AddThemeStyleboxOverride("normal", UiStyle.Box(UiStyle.Panel.Lightened(0.05f), current ? UiStyle.Accent : UiStyle.Border with { A = 0.3f }, 6, current ? 2 : 1));
+        card.AddThemeStyleboxOverride("hover", UiStyle.Box(UiStyle.Panel.Lightened(0.12f), UiStyle.Accent, 6, 1));
+        card.AddThemeStyleboxOverride("pressed", UiStyle.Box(UiStyle.Panel.Lightened(0.2f), UiStyle.Accent, 6, 2));
+        card.Pressed += () => _notice.Text = Open(piece) ?? "";
 
-        var row = new HBoxContainer { MouseFilter = MouseFilterEnum.Ignore };
-        row.SetAnchorsPreset(LayoutPreset.FullRect);
-        row.OffsetLeft = row.OffsetTop = 6f;
-        row.OffsetRight = row.OffsetBottom = -6f;
-        row.AddThemeConstantOverride("separation", 10);
-        row.AddChild(new TextureRect
+        var column = new VBoxContainer { MouseFilter = MouseFilterEnum.Ignore };
+        column.AddThemeConstantOverride("separation", 3);
+        column.AddChild(new TextureRect
         {
-            Texture = Thumbnail(piece, biome),
+            Texture = Picture(piece, biome),
             CustomMinimumSize = Thumb,
             ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
             StretchMode = TextureRect.StretchModeEnum.KeepAspectCovered,
             MouseFilter = MouseFilterEnum.Ignore,
         });
-        var text = new VBoxContainer { MouseFilter = MouseFilterEnum.Ignore, SizeFlagsHorizontal = SizeFlags.ExpandFill };
-        text.AddChild(Ignore(UiStyle.Label(piece.Id, 15, current ? UiStyle.Accent : UiStyle.Text)));
-        text.AddChild(Ignore(UiStyle.Label($"{piece.Props.Length} props · {piece.Clear:0.#} m", 12, UiStyle.Dim)));
-        text.AddChild(Ignore(UiStyle.Label($"weight {piece.Weight:0.##} · {(piece.Turn ? "turns" : "fixed")}", 12, UiStyle.Dim)));
-        if (piece.Biomes.Length > 1)
-            text.AddChild(Ignore(UiStyle.Label(string.Join(", ", piece.Biomes), 12, UiStyle.Dim)));
-        row.AddChild(text);
-        button.AddChild(row);
-        return button;
+        var biomes = string.Join(", ", Map.Biomes.Where(b => piece.Biomes.Contains(b.Id)).Select(b => b.Name));
+        column.AddChild(Ignore(UiStyle.Label(piece.Id, 15, current ? UiStyle.Accent : UiStyle.Text)));
+        column.AddChild(Ignore(UiStyle.Label($"{biomes} · {piece.Props.Length} props · {piece.Clear:0.#} m", 12, UiStyle.Dim)));
+        column.AddChild(Ignore(UiStyle.Label($"weight {piece.Weight:0.##} · {(piece.Turn ? "turns" : "fixed")}", 12, UiStyle.Dim)));
+        var tags = Ignore(UiStyle.Label(piece.Tags.Length > 0 ? string.Join("  ", piece.Tags.Select(t => "#" + t)) : "no tags", 12, piece.Tags.Length > 0 ? UiStyle.Xp : UiStyle.Dim, wrap: true));
+        tags.CustomMinimumSize = new Vector2(Thumb.X, 0f);
+        column.AddChild(tags);
+
+        var margin = new MarginContainer { MouseFilter = MouseFilterEnum.Ignore };
+        foreach (var side in new[] { "left", "top", "right", "bottom" })
+            margin.AddThemeConstantOverride($"margin_{side}", 8);
+        margin.AddChild(column);
+        holder.AddChild(margin);
+        return holder;
     }
 
     private static Control Ignore(Control c)
@@ -139,19 +223,28 @@ public partial class SetPieceBrowser : VBoxContainer
         return c;
     }
 
-    /// <summary>The piece's picture, redrawn when its file is written again.</summary>
-    private Texture2D Thumbnail(SetPiece piece, Biome biome)
+    /// <summary>
+    /// The picture saved next to the piece's JSON when it is up to date, so the grid needs no
+    /// live studio for each card; otherwise (a piece saved a moment ago) the studio draws it.
+    /// </summary>
+    private Texture2D Picture(SetPiece piece, Biome biome)
     {
-        var written = File.GetLastWriteTimeUtc(ProjectSettings.GlobalizePath(SetPieces.Folder + piece.Id + ".json"));
-        return Studio.Piece(piece, biome, written, Thumb * 2);
-    }
-
-    public override void _UnhandledInput(InputEvent e)
-    {
-        if (e is InputEventKey { Pressed: true, Echo: false, PhysicalKeycode: Key.B } && GetViewport().GuiGetFocusOwner() is not LineEdit)
+        var json = ProjectSettings.GlobalizePath(SetPieces.Folder + piece.Id + ".json");
+        var png = Path.ChangeExtension(json, ".png");
+        var written = File.GetLastWriteTimeUtc(json);
+        if (File.Exists(png) && File.GetLastWriteTimeUtc(png) is var drawn && drawn >= written)
         {
-            Visible = !Visible;
-            GetViewport().SetInputAsHandled();
+            if (_pictures.TryGetValue(piece.Id, out var known) && known.Stamp == drawn)
+                return known.Texture;
+            var image = Image.LoadFromFile(png);
+            if (image != null && !image.IsEmpty())
+            {
+                image.Resize(Thumb.X * 2, Thumb.Y * 2, Image.Interpolation.Lanczos);
+                var texture = ImageTexture.CreateFromImage(image);
+                _pictures[piece.Id] = (drawn, texture);
+                return texture;
+            }
         }
+        return Studio.Piece(piece, biome, written, Thumb * 2);
     }
 }

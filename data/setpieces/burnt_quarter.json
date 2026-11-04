@@ -2,6 +2,7 @@
   "biomes": ["cinder"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "walls"],
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_01.fbx", "x": -10.05, "z": -9.6, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Wall_01.fbx", "x": -5.11, "z": -9.6, "rot": 180, "scale": 1, "block": 0 },

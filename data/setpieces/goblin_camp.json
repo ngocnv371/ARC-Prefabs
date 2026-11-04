@@ -2,6 +2,7 @@
   "biomes": ["pinewood"],
   "weight": 1,
   "turn": true,
+  "tags": ["camp", "tents", "goblins"],
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": 3.904, "z": 8.108, "rot": 330.767, "scale": 1.032, "block": 1 },
     { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": 5.633, "z": 7.064, "rot": 318.54, "scale": 0.998, "block": 1 },

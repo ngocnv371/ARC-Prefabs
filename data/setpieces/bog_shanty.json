@@ -2,6 +2,7 @@
   "biomes": ["fen"],
   "weight": 1,
   "turn": true,
+  "tags": ["camp", "water"],
   "props": [
     { "mesh": "dungeon/SM_Env_Wood_Platform_01.fbx", "x": -2.4, "z": -2, "rot": 8, "scale": 1, "block": 1.8 },
     { "mesh": "dungeon/SM_Env_Wood_Platform_01.fbx", "x": 2.6, "z": -3.2, "rot": 346, "scale": 1, "block": 1.8 },

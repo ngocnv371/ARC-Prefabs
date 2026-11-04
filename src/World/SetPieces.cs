@@ -13,11 +13,19 @@ public sealed record SetPieceProp(string Mesh, Vector2 Offset, float Rotation, f
 /// <summary>
 /// A hand-made layout of props (data/setpieces/*.json, painted with ARC-Prefabs) that
 /// regions of its biomes drop into the field. <see cref="Clear"/> is the radius kept free of the
-/// random scatter; <see cref="Turn"/> lets each placement face a random way.
+/// random scatter; <see cref="Turn"/> lets each placement face a random way. <see cref="Tags"/>
+/// are lowercase words for finding pieces in the browser; games ignore them.
 /// </summary>
 public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Turn, float Clear, SetPieceProp[] Props)
 {
     private const float Margin = 2f; // scatter stays this far outside the outermost prop
+
+    public string[] Tags { get; init; } = [];
+
+    /// <summary>Tags typed as free text: split at commas and spaces, lowercased, each once, in order.</summary>
+    public static string[] ParseTags(string text) =>
+        text.Split([',', ' ', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(t => t.ToLowerInvariant()).Distinct().ToArray();
 
     /// <summary>The radius that holds every prop, plus a margin.</summary>
     public static float Footprint(IEnumerable<SetPieceProp> props) =>
@@ -44,7 +52,10 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
             !root.TryGetValue("turn", out var turn) || turn.AsBool(),
             root.TryGetValue("clear", out var clear) ? clear.AsSingle() : Footprint(props),
             props
-        );
+        )
+        {
+            Tags = root.TryGetValue("tags", out var tags) ? ParseTags(string.Join(",", tags.AsGodotArray().Select(t => t.AsString()))) : [],
+        };
     }
 
     /// <summary>Writes the piece as JSON, one prop per line so diffs stay readable.</summary>

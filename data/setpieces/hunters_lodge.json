@@ -2,6 +2,7 @@
   "biomes": ["pinewood"],
   "weight": 1,
   "turn": true,
+  "tags": ["building", "camp"],
   "props": [
     { "mesh": "adventure/SM_Bld_Hut_01.fbx", "x": 0, "z": -4.6, "rot": 0, "scale": 1, "block": 2.8 },
     { "mesh": "dungeon/SM_Prop_Bonfire_01.fbx", "x": 0, "z": 2.2, "rot": 30, "scale": 1.1, "block": 0.7 },

@@ -2,6 +2,7 @@
   "biomes": ["meadow", "pinewood"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "pillars"],
   "props": [
     { "mesh": "dungeon/SM_Env_CrackedRock_02.fbx", "x": -6.786, "z": -3.576, "rot": 0, "scale": 0.36, "block": 0 },
     { "mesh": "dungeon/SM_Env_CrackedRock_02.fbx", "x": 0.023, "z": 3.586, "rot": 90, "scale": 0.34, "block": 0 },

@@ -2,6 +2,7 @@
   "biomes": ["meadow"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "walls", "paving", "statue"],
   "props": [
     { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -7.5, "z": -7.5, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Tiles_02.fbx", "x": -2.5, "z": 7.5, "rot": 180, "scale": 1, "block": 0 },

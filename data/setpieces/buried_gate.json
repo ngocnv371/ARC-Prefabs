@@ -2,6 +2,7 @@
   "biomes": ["frost"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "walls", "gate", "statue"],
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Archway_01.fbx", "x": -2.44, "z": 0, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Wall_Archway_01.fbx", "x": 2.57, "z": 0, "rot": 180, "scale": 1, "block": 0 },

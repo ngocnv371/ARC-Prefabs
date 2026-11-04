@@ -2,6 +2,7 @@
   "biomes": ["cinder"],
   "weight": 1,
   "turn": true,
+  "tags": ["ritual", "ring", "bones"],
   "props": [
     { "mesh": "dungeon/SM_Env_CrackedRock_02.fbx", "x": -5.437, "z": -1.449, "rot": 30, "scale": 0.4, "block": 0 },
     { "mesh": "dungeon/SM_Env_Rune_Pillar_01.fbx", "x": 6.5, "z": 0, "rot": 270, "scale": 1.134, "block": 0.5 },

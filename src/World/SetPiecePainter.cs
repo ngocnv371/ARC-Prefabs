@@ -11,13 +11,13 @@ namespace ArcPrefabs.World;
 /// shader), and the game's camera, so a piece looks as it will in a run. Props sit around the
 /// region's centre, which becomes the piece's centre; saving writes data/setpieces/name.json.
 /// Controls: WASD pans, wheel zooms, Tab switches between painting and selecting, R random turn
-/// and scale, G snaps to half a metre, ctrl+Z undoes, ctrl+S saves, B shows or hides the
-/// <see cref="SetPieceBrowser"/>. Painting: click places, shift-drag paints, right-click (or drag)
+/// and scale, G snaps to half a metre, ctrl+Z undoes, ctrl+S saves, B switches to the Browse tab
+/// (the <see cref="SetPieceBrowser"/>, over the whole window) and back. Painting: click places, shift-drag paints, right-click (or drag)
 /// erases, alt-click picks up a placed prop's mesh, rotation and scale, Q/E turn and Z/X scale
 /// the brush. Selecting: click a prop (its box, not just its centre), shift-click to add or drop
 /// one, or drag a box over open ground; drag the selection to move it, Q/E turn it (shift: 1°) and
 /// Z/X scale it, a group about its middle; Delete removes it, ctrl+D duplicates it, Esc drops it.
-/// The palette is on the left; the piece's name, actions and the browser are on the right.
+/// The palette is on the left; the piece's name, tags and actions are on the right.
 /// </summary>
 public partial class SetPiecePainter : Node3D
 {
@@ -71,10 +71,15 @@ public partial class SetPiecePainter : Node3D
     private string? _confirmOpen;
 
     private PanelContainer _panel = null!; // the palette, on the left
-    private PanelContainer _piecePanel = null!; // the piece's name, actions and the browser, on the right
+    private PanelContainer _piecePanel = null!; // the piece's name, tags and actions, on the right
+    private Control _tabs = null!; // Paint | Browse, at the top
+    private Button _paintTab = null!;
+    private Button _browseTab = null!;
     private SetPieceBrowser _browser = null!;
+    private bool _browsing;
     private ThumbnailStudio _studio = null!;
     private LineEdit _name = null!;
+    private LineEdit _tags = null!;
     private OptionButton _biomes = null!;
     private CheckBox _all = null!;
     private CheckBox _turn = null!;
@@ -89,6 +94,9 @@ public partial class SetPiecePainter : Node3D
 
     /// <summary>The biome to start a new piece in.</summary>
     public string? Biome { get; init; }
+
+    /// <summary>Start on the Browse tab.</summary>
+    public bool Browse { get; init; }
 
     public override void _Ready()
     {
@@ -120,6 +128,8 @@ public partial class SetPiecePainter : Node3D
         }
         FitCamera();
         GetViewport().SizeChanged += FitCamera;
+        if (Browse)
+            ShowBrowser(true);
     }
 
     public override void _ExitTree() => GetViewport().SizeChanged -= FitCamera;
@@ -152,6 +162,7 @@ public partial class SetPiecePainter : Node3D
     private void Load(SetPiece piece)
     {
         _name.Text = piece.Id;
+        _tags.Text = string.Join(", ", piece.Tags);
         _browser.Current = piece.Id;
         _weight = piece.Weight;
         _turn.ButtonPressed = piece.Turn;
@@ -231,6 +242,8 @@ public partial class SetPiecePainter : Node3D
 
     public override void _Process(double delta)
     {
+        if (_browsing)
+            return;
         var typing = GetViewport().GuiGetFocusOwner() is LineEdit;
         if (!typing && !Input.IsKeyPressed(Godot.Key.Ctrl))
         {
@@ -254,7 +267,7 @@ public partial class SetPiecePainter : Node3D
     private void UpdateMouse()
     {
         _mouse = null;
-        if (_pointer is not { } screen || _panel.GetGlobalRect().HasPoint(screen) || _piecePanel.GetGlobalRect().HasPoint(screen))
+        if (_pointer is not { } screen || _panel.GetGlobalRect().HasPoint(screen) || _piecePanel.GetGlobalRect().HasPoint(screen) || _tabs.GetGlobalRect().HasPoint(screen))
             return;
         if (Ground(screen) is { } at)
             _mouse = _snap ? at.Snapped(Vector2.One * Snap) : at;
@@ -274,6 +287,15 @@ public partial class SetPiecePainter : Node3D
 
     public override void _UnhandledInput(InputEvent e)
     {
+        if (_browsing)
+        {
+            if (e is InputEventKey { Pressed: true, Echo: false, PhysicalKeycode: Godot.Key.B or Godot.Key.Escape })
+            {
+                ShowBrowser(false);
+                GetViewport().SetInputAsHandled();
+            }
+            return;
+        }
         if (e is InputEventMouse pointer)
         {
             _pointer = pointer.Position;
@@ -334,6 +356,9 @@ public partial class SetPiecePainter : Node3D
             case Godot.Key.S when key.CtrlPressed:
                 if (!key.Echo)
                     Save();
+                return true;
+            case Godot.Key.B when !key.Echo && !key.CtrlPressed:
+                ShowBrowser(true);
                 return true;
             case Godot.Key.Tab when !key.Echo:
                 _selectMode.ButtonPressed = !_selecting; // fires Toggled, which switches the mode
@@ -701,10 +726,11 @@ public partial class SetPiecePainter : Node3D
         }
         DirAccess.MakeDirRecursiveAbsolute(ProjectSettings.GlobalizePath(SetPieces.Folder));
         var props = _props.ToArray();
-        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props);
+        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text) };
         piece.Write(SetPieces.Folder + name + ".json");
         _ = _studio.SavePiece(piece, _biome, SetPieces.Folder + name + ".png", ThumbnailStudio.PieceImage);
         _name.Text = name;
+        _tags.Text = string.Join(", ", piece.Tags);
         _dirty = false;
         _message = $"saved data/setpieces/{name}.json and .png";
         _browser.Current = name;
@@ -783,17 +809,35 @@ public partial class SetPiecePainter : Node3D
             (_message.Length > 0 ? $"\n{_message}" : "");
     }
 
-    /// <summary>Opens a piece picked in the browser; with unsaved changes it asks for a second click.</summary>
-    private void OpenFromBrowser(SetPiece piece)
+    /// <summary>
+    /// Opens a piece picked in the browser and goes back to painting; with unsaved changes it
+    /// asks for a second click (the browser shows the returned message).
+    /// </summary>
+    private string? OpenFromBrowser(SetPiece piece)
     {
         if (_dirty && _confirmOpen != piece.Id)
         {
             _confirmOpen = piece.Id;
-            _message = $"unsaved changes: click {piece.Id} again to drop them";
-            return;
+            return $"{(_name.Text.Length > 0 ? _name.Text : "The open piece")} has unsaved changes: click {piece.Id} again to drop them.";
         }
         _confirmOpen = null;
         Load(piece);
+        ShowBrowser(false);
+        return null;
+    }
+
+    /// <summary>Switches between the Paint tab (the field and the side panels) and the Browse tab over them.</summary>
+    private void ShowBrowser(bool on)
+    {
+        _browsing = on;
+        _browser.Visible = on;
+        _paintTab.SetPressedNoSignal(!on);
+        _browseTab.SetPressedNoSignal(on);
+        if (_ghost != null)
+            _ghost.Visible = false;
+        (_boxFrom, _moveFrom, _moveStart, _lastStroke) = (null, null, null, null);
+        _confirmOpen = null;
+        GetViewport().GuiReleaseFocus();
     }
 
     private static string Short(string mesh) => mesh[(mesh.IndexOf('/') + 1)..].Replace("SM_", "").Replace(".fbx", "");
@@ -843,6 +887,10 @@ public partial class SetPiecePainter : Node3D
         _name = new LineEdit { PlaceholderText = "name (file under data/setpieces)" };
         _name.TextSubmitted += _ => _name.ReleaseFocus();
         piece.AddChild(_name);
+        _tags = new LineEdit { PlaceholderText = "tags: camp, ruin, water", TooltipText = "Words to find the piece by in Browse, separated by commas or spaces" };
+        _tags.TextSubmitted += _ => _tags.ReleaseFocus();
+        _tags.TextChanged += _ => _dirty = true;
+        piece.AddChild(_tags);
 
         _turn = new CheckBox { Text = "Turn randomly when placed in a run", ButtonPressed = true, FocusMode = Control.FocusModeEnum.None };
         piece.AddChild(_turn);
@@ -855,6 +903,7 @@ public partial class SetPiecePainter : Node3D
             _picked.Clear();
             Rebuild();
             _name.Text = "";
+            _tags.Text = "";
             _weight = 1f;
             _dirty = false;
             _message = "new piece";
@@ -880,13 +929,43 @@ public partial class SetPiecePainter : Node3D
             "WASD pan · wheel zoom · Tab paint/select\n" +
             "paint: click place · shift-drag paint\n   right-click/drag erase · alt-click pick up\n   Q/E turn · Z/X scale the brush\n" +
             "select: click · shift-click · drag a box\n   drag move · Q/E turn (shift 1°) · Z/X scale\n   Del delete · ctrl+D duplicate · Esc drop\n" +
-            "ctrl+Z undo · ctrl+S save · B set pieces",
+            "ctrl+Z undo · ctrl+S save · B browse pieces",
             12, UiStyle.Dim));
-        piece.AddChild(new HSeparator());
 
-        _browser = new SetPieceBrowser { Name = "Browser", Map = Map, Studio = _studio };
-        _browser.Opened += OpenFromBrowser;
-        piece.AddChild(_browser);
+        // Browse: every saved piece over the whole window, under the tabs.
+        _browser = new SetPieceBrowser { Name = "Browser", Map = Map, Studio = _studio, Open = OpenFromBrowser, Visible = false };
+        _browser.SetAnchorsPreset(Control.LayoutPreset.FullRect);
+        layer.AddChild(_browser);
+
+        // The tabs, centred at the top, over both.
+        var tabs = new HBoxContainer { Name = "Tabs" };
+        tabs.AddThemeConstantOverride("separation", 0);
+        tabs.SetAnchorsPreset(Control.LayoutPreset.CenterTop);
+        tabs.GrowHorizontal = Control.GrowDirection.Both;
+        tabs.OffsetTop = 8f;
+        var group = new ButtonGroup();
+        _paintTab = Tab("Paint", group, true, () => ShowBrowser(false));
+        _browseTab = Tab("Browse  (B)", group, false, () => ShowBrowser(true));
+        tabs.AddChild(_paintTab);
+        tabs.AddChild(_browseTab);
+        layer.AddChild(tabs);
+        _tabs = tabs;
+    }
+
+    private static Button Tab(string text, ButtonGroup group, bool on, Action chosen)
+    {
+        var tab = new Button { Text = text, ToggleMode = true, ButtonGroup = group, ButtonPressed = on, FocusMode = Control.FocusModeEnum.None, CustomMinimumSize = new Vector2(120f, 34f) };
+        tab.AddThemeStyleboxOverride("normal", UiStyle.Box(UiStyle.Panel with { A = 0.95f }, UiStyle.Border with { A = 0.4f }, 6, 1));
+        tab.AddThemeStyleboxOverride("hover", UiStyle.Box(UiStyle.Panel.Lightened(0.12f), UiStyle.Accent, 6, 1));
+        tab.AddThemeStyleboxOverride("pressed", UiStyle.Box(UiStyle.Accent with { A = 0.3f }, UiStyle.Accent, 6, 2));
+        tab.AddThemeStyleboxOverride("hover_pressed", UiStyle.Box(UiStyle.Accent with { A = 0.4f }, UiStyle.Accent, 6, 2));
+        tab.AddThemeColorOverride("font_pressed_color", UiStyle.Accent);
+        tab.Toggled += pressed =>
+        {
+            if (pressed)
+                chosen();
+        };
+        return tab;
     }
 
     /// <summary>A full-height side panel docked to the window's edge; the paint area is between the two.</summary>

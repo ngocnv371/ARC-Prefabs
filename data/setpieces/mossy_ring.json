@@ -2,6 +2,7 @@
   "biomes": ["pinewood"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "pillars", "ring"],
   "props": [
     { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_01.fbx", "x": 5.543, "z": 2.296, "rot": 85.667, "scale": 1.618, "block": 0.4 },
     { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -5.543, "z": 2.296, "rot": 133.184, "scale": 1.642, "block": 0.4 },

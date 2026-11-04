@@ -2,6 +2,7 @@
   "biomes": ["meadow"],
   "weight": 1,
   "turn": true,
+  "tags": ["camp", "building"],
   "props": [
     { "mesh": "adventure/SM_Bld_Hut_01.fbx", "x": -3.6, "z": -4.4, "rot": 47.289, "scale": 1, "block": 2.8 },
     { "mesh": "adventure/SM_Bld_Fence_02.fbx", "x": -8.6, "z": -0.6, "rot": 80, "scale": 1, "block": 0 },

@@ -2,6 +2,7 @@
   "biomes": ["frost"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "pillars", "gate"],
   "props": [
     { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -1.6, "z": 0, "rot": 137.167, "scale": 1.8, "block": 0.3 },
     { "mesh": "nature/SM_Prop_Pillar_Arch_Broken_Moss_01.fbx", "x": -1.6, "z": 0, "rot": 90, "scale": 0.999, "block": 0 },

@@ -2,6 +2,7 @@
   "biomes": ["pinewood"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "walls", "paving"],
   "props": [
     { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -2.5, "z": -12.5, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Tiles_02.fbx", "x": -2.5, "z": -2.5, "rot": 90, "scale": 1, "block": 0 },

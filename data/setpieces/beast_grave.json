@@ -2,6 +2,7 @@
   "biomes": ["cinder"],
   "weight": 1,
   "turn": true,
+  "tags": ["remains", "bones"],
   "props": [
     { "mesh": "dungeon/SM_Env_Bone_Ribcage_01.fbx", "x": 0, "z": -1.2, "rot": 0, "scale": 0.65, "block": 3.5 },
     { "mesh": "dungeon/SM_Env_Bone_Skull_01.fbx", "x": 0.4, "z": 4.4, "rot": 0, "scale": 0.5, "block": 4 },

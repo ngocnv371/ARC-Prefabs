@@ -2,6 +2,7 @@
   "biomes": ["frost"],
   "weight": 1,
   "turn": true,
+  "tags": ["remains", "bones"],
   "props": [
     { "mesh": "dungeon/SM_Env_Bone_Ribcage_01.fbx", "x": 0.6, "z": 0, "rot": 35, "scale": 0.6, "block": 3.5 },
     { "mesh": "dungeon/SM_Env_Bone_Skull_01.fbx", "x": -3.4, "z": 4.6, "rot": 320, "scale": 0.48, "block": 4 },

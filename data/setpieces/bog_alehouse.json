@@ -2,6 +2,7 @@
   "biomes": ["fen"],
   "weight": 1,
   "turn": true,
+  "tags": ["tavern", "building", "water"],
   "props": [
     { "mesh": "adventure/SM_Bld_Hut_01.fbx", "x": 0, "z": -5, "rot": 0, "scale": 1, "block": 2.8 },
     { "mesh": "dungeon/SM_Env_Wood_Platform_01.fbx", "x": 0.6, "z": 0.2, "rot": 90, "scale": 1, "block": 1.8 },

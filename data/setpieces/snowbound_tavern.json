@@ -2,6 +2,7 @@
   "biomes": ["frost"],
   "weight": 1,
   "turn": true,
+  "tags": ["tavern", "building"],
   "props": [
     { "mesh": "adventure/SM_Bld_Hut_01_Snow.fbx", "x": 0, "z": -4.4, "rot": 0, "scale": 1, "block": 2.8 },
     { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0.4, "z": 2.6, "rot": 61.547, "scale": 1, "block": 0.6 },

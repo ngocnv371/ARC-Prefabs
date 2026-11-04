@@ -2,6 +2,7 @@
   "biomes": ["frost"],
   "weight": 1,
   "turn": true,
+  "tags": ["camp", "tents"],
   "props": [
     { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0, "z": 0, "rot": 31.481, "scale": 1, "block": 0.6 },
     { "mesh": "dungeon/SM_Prop_Goblin_Tent_02.fbx", "x": -4, "z": -3.4, "rot": 229.635, "scale": 1, "block": 1.4 },

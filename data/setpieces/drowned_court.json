@@ -2,6 +2,7 @@
   "biomes": ["fen"],
   "weight": 1,
   "turn": true,
+  "tags": ["ruin", "pillars", "water"],
   "props": [
     { "mesh": "dungeon/SM_Env_CrackedRock_02.fbx", "x": -4.633, "z": -2.666, "rot": 15, "scale": 0.38, "block": 0 },
     { "mesh": "nature/SM_Prop_Pillar_Broken_Moss_02.fbx", "x": -3.344, "z": -3.517, "rot": 187.402, "scale": 1.527, "block": 0.3 },
