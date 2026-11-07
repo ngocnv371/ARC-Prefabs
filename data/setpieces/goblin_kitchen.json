@@ -1,0 +1,24 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "camp"],
+  "lore": "The cook roasts whatever the hunters bring back, and does not ask what it was. The table is for the chief; everyone else eats off the floor.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Rotisserie_Meat_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": -2.4, "z": -1.2, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 2.4, "z": -2.4, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Meat_01.fbx", "x": 2.6, "z": -1, "rot": 80, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": 1.4, "z": -1.3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": 3.4, "z": -1.3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Logpile_01.fbx", "x": -3.4, "z": 1.8, "rot": 30, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 3.6, "z": 1.2, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Barrel_02.fbx", "x": 4.2, "z": 0.3, "rot": 40, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": -3.173, "z": 1.179, "rot": 40.49, "scale": 0.971, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": -4.67, "z": -0.025, "rot": 48.53, "scale": 1.081, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -1.778, "z": -2.144, "rot": 31.33, "scale": 1.09, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": 3.684, "z": 0.443, "rot": 355.69, "scale": 0.969, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Jar_01.fbx", "x": 1.119, "z": 2.858, "rot": 316.81, "scale": 0.997, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -0.796, "z": 4.605, "rot": 295.68, "scale": 0.888, "block": 0 }
+  ]
+}

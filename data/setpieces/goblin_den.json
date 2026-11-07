@@ -1,0 +1,30 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "camp", "tents", "ring"],
+  "lore": "Four tents round one fire is a whole clan to a goblin. They argue all night about whose turn it is to keep watch, so no one ever does.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Bonfire_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_01.fbx", "x": 3.818, "z": -3.818, "rot": 315, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_02.fbx", "x": -3.818, "z": -3.818, "rot": 45, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": -3.818, "z": 3.818, "rot": 135, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_01.fbx", "x": 3.818, "z": 3.818, "rot": 225, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 1.871, "z": -0.33, "rot": 280, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": 0.264, "z": -1.882, "rot": 352, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -1.708, "z": -0.833, "rot": 64, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": -1.32, "z": 1.367, "rot": 136, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 0.892, "z": 1.678, "rot": 208, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Drum_01.fbx", "x": 2.6, "z": 0.4, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Meat_01.fbx", "x": -1.6, "z": 1.4, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_01.fbx", "x": 6.365, "z": 2.8, "rot": 148.62, "scale": 1.043, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": -2.213, "z": 5.333, "rot": 311.14, "scale": 1.113, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": 2.635, "z": 0.15, "rot": 19.32, "scale": 0.894, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_02.fbx", "x": 4.386, "z": 0.959, "rot": 357.27, "scale": 0.937, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": 1.667, "z": -2.188, "rot": 113.57, "scale": 1.088, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 7.101, "z": 0.881, "rot": 87.07, "scale": 0.87, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 1.375, "z": 5.941, "rot": 244.8, "scale": 0.953, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_01.fbx", "x": -5.377, "z": 1.967, "rot": 333.3, "scale": 1.083, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 0.618, "z": 3.568, "rot": 252.41, "scale": 0.979, "block": 0 }
+  ]
+}

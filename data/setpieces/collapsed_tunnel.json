@@ -1,0 +1,29 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["mine", "rocks", "ruin", "remains"],
+  "lore": "The props gave way and the tunnel came down on a dwarf survey party. One of them nearly crawled clear; his lamp is still burning.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": 0, "z": -3, "rot": 0, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_06.fbx", "x": -3, "z": -2, "rot": 40, "scale": 1, "block": 1.3 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_02.fbx", "x": 3, "z": -2.3, "rot": 330, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Wood_Pole_02.fbx", "x": 0.2, "z": -0.8, "rot": 8, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_03.fbx", "x": -1.4, "z": 1.2, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Broken_01.fbx", "x": -1, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 1.8, "z": 0.8, "rot": 200, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 2.8, "z": 1.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -0.714, "z": 2.434, "rot": 59.29, "scale": 1.083, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 1.662, "z": 1.074, "rot": 313.33, "scale": 1.003, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -2.982, "z": 3.18, "rot": 324.07, "scale": 1.083, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 1.318, "z": 4.491, "rot": 204.37, "scale": 0.928, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 0.839, "z": -4.93, "rot": 309.81, "scale": 0.991, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 4.458, "z": 1.668, "rot": 167.42, "scale": 0.982, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": -1.59, "z": 3.406, "rot": 123.97, "scale": 0.919, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -3.345, "z": -4.788, "rot": 58.05, "scale": 1.014, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 3.188, "z": 0.821, "rot": 156.38, "scale": 0.979, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": -2.4, "z": 2.313, "rot": 159.98, "scale": 0.991, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": -3.895, "z": -0.233, "rot": 340, "scale": 0.896, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -4.09, "z": -2.487, "rot": 206.66, "scale": 0.966, "block": 0 }
+  ]
+}

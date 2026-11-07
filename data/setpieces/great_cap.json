@@ -1,0 +1,31 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "mushrooms"],
+  "lore": "The oldest mushroom in the caverns, older than the city above. Its children ring it at a respectful distance.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 2.2, "block": 1.1 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_01.fbx", "x": 3.02, "z": -2.556, "rot": 40, "scale": 1.158, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_02.fbx", "x": -1.2, "z": -3.185, "rot": 112, "scale": 1.272, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_05.fbx", "x": -3.773, "z": 0.255, "rot": 184, "scale": 1.241, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_01.fbx", "x": -0.505, "z": 3.309, "rot": 256, "scale": 1.122, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_02.fbx", "x": 3.421, "z": 1.501, "rot": 328, "scale": 1.162, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": 0.953, "z": -2.818, "rot": 355.78, "scale": 1.106, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_03.fbx", "x": -5.377, "z": -2.657, "rot": 286.47, "scale": 0.953, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 3.162, "z": 4.543, "rot": 51.82, "scale": 1.028, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_04.fbx", "x": 5.085, "z": 0.852, "rot": 288.9, "scale": 1.003, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": -0.367, "z": -2.939, "rot": 112.92, "scale": 0.95, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_04.fbx", "x": 0.277, "z": -3.617, "rot": 286.04, "scale": 1.139, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": -4.658, "z": 3.345, "rot": 351.84, "scale": 1.004, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": -2.885, "z": 3.415, "rot": 24.95, "scale": 0.93, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": -1.934, "z": -4.624, "rot": 70.04, "scale": 0.909, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -1.046, "z": -4.774, "rot": 299.97, "scale": 1.144, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_04.fbx", "x": 2.788, "z": 3.048, "rot": 200.59, "scale": 1.104, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 2.325, "z": 5.219, "rot": 319.89, "scale": 0.987, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -1.804, "z": 0.904, "rot": 92.83, "scale": 0.962, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": -3.648, "z": -4.756, "rot": 137.14, "scale": 1.081, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 4.584, "z": 1.684, "rot": 255.87, "scale": 1.036, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_03.fbx", "x": -2.648, "z": -1.935, "rot": 73.76, "scale": 1.117, "block": 0.25 }
+  ]
+}

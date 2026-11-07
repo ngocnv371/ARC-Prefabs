@@ -1,0 +1,32 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "bones", "remains"],
+  "lore": "The spine of a beast long dead, laid bare in the rock where the floor wore away. Scholars argue about its head; the head is not saying.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Bone_Spine_01.fbx", "x": 0, "z": 0, "rot": 90, "scale": 0.45, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -4.5, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -3, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -1.5, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 1.5, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 3, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 4.5, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Skull_Jaw_01.fbx", "x": 7.2, "z": 0.2, "rot": 90, "scale": 0.5, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -3, "z": 1.8, "rot": 0, "scale": 0.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -1, "z": 1.8, "rot": 0, "scale": 0.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 1, "z": 1.8, "rot": 0, "scale": 0.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 3, "z": 1.8, "rot": 0, "scale": 0.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 0.348, "z": 7.876, "rot": 131.22, "scale": 0.9, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 5.419, "z": 3.545, "rot": 308.72, "scale": 0.92, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -6.964, "z": 3.026, "rot": 174.82, "scale": 0.949, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 4.073, "z": 4.684, "rot": 85.48, "scale": 1.019, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -3.672, "z": 6.621, "rot": 287.35, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 5.326, "z": 2.309, "rot": 168.72, "scale": 0.901, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -0.518, "z": -3.139, "rot": 6.09, "scale": 0.891, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 2.766, "z": -2.56, "rot": 111.81, "scale": 1.139, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_02.fbx", "x": -5.593, "z": -2.453, "rot": 107.83, "scale": 1, "block": 0.2 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -3.883, "z": 4.36, "rot": 139.67, "scale": 1.028, "block": 0 }
+  ]
+}

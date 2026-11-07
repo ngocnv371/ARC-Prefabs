@@ -1,0 +1,23 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "rocks", "ring", "ritual"],
+  "lore": "Standing stones that hum when you pass, each with a note of its own. Someone once played a song on them, and the song opened something.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_01.fbx", "x": 4.924, "z": -0.868, "rot": 10, "scale": 1.719, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_02.fbx", "x": 3.214, "z": -3.83, "rot": 50, "scale": 1.71, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_03.fbx", "x": 0, "z": -5, "rot": 90, "scale": 1.312, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_05.fbx", "x": -3.214, "z": -3.83, "rot": 130, "scale": 1.539, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_07.fbx", "x": -4.924, "z": -0.868, "rot": 170, "scale": 1.722, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_01.fbx", "x": -4.33, "z": 2.5, "rot": 210, "scale": 1.42, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_02.fbx", "x": -1.71, "z": 4.698, "rot": 250, "scale": 1.522, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_03.fbx", "x": 1.71, "z": 4.698, "rot": 290, "scale": 1.594, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rock_Rectangle_05.fbx", "x": 4.33, "z": 2.5, "rot": 330, "scale": 1.641, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": 1.273, "z": -1.273, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_04.fbx", "x": -1.273, "z": -1.273, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": -1.273, "z": 1.273, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_04.fbx", "x": 1.273, "z": 1.273, "rot": 225, "scale": 1, "block": 0 }
+  ]
+}

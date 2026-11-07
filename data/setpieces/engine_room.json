@@ -1,0 +1,23 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery"],
+  "lore": "An engine of brass and pipes that drives the deep's pumps and wheels. Nobody remembers how to stop it, so nobody tries.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_Engine_01.fbx", "x": 0, "z": -2, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": 3.4, "z": -2.2, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Tech_SwitchBoard_01.fbx", "x": -3.4, "z": -2.4, "rot": 30, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -2.2, "z": -0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -1.4, "z": -0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2.6, "z": 0.2, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_02.fbx", "x": 2.6, "z": 2.2, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": 4.4, "z": 0.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": -1.273, "z": 3.5, "rot": 194.9, "scale": 1.007, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": 0.865, "z": 3.444, "rot": 180.2, "scale": 1.031, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -1.746, "z": 5.329, "rot": 154.21, "scale": 1.101, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": -4.371, "z": 1.463, "rot": 41.52, "scale": 1.049, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": -3.051, "z": 1.34, "rot": 173.02, "scale": 1.012, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": 3.618, "z": 1.918, "rot": 342.49, "scale": 1.041, "block": 0 }
+  ]
+}

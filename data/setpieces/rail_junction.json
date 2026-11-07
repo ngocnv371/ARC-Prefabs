@@ -1,0 +1,22 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["mine"],
+  "lore": "Two lines of track from the deep seams meet here before the climb to the smelters. The lever sets which line gets the right of way, in theory.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -4.3, "z": -7.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -4.3, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -4.3, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -0.7, "z": -7.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -0.7, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Broken_01.fbx", "x": -0.7, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": -1.8, "z": -3.6, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": 1.8, "z": 0.8, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": 4.2, "z": -1.2, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": -4.4, "z": 1, "rot": 20, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_02.fbx", "x": -4.2, "z": -2.4, "rot": 0, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 4.4, "z": 3.4, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": -3.8, "z": 4.2, "rot": 0, "scale": 1, "block": 0 }
+  ]
+}

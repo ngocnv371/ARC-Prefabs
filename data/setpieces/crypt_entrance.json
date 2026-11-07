@@ -1,0 +1,27 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "tomb", "statue", "building"],
+  "lore": "The Varrow family sealed their dead in here and set two stone mourners to weep at the door. Someone has been leaving fresh candles, though no Varrow has lived for three hundred years.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Entrance_Crypt_01.fbx", "x": 0, "z": -3, "rot": 0, "scale": 1, "block": 1.9 },
+    { "mesh": "dungeon/SM_Env_Statue_02.fbx", "x": -3.6, "z": -0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -2.3, "z": 1.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -1.429, "z": 0.264, "rot": 133.08, "scale": 0.984, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.164, "z": 0.844, "rot": 187.38, "scale": 1.027, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -1.976, "z": 0.739, "rot": 331.06, "scale": 0.867, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_02.fbx", "x": 3.6, "z": -0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 2.3, "z": 1.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 1.058, "z": 0.329, "rot": 209.43, "scale": 0.949, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 1.761, "z": 1.032, "rot": 179.43, "scale": 1.105, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 1.351, "z": 1.069, "rot": 259.78, "scale": 1.033, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -3.794, "z": 0.261, "rot": 163.88, "scale": 0.869, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 1.432, "z": 4.585, "rot": 14.55, "scale": 1.004, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": -3.413, "z": -2.11, "rot": 143.41, "scale": 0.959, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_04.fbx", "x": -2.557, "z": 4.871, "rot": 257.52, "scale": 1.018, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_04.fbx", "x": 3.054, "z": -5.181, "rot": 346.02, "scale": 0.871, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_06.fbx", "x": 4.99, "z": 1.621, "rot": 310.92, "scale": 1.053, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 5.169, "z": 0.52, "rot": 308.27, "scale": 0.957, "block": 0 }
+  ]
+}

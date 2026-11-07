@@ -1,0 +1,29 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["trap", "paving"],
+  "lore": "A floor of grates with spears waiting underneath. Every third grate has fired; the engineer who knew the safe path took it with him.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": -2.5, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": -2.5, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_01.fbx", "x": -2.5, "z": 0, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": -2.5, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 0, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 0, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 2.5, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 2.5, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_01.fbx", "x": 2.5, "z": 0, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": 2.5, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 2, "z": 4.6, "rot": 200, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Trap_Hatch_01.fbx", "x": -4.6, "z": 4.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -3.743, "z": 4.485, "rot": 205.43, "scale": 0.965, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 5.667, "z": -2.961, "rot": 333.92, "scale": 1.098, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -3.308, "z": -3.748, "rot": 26.75, "scale": 1.022, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": 6.152, "z": 1, "rot": 245.95, "scale": 0.942, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 4.339, "z": 1.916, "rot": 328.6, "scale": 0.927, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": -3.112, "z": 5.569, "rot": 55.19, "scale": 0.95, "block": 0 }
+  ]
+}

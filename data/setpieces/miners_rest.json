@@ -1,0 +1,26 @@
+{
+  "biomes": ["caverns", "warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["mine", "camp"],
+  "lore": "Where the miners stop to eat between the seams and the surface: a table, some stools and a cart left with its handbrake on.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 1.222, "z": -0.445, "rot": 290, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -0.996, "z": -0.836, "rot": 50, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -0.226, "z": 1.28, "rot": 170, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.6, "z": -1.8, "rot": 30, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 1.4, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": 3.2, "z": -1.4, "rot": 10, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": -2.8, "z": 1.6, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_02.fbx", "x": 3.4, "z": 1.4, "rot": 20, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_01.fbx", "x": 0.8, "z": 1.9, "rot": 60, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Wood_Pole_02.fbx", "x": 0, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 5.219, "z": -3.768, "rot": 19.12, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 1.245, "z": -4.734, "rot": 244.16, "scale": 1.111, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 6.345, "z": 0.266, "rot": 162.2, "scale": 0.96, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 2.193, "z": 5, "rot": 67.61, "scale": 0.942, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -4.76, "z": 1.075, "rot": 19.33, "scale": 1.091, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 0.108, "z": 6.324, "rot": 246.28, "scale": 1.03, "block": 0 }
+  ]
+}

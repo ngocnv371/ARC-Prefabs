@@ -5,10 +5,10 @@ namespace ArcPrefabs.World;
 
 /// <summary>
 /// The painter's Browse tab: every piece in data/setpieces as a card in a grid filling the
-/// window (its picture from the game's camera, biome, prop count, clear radius, weight and tags),
+/// window (its picture from the game's camera, biome, prop count, clear radius, weight, tags and lore),
 /// with a search box and biome and tag filters at the side. Biomes add up (a piece in any chosen
-/// biome shows); tags narrow (a piece needs every chosen tag); the search matches a name or a
-/// tag. Each tag shows how many pieces the other filters leave it. Clicking a card asks
+/// biome shows); tags narrow (a piece needs every chosen tag); the search matches a name, a tag or
+/// the lore. Each tag shows how many pieces the other filters leave it. Clicking a card asks
 /// <see cref="Open"/> to open it in the painter.
 /// </summary>
 public partial class SetPieceBrowser : PanelContainer
@@ -20,7 +20,7 @@ public partial class SetPieceBrowser : PanelContainer
     private readonly ScrollContainer _scroll = new() { SizeFlagsHorizontal = SizeFlags.ExpandFill, SizeFlagsVertical = SizeFlags.ExpandFill, HorizontalScrollMode = ScrollContainer.ScrollMode.Disabled };
     private readonly HFlowContainer _biomeChips = new();
     private readonly HFlowContainer _tagChips = new();
-    private readonly LineEdit _search = new() { PlaceholderText = "search names and tags", ClearButtonEnabled = true };
+    private readonly LineEdit _search = new() { PlaceholderText = "search names, tags and lore", ClearButtonEnabled = true };
     private readonly Label _count = UiStyle.Label("", 13, UiStyle.Dim);
     private readonly Label _notice = UiStyle.Label("", 13, UiStyle.Accent, wrap: true);
     private readonly HashSet<string> _biomes = [];
@@ -116,7 +116,7 @@ public partial class SetPieceBrowser : PanelContainer
         if (tags && !_tags.All(piece.Tags.Contains))
             return false;
         var search = _search.Text.Trim().ToLowerInvariant();
-        return search.Length == 0 || piece.Id.Contains(search) || piece.Tags.Any(t => t.Contains(search));
+        return search.Length == 0 || piece.Id.Contains(search) || piece.Tags.Any(t => t.Contains(search)) || piece.Lore.Contains(search, StringComparison.OrdinalIgnoreCase);
     }
 
     private void Fill()
@@ -208,6 +208,12 @@ public partial class SetPieceBrowser : PanelContainer
         var tags = Ignore(UiStyle.Label(piece.Tags.Length > 0 ? string.Join("  ", piece.Tags.Select(t => "#" + t)) : "no tags", 12, piece.Tags.Length > 0 ? UiStyle.Xp : UiStyle.Dim, wrap: true));
         tags.CustomMinimumSize = new Vector2(Thumb.X, 0f);
         column.AddChild(tags);
+        if (piece.Lore.Length > 0)
+        {
+            var lore = Ignore(UiStyle.Label(piece.Lore, 12, UiStyle.Dim, wrap: true));
+            lore.CustomMinimumSize = new Vector2(Thumb.X, 0f);
+            column.AddChild(lore);
+        }
 
         var margin = new MarginContainer { MouseFilter = MouseFilterEnum.Ignore };
         foreach (var side in new[] { "left", "top", "right", "bottom" })

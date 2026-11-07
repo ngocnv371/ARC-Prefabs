@@ -1,0 +1,27 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery"],
+  "lore": "A tangle of pipes, valves and a turbine that carries steam from the deep vents to the engine. The levers are labelled in a language no one reads anymore.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": -4, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": -2, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 0, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 4, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2, "z": 0.6, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2, "z": 2.6, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2, "z": 4.6, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_02.fbx", "x": -4.4, "z": 0.4, "rot": 180, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": 4.2, "z": 2.6, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -2, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": 0, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": 4.4, "z": -3.2, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -3.839, "z": 2.516, "rot": 299.55, "scale": 1.01, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 1.088, "z": 2.826, "rot": 15.06, "scale": 1.05, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": -2.882, "z": 1.381, "rot": 291.82, "scale": 0.918, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -3.414, "z": 3.45, "rot": 274.8, "scale": 1.048, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": -0.695, "z": 3.08, "rot": 230.91, "scale": 0.932, "block": 0 }
+  ]
+}

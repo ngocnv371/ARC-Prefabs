@@ -1,0 +1,21 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["prison", "remains"],
+  "lore": "The question room, where the king's inquisitors found the answers they wanted. The brazier is warm, the tools are clean, and the iron maiden is open.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Toture_IronMaiden_01.fbx", "x": -3.2, "z": -2.6, "rot": 20, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Toture_IronMaiden_Door_L.fbx", "x": -4.8, "z": -1.4, "rot": 80, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Toture_StretchTable_01.fbx", "x": 0.6, "z": -1.4, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Toture_Stocks_01.fbx", "x": 3.8, "z": -2.4, "rot": 340, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Toture_Cage_01.fbx", "x": 3.6, "z": 1.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -1.8, "z": 1.2, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": -3.6, "z": 2.2, "rot": 80, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_01.fbx", "x": -0.205, "z": 3.076, "rot": 36.97, "scale": 0.949, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Shiv_Stone_01.fbx", "x": -1.232, "z": 3.085, "rot": 106.83, "scale": 1.072, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Shiv_Stone_01.fbx", "x": 3.022, "z": 2.171, "rot": 156.58, "scale": 0.86, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_01.fbx", "x": -1.785, "z": 1.886, "rot": 135.92, "scale": 1.079, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 0.541, "z": 4.797, "rot": 202.57, "scale": 1.031, "block": 0 }
+  ]
+}

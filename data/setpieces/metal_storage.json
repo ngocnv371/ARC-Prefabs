@@ -1,0 +1,32 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "treasure"],
+  "lore": "Iron stores behind a fence: ingots, plate and bars waiting for the smiths. The lock was broken long ago; the fence still makes people think twice.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_01.fbx", "x": -2.4, "z": -2, "rot": 6.42, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_02.fbx", "x": -1.2, "z": -2, "rot": 2.09, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_03.fbx", "x": 0, "z": -2, "rot": 3.85, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_Open_01.fbx", "x": -1.8, "z": -0.8, "rot": 354.77, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_02.fbx", "x": 1.6, "z": -1.6, "rot": 355.96, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_03.fbx", "x": 2.8, "z": -1.8, "rot": 357.54, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_01.fbx", "x": 2.2, "z": -0.4, "rot": 0.36, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Metal_Fence_01.fbx", "x": -2.5, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -3.35, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -2.5, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -1.65, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Metal_Fence_01.fbx", "x": 0, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -0.85, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0.85, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Metal_Fence_01.fbx", "x": 2.5, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 1.65, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 2.5, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 3.35, "z": 1.6, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Metal_Fence_Post_01.fbx", "x": -3.75, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Metal_Fence_Post_01.fbx", "x": 3.75, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_02.fbx", "x": -4.4, "z": 0, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 4.4, "z": -0.6, "rot": 0, "scale": 1, "block": 0.38 }
+  ]
+}

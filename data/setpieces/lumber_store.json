@@ -1,0 +1,24 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["mine", "camp"],
+  "lore": "Every prop in the warren comes from this pile of timber, dragged down from the forests above. The goblins use the platform as a stage on feast nights.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Wood_Platform_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 1.5 },
+    { "mesh": "adventure/SM_Prop_Logpile_01.fbx", "x": -3.6, "z": -1.2, "rot": 90, "scale": 1, "block": 0.9 },
+    { "mesh": "adventure/SM_Prop_Logpile_01.fbx", "x": -3.4, "z": 1.4, "rot": 80, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": 2.8, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": 2.8, "z": 1.4, "rot": 5, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": 2.8, "z": 1.8, "rot": 10, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": 2.8, "z": 2.2, "rot": 15, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Wood_Pole_02.fbx", "x": 2.4, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_03.fbx", "x": 3.6, "z": -0.6, "rot": 20, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Wep_HandAxe_01.fbx", "x": 0.6, "z": 1.8, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_01.fbx", "x": -0.271, "z": -4.191, "rot": 119.19, "scale": 0.946, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Plank_01.fbx", "x": -3.392, "z": -4.53, "rot": 89.8, "scale": 1.012, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": -4.64, "z": 2.012, "rot": 80.17, "scale": 0.923, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_02.fbx", "x": 5.474, "z": -1.831, "rot": 120.85, "scale": 1.133, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": 2.173, "z": -5.179, "rot": 142.16, "scale": 0.894, "block": 0 }
+  ]
+}

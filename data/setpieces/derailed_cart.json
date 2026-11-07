@@ -1,0 +1,30 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["mine", "treasure", "rocks"],
+  "lore": "A runaway cart jumped its rails on the bend and spilled a week of gem-picking across the floor. The goblins who were riding it went much further.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -4, "z": -7, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Broken_02.fbx", "x": -4, "z": -2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Broken_01.fbx", "x": -4.5, "z": 1, "rot": 20, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": 1.6, "z": 1, "rot": 60, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Minecart_Wheel_01.fbx", "x": 3.2, "z": -0.6, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Minecart_Wheel_02.fbx", "x": -0.4, "z": 3.2, "rot": 110, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": 2.8, "z": 2.6, "rot": 25, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -0.719, "z": -0.247, "rot": 33.15, "scale": 0.981, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": 2.267, "z": 4.356, "rot": 165.06, "scale": 0.891, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 0.805, "z": 1.961, "rot": 160.13, "scale": 0.96, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -2.839, "z": 0.686, "rot": 120.7, "scale": 0.883, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -0.992, "z": -2.309, "rot": 271.36, "scale": 1.057, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 0.487, "z": 4.761, "rot": 154.09, "scale": 0.906, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -0.891, "z": 1.924, "rot": 209.65, "scale": 1.118, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 3.066, "z": -0.07, "rot": 355.05, "scale": 0.899, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 4.554, "z": 2.221, "rot": 323.83, "scale": 0.892, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 2.187, "z": -0.111, "rot": 177.97, "scale": 0.943, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 1.58, "z": -0.9, "rot": 88.05, "scale": 1.017, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 3.733, "z": -0.55, "rot": 285.16, "scale": 1.065, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": 0.877, "z": -0.257, "rot": 66.17, "scale": 1.03, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": -1.91, "z": 3.326, "rot": 101.56, "scale": 1.079, "block": 0 }
+  ]
+}

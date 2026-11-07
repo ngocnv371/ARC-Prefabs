@@ -1,0 +1,26 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["fort", "camp"],
+  "lore": "The guards played dice on this table between rounds, and a game is still in play. The off watch sleeps on, in beds they never left.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 1.126, "z": -0.65, "rot": 300, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": -1.126, "z": -0.65, "rot": 60, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -0, "z": 1.3, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_01.fbx", "x": 0.3, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": -0.9, "z": 1.3, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_01.fbx", "x": 1.1, "z": 1.1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": 0, "z": -3.4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": -3.6, "z": -2.2, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 3.6, "z": -2.2, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Chest_Wood_01.fbx", "x": -3.6, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 3.4, "z": 1.2, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Barrel_03.fbx", "x": 4.2, "z": 0.4, "rot": 0, "scale": 1, "block": 0.37 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2.2, "z": 2.6, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Spear_01.fbx", "x": -2.025, "z": -2, "rot": 318.15, "scale": 0.998, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_01.fbx", "x": -1.169, "z": -1.766, "rot": 179.8, "scale": 0.901, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_01.fbx", "x": -1.608, "z": -1.501, "rot": 92.78, "scale": 0.922, "block": 0 }
+  ]
+}

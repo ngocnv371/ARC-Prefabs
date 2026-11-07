@@ -1,0 +1,27 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "rocks", "ruin"],
+  "lore": "The roof came down here last spring and the rock is still settling. Listen and you can hear it deciding whether to come down again.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": 0, "z": -1, "rot": 15, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_04.fbx", "x": -2.6, "z": 0.8, "rot": 80, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_05.fbx", "x": 2.4, "z": 1, "rot": 320, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 0.4, "z": 2.6, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -4.127, "z": -3.518, "rot": 19.61, "scale": 1.044, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": -5.843, "z": -2.634, "rot": 81.91, "scale": 1.04, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": 0.389, "z": 6.781, "rot": 178.39, "scale": 1.138, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": 4.718, "z": 4.375, "rot": 153.75, "scale": 1.115, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": 4.622, "z": 2.424, "rot": 119.38, "scale": 0.93, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": 6.453, "z": -0.073, "rot": 5.39, "scale": 1.119, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": -0.813, "z": -6.702, "rot": 245.97, "scale": 1.107, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -2.595, "z": 2.566, "rot": 244.25, "scale": 1.041, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 2.938, "z": -2.103, "rot": 110.93, "scale": 1.077, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": 1.364, "z": -3.564, "rot": 260.07, "scale": 0.864, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": -1.781, "z": 0.96, "rot": 191.63, "scale": 0.967, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 3.567, "z": 0.611, "rot": 101.71, "scale": 1.084, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": 5.511, "z": -3.962, "rot": 52.71, "scale": 0.855, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 0.068, "z": -4.514, "rot": 50.82, "scale": 0.944, "block": 0 }
+  ]
+}

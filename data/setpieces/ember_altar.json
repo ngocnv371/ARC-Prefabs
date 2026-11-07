@@ -1,0 +1,22 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "shrine", "arcane", "ritual"],
+  "lore": "An altar to the fire, ringed with braziers on a pentagram floor. The smiths made offerings here before a great casting, and some of the offerings were people.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Tiles_Pentagram_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Alter_01.fbx", "x": 0, "z": -4.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -3.4, "z": -3.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 3.4, "z": -3.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 3.4, "z": 3.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -3.4, "z": 3.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0, "z": -2.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -2.092, "z": -0.68, "rot": 72, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -1.293, "z": 1.78, "rot": 144, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 1.293, "z": 1.78, "rot": 216, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 2.092, "z": -0.68, "rot": 288, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": -5.2, "z": -4.2, "rot": 20, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_05.fbx", "x": 5.2, "z": -4.2, "rot": 340, "scale": 1, "block": 0 }
+  ]
+}

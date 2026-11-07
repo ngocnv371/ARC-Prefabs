@@ -1,0 +1,23 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["hall", "statue"],
+  "lore": "A gallery of statues of the kings who came before, facing each other across a red runner. They seem to be arguing about the last one.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Rug_01.fbx", "x": 0, "z": 0, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_01.fbx", "x": -3.4, "z": -4.8, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 3.4, "z": -4.8, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_02.fbx", "x": -3.4, "z": -1.6, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": 3.4, "z": -1.6, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": -3.4, "z": 1.6, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_01.fbx", "x": 3.4, "z": 1.6, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": -3.4, "z": 4.8, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_02.fbx", "x": 3.4, "z": 4.8, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 0, "z": -7.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": -3.886, "z": 4.779, "rot": 169.71, "scale": 0.865, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -1.777, "z": 6.566, "rot": 266.79, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_04.fbx", "x": 5.586, "z": 5.253, "rot": 32.77, "scale": 0.92, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_06.fbx", "x": 2.149, "z": 6.789, "rot": 101.68, "scale": 1.07, "block": 0 }
+  ]
+}

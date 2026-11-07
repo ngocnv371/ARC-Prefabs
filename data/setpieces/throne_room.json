@@ -1,0 +1,28 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["hall", "throne", "pillars", "statue"],
+  "lore": "The empty seat of the last Deep King, who went down to bargain with what lived below and never came back up. His banners still hang behind the throne.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Throne_01.fbx", "x": 0, "z": -6.4, "rot": 0, "scale": 1.5, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Rug_01.fbx", "x": 0, "z": 0.2, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": -3.4, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": 3.4, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": -3.4, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": 3.4, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": -3.4, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_02.fbx", "x": 3.4, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_02.fbx", "x": -1.4, "z": -7.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2, "z": -5.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": -5.6, "z": -6.6, "rot": 40.31, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_02.fbx", "x": 1.4, "z": -7.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2, "z": -5.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": 5.6, "z": -6.6, "rot": 319.69, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -3.472, "z": 5.036, "rot": 80.54, "scale": 1.143, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_06.fbx", "x": 0.417, "z": 7.502, "rot": 157.89, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -3.108, "z": 6.434, "rot": 98.12, "scale": 0.996, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": -0.046, "z": 5.457, "rot": 233.71, "scale": 0.958, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 2.395, "z": 6.877, "rot": 137.73, "scale": 0.865, "block": 0 }
+  ]
+}

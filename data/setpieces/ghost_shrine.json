@@ -1,0 +1,28 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "shrine", "arcane", "ring"],
+  "lore": "Five rune stones mark the place where the dead come up to remember being alive. The pale flower at the centre only blooms when they are near.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_GlowingOrb_02.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_01.fbx", "x": 0, "z": -3.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_02.fbx", "x": -3.614, "z": -1.174, "rot": 72, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": -2.234, "z": 3.074, "rot": 144, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": 2.234, "z": 3.074, "rot": 216, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_05.fbx", "x": 3.614, "z": -1.174, "rot": 288, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_01.fbx", "x": -1.176, "z": -1.618, "rot": 36, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_02.fbx", "x": -1.902, "z": 0.618, "rot": 108, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_03.fbx", "x": -0, "z": 2, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_04.fbx", "x": 1.902, "z": 0.618, "rot": 252, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_05.fbx", "x": 1.176, "z": -1.618, "rot": 324, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -2.996, "z": 5, "rot": 226.37, "scale": 1.024, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 4.544, "z": -2.164, "rot": 122.9, "scale": 1.014, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -4.383, "z": 3.556, "rot": 255.39, "scale": 0.976, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -1.93, "z": -5.363, "rot": 141.34, "scale": 1.096, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -5.112, "z": -3.324, "rot": 240.93, "scale": 0.931, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 0.143, "z": -5.271, "rot": 17.09, "scale": 1.065, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -5.223, "z": 0.999, "rot": 32.63, "scale": 0.953, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 1.793, "z": -5.244, "rot": 84.38, "scale": 1.095, "block": 0 }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "rocks", "mine"],
+  "lore": "Where the carts tip the slag from the smelters. Picked over a hundred times, it still turns up a lump of iron or a lost tool now and then.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.6, "block": 1.4 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 2.6, "z": 1.2, "rot": 70, "scale": 1.2, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": -2.4, "z": 1.6, "rot": 140, "scale": 1.4, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": 3.8, "z": -2.4, "rot": 30, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Minetrack_Broken_02.fbx", "x": 4.2, "z": -7.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -4.75, "z": -3.666, "rot": 87.98, "scale": 1.09, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_01.fbx", "x": -1.181, "z": 5.164, "rot": 255.25, "scale": 0.956, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": -0.809, "z": 6.642, "rot": 290.19, "scale": 0.886, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_01.fbx", "x": -3.251, "z": 4.237, "rot": 155.24, "scale": 1.024, "block": 0.38 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 1.771, "z": 5.786, "rot": 31.64, "scale": 0.873, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -1.65, "z": 4.194, "rot": 43.2, "scale": 0.912, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_02.fbx", "x": 1.808, "z": -3.932, "rot": 63.37, "scale": 1.116, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_01.fbx", "x": -0.388, "z": -4.735, "rot": 107.64, "scale": 0.999, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Brick_02.fbx", "x": 6.475, "z": -1.036, "rot": 322.74, "scale": 0.977, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 2.676, "z": 4.194, "rot": 174.47, "scale": 0.99, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 0.847, "z": -3.391, "rot": 142.33, "scale": 1.13, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 3.209, "z": -4.341, "rot": 358.57, "scale": 0.865, "block": 0 }
+  ]
+}

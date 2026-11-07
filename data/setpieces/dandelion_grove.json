@@ -1,0 +1,32 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "grove"],
+  "lore": "Giant dandelions nodding in a breeze no one can feel. When they seed, the whole cavern fills with drifting white lights.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Tree_Dandelion_01.fbx", "x": 0, "z": -2, "rot": 176.73, "scale": 1.043, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Tree_Dandelion_02.fbx", "x": -3, "z": 1, "rot": 288.63, "scale": 1.19, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Tree_Dandelion_03.fbx", "x": 3, "z": 0.6, "rot": 75.65, "scale": 1.133, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Tree_Dandelion_03.fbx", "x": -1, "z": 3.6, "rot": 131.64, "scale": 0.966, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Tree_Dandelion_02.fbx", "x": 2, "z": -5, "rot": 206.63, "scale": 0.991, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -4.896, "z": 2.789, "rot": 343.71, "scale": 0.858, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_01.fbx", "x": 0.363, "z": -1.637, "rot": 158.63, "scale": 1.116, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -1.618, "z": 1.158, "rot": 99.29, "scale": 1.025, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -1.231, "z": -6.085, "rot": 10.99, "scale": 1.022, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": -0.474, "z": -2.256, "rot": 68.69, "scale": 0.962, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 3.072, "z": 4.919, "rot": 346.12, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 3.511, "z": -0.656, "rot": 229.77, "scale": 0.962, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": 2.421, "z": -5.363, "rot": 205.22, "scale": 1.111, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": 1.413, "z": 4.033, "rot": 212.96, "scale": 1.099, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_02.fbx", "x": -3.704, "z": 2.681, "rot": 286.1, "scale": 0.954, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": 1.913, "z": -1.738, "rot": 229.53, "scale": 0.899, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": 3.606, "z": 0.078, "rot": 124.47, "scale": 0.995, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": -5.835, "z": -0, "rot": 207.82, "scale": 0.911, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": 0.689, "z": 4.13, "rot": 96.58, "scale": 1.147, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 0.744, "z": 3.306, "rot": 291.45, "scale": 1.053, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_01.fbx", "x": -4.396, "z": -2.236, "rot": 128.53, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_02.fbx", "x": -3.46, "z": 1.999, "rot": 186.64, "scale": 1.093, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": -2.018, "z": 0.545, "rot": 95.59, "scale": 1.107, "block": 0 }
+  ]
+}

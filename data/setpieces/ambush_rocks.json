@@ -1,0 +1,27 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "rocks"],
+  "lore": "A ring of boulders where the goblins hide to wait for travellers. The chest in the middle is bait, and it is empty.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_01.fbx", "x": 3.682, "z": -0.583, "rot": 10, "scale": 0.953, "block": 0.85 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": 1.786, "z": -3.401, "rot": 61.43, "scale": 1.287, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_03.fbx", "x": -1.861, "z": -4.337, "rot": 112.86, "scale": 0.958, "block": 0.42 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_01.fbx", "x": -3.719, "z": -0.575, "rot": 164.29, "scale": 1.254, "block": 0.85 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": -3.23, "z": 2.077, "rot": 215.71, "scale": 0.922, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_03.fbx", "x": -0.375, "z": 3.778, "rot": 267.14, "scale": 1.045, "block": 0.42 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_01.fbx", "x": 2.873, "z": 2.527, "rot": 318.57, "scale": 1.037, "block": 0.85 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Spikes_03.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Chest_Wood_01.fbx", "x": -1.6, "z": -1.6, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Spear_01.fbx", "x": -0.789, "z": -2.724, "rot": 67.59, "scale": 0.909, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Spear_01.fbx", "x": -2.573, "z": -0.97, "rot": 352.18, "scale": 0.975, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Spear_01.fbx", "x": 1.69, "z": -0.636, "rot": 146.11, "scale": 1.122, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -1.121, "z": 6.57, "rot": 111.27, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 2.482, "z": 5.01, "rot": 357.44, "scale": 0.914, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 5.417, "z": -2.23, "rot": 311.85, "scale": 0.985, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 2.485, "z": -5.301, "rot": 316.9, "scale": 1.135, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 0.992, "z": -5.185, "rot": 97.49, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -1.478, "z": 5.009, "rot": 184.38, "scale": 0.929, "block": 0 }
+  ]
+}

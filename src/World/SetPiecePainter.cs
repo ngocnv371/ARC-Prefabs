@@ -80,6 +80,7 @@ public partial class SetPiecePainter : Node3D
     private ThumbnailStudio _studio = null!;
     private LineEdit _name = null!;
     private LineEdit _tags = null!;
+    private TextEdit _lore = null!;
     private OptionButton _biomes = null!;
     private CheckBox _all = null!;
     private CheckBox _turn = null!;
@@ -163,6 +164,7 @@ public partial class SetPiecePainter : Node3D
     {
         _name.Text = piece.Id;
         _tags.Text = string.Join(", ", piece.Tags);
+        _lore.Text = piece.Lore;
         _browser.Current = piece.Id;
         _weight = piece.Weight;
         _turn.ButtonPressed = piece.Turn;
@@ -244,7 +246,7 @@ public partial class SetPiecePainter : Node3D
     {
         if (_browsing)
             return;
-        var typing = GetViewport().GuiGetFocusOwner() is LineEdit;
+        var typing = GetViewport().GuiGetFocusOwner() is LineEdit or TextEdit;
         if (!typing && !Input.IsKeyPressed(Godot.Key.Ctrl))
         {
             var move = Controls.Move();
@@ -726,7 +728,7 @@ public partial class SetPiecePainter : Node3D
         }
         DirAccess.MakeDirRecursiveAbsolute(ProjectSettings.GlobalizePath(SetPieces.Folder));
         var props = _props.ToArray();
-        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text) };
+        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text), Lore = _lore.Text.Trim() };
         piece.Write(SetPieces.Folder + name + ".json");
         _ = _studio.SavePiece(piece, _biome, SetPieces.Folder + name + ".png", ThumbnailStudio.PieceImage);
         _name.Text = name;
@@ -891,6 +893,15 @@ public partial class SetPiecePainter : Node3D
         _tags.TextSubmitted += _ => _tags.ReleaseFocus();
         _tags.TextChanged += _ => _dirty = true;
         piece.AddChild(_tags);
+        _lore = new TextEdit
+        {
+            PlaceholderText = "lore: who made this place, what happened here",
+            TooltipText = "A line or two of story to steer how the piece is dressed (games ignore it)",
+            WrapMode = TextEdit.LineWrappingMode.Boundary,
+            CustomMinimumSize = new Vector2(0f, 84f),
+        };
+        _lore.TextChanged += () => _dirty = true;
+        piece.AddChild(_lore);
 
         _turn = new CheckBox { Text = "Turn randomly when placed in a run", ButtonPressed = true, FocusMode = Control.FocusModeEnum.None };
         piece.AddChild(_turn);
@@ -904,6 +915,7 @@ public partial class SetPiecePainter : Node3D
             Rebuild();
             _name.Text = "";
             _tags.Text = "";
+            _lore.Text = "";
             _weight = 1f;
             _dirty = false;
             _message = "new piece";

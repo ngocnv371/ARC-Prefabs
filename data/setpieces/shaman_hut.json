@@ -1,0 +1,27 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "arcane", "tents", "ritual"],
+  "lore": "The shaman brews his visions in a pot ringed with rune stones he cannot read. Some of his potions work; he does not know which.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": 0, "z": -2.6, "rot": 0, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": 0, "z": 1.2, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": 2.944, "z": 1.7, "rot": 240, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": 0, "z": -3.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_04.fbx", "x": -2.944, "z": -1.7, "rot": 60, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": -2.944, "z": 1.7, "rot": 120, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_04.fbx", "x": -0, "z": 3.4, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Staff_01.fbx", "x": -1.6, "z": 0.4, "rot": 20, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_01.fbx", "x": 0.514, "z": -0.009, "rot": 106.68, "scale": 1.073, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_03.fbx", "x": -1.576, "z": 2.682, "rot": 122.57, "scale": 1.008, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Vial_01.fbx", "x": 0.992, "z": 1.673, "rot": 181.04, "scale": 1.018, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Jar_02.fbx", "x": 1.664, "z": 1.576, "rot": 106.52, "scale": 1.132, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_03.fbx", "x": 0.695, "z": 3.021, "rot": 263.05, "scale": 1.091, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0.975, "z": -0.684, "rot": 194.31, "scale": 1.051, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 2.054, "z": 1.83, "rot": 87.6, "scale": 0.951, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.291, "z": -0.37, "rot": 95.4, "scale": 0.96, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_03.fbx", "x": 2.6, "z": -2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Branch_01.fbx", "x": -2.6, "z": -1.6, "rot": 0, "scale": 1, "block": 0 }
+  ]
+}

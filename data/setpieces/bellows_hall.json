@@ -1,0 +1,26 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "pillars", "machinery"],
+  "lore": "Four great piers hold up the roof over the central firepit, with the flues drawing the smoke up between them. The heat here can melt a sword in its scabbard.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Pillar_Square_07.fbx", "x": -4, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_07.fbx", "x": 4, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_07.fbx", "x": 4, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_07.fbx", "x": -4, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Forge_Ventilation_Pipe_01.fbx", "x": 0, "z": -4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Forge_Ventilation_Pipe_01.fbx", "x": 0, "z": 4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Forge_Ventilation_Pipe_01.fbx", "x": -4, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Forge_Ventilation_Pipe_01.fbx", "x": 4, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Forge_FirePit_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 1.4 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2.309, "z": 5.992, "rot": 71.55, "scale": 0.937, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -1.646, "z": 6.267, "rot": 187.19, "scale": 0.948, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": -2.73, "z": -5.408, "rot": 178.95, "scale": 0.913, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 6.088, "z": 0.471, "rot": 11.66, "scale": 0.948, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": 3.677, "z": 4.115, "rot": 256.75, "scale": 0.929, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -2.729, "z": 3.835, "rot": 115.63, "scale": 0.907, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -2.401, "z": -0.403, "rot": 316.03, "scale": 1.114, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 5.413, "z": -2.325, "rot": 72.85, "scale": 1.027, "block": 0 }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery"],
+  "lore": "A tinker's bench strewn with parts, scales and potions, and a lever that does nothing anyone can tell. The tinker said he would be right back.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": -1.4, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Bookcase_01.fbx", "x": -3, "z": -2.4, "rot": 20, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": 2.6, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pole_01.fbx", "x": 3.2, "z": -1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Scale_01.fbx", "x": -1.8, "z": 0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 1.8, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 1.861, "z": 0.777, "rot": 12.08, "scale": 0.985, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Vial_03.fbx", "x": -2.081, "z": -1.362, "rot": 19.29, "scale": 0.884, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_02.fbx", "x": 1.436, "z": -0.558, "rot": 44.09, "scale": 1.146, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -1.891, "z": 0.117, "rot": 190.12, "scale": 0.959, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_01.fbx", "x": -1.264, "z": -0.78, "rot": 301.6, "scale": 1.01, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Vial_03.fbx", "x": -2.685, "z": -0.48, "rot": 145.49, "scale": 0.893, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 2.262, "z": 2.32, "rot": 1.97, "scale": 0.953, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_02.fbx", "x": -0.199, "z": -1.294, "rot": 132.24, "scale": 0.866, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_05.fbx", "x": -3.2, "z": 0.6, "rot": 80, "scale": 1, "block": 0.6 }
+  ]
+}

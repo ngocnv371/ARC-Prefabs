@@ -1,0 +1,27 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "building"],
+  "lore": "The great forge of the deep smiths, where the dungeon's iron was born. The fire has never gone out; the smiths left it burning when they fled.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Forge_FirePit_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 1.4 },
+    { "mesh": "dungeon/SM_Prop_Forge_Ventilation_Pipe_01.fbx", "x": 0, "z": -3.4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": -3.6, "z": -1.6, "rot": 70, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Barrel_02.fbx", "x": 2.6, "z": 0.8, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_StoneTable_01.fbx", "x": 3.2, "z": -2.4, "rot": 90, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Large_Metal_01.fbx", "x": 1.8, "z": 1.6, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_02.fbx", "x": -1.8, "z": 1.4, "rot": 160, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Cutlass_01.fbx", "x": -1.873, "z": 3.17, "rot": 357.21, "scale": 0.921, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Cutlass_01.fbx", "x": -2.942, "z": 3.493, "rot": 328.54, "scale": 0.947, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Cutlass_01.fbx", "x": -2.606, "z": 2.244, "rot": 238.75, "scale": 1.082, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_GreatSword_01.fbx", "x": -1.367, "z": 2.524, "rot": 74.48, "scale": 0.855, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_01.fbx", "x": 4.2, "z": 1.6, "rot": 15, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": -2.777, "z": -5.124, "rot": 88.57, "scale": 1.02, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -3.668, "z": 3.547, "rot": 61.56, "scale": 0.876, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": -4.722, "z": -1.769, "rot": 125.87, "scale": 1.051, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_02.fbx", "x": 3.075, "z": 5.148, "rot": 147.7, "scale": 0.868, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -2.065, "z": 4.162, "rot": 67.02, "scale": 1.04, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": 1.346, "z": -4.905, "rot": 262.02, "scale": 1.055, "block": 0 }
+  ]
+}

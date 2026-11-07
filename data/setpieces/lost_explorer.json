@@ -1,0 +1,31 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "remains", "treasure"],
+  "lore": "An adventurer who got lost, ran out of lamp oil and sat down to wait. The coins and the open chest are what they died rich with.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0, "z": 0, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 1, "z": 1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Straightsword_01.fbx", "x": -1.2, "z": 0.8, "rot": 70, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": 1.4, "z": -0.8, "rot": 200, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Chest_01.fbx", "x": -1.6, "z": -1.4, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Chest_01_Lid.fbx", "x": -1.42, "z": -1.65, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 2.301, "z": -0.346, "rot": 114.52, "scale": 0.996, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 2.208, "z": -1.037, "rot": 323.78, "scale": 1.001, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": -1.47, "z": -1.192, "rot": 330.85, "scale": 1.047, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 0.488, "z": 1.512, "rot": 230.12, "scale": 0.871, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_01.fbx", "x": 1.229, "z": -1.572, "rot": 182.23, "scale": 0.983, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 0.938, "z": 0.313, "rot": 136.39, "scale": 1.048, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Basket_01.fbx", "x": 2.2, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_03.fbx", "x": -4.539, "z": -1.297, "rot": 352.05, "scale": 1.233, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -0.859, "z": 4.728, "rot": 10.19, "scale": 1.411, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -3.422, "z": -5.236, "rot": 25.16, "scale": 1.38, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 4.104, "z": -3.085, "rot": 53.23, "scale": 0.933, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_07.fbx", "x": -5.366, "z": 2.224, "rot": 118.23, "scale": 1.493, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_04.fbx", "x": 0.607, "z": -6.324, "rot": 260.56, "scale": 1.49, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_02.fbx", "x": 5.324, "z": 0.595, "rot": 300.67, "scale": 1.439, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": -4.337, "z": 3.516, "rot": 246.19, "scale": 1.166, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 2.16, "z": 2.888, "rot": 70.03, "scale": 1.023, "block": 0.25 }
+  ]
+}

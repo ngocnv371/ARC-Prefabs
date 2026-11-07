@@ -1,0 +1,26 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "statue", "paving", "shrine"],
+  "lore": "Four stone wardens round a basin of holy water, set to watch the paths from each corner of the crypt. One of them has turned its head.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -5, "z": -5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -5, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": 0, "z": -5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Vessel_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": -3.8, "z": -3.8, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 3.8, "z": -3.8, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": -3.8, "z": 3.8, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 3.8, "z": 3.8, "rot": 225, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 0, "z": -4.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 0, "z": 4.5, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -4.5, "z": 0, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 4.5, "z": 0, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.111, "z": 0.429, "rot": 269.37, "scale": 0.927, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -0.468, "z": 1.345, "rot": 359.66, "scale": 0.882, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -0.725, "z": 0.8, "rot": 249.28, "scale": 0.95, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -1.44, "z": -0.532, "rot": 211.18, "scale": 1.013, "block": 0 }
+  ]
+}

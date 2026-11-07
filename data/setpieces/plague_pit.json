@@ -1,0 +1,32 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "bones", "remains"],
+  "lore": "In the plague year the bodies came faster than coffins could be made, so they were tipped in here from the cart. The cart is still waiting for its next load.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 3.604, "z": -0.523, "rot": 10, "scale": 0.979, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 2.039, "z": -3.005, "rot": 50, "scale": 0.992, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": -0.106, "z": -3.461, "rot": 90, "scale": 1.048, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": -2.485, "z": -2.672, "rot": 130, "scale": 0.951, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": -3.279, "z": -0.779, "rot": 170, "scale": 0.887, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": -2.98, "z": 1.999, "rot": 210, "scale": 1.096, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": -1.068, "z": 3.413, "rot": 250, "scale": 1.038, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 1.373, "z": 3.625, "rot": 290, "scale": 0.875, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": 2.961, "z": 1.807, "rot": 330, "scale": 1.073, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_BonePile_01.fbx", "x": -1, "z": -0.5, "rot": 0, "scale": 0.9, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_02.fbx", "x": 1.4, "z": 1, "rot": 90, "scale": 0.8, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 0.067, "z": -1.198, "rot": 280.15, "scale": 0.867, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 2.646, "z": -1.567, "rot": 87.66, "scale": 1.028, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -0.61, "z": 0.33, "rot": 262.31, "scale": 0.852, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 2.043, "z": 2.539, "rot": 353.02, "scale": 1.046, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 0.246, "z": 1.57, "rot": 19.55, "scale": 1.128, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 1.592, "z": -0.626, "rot": 67.95, "scale": 0.867, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 1.192, "z": 0.664, "rot": 205.99, "scale": 1.053, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -5.5, "z": -1, "rot": 79.7, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 5.4, "z": 2, "rot": 249.68, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -2, "z": 5.5, "rot": 160.02, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": 5, "z": -3.5, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "adventure/SM_Prop_Cart_02.fbx", "x": -5.5, "z": 3.6, "rot": 130, "scale": 1, "block": 1 }
+  ]
+}

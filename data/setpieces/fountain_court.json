@@ -1,0 +1,30 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["hall", "water", "paving"],
+  "lore": "A court round an old fountain, benches facing in, where the court took the air. Flowers still push up between the flags from the soil beneath.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -5, "z": -5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": -5, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": 0, "z": -5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Tiles_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Fountain_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.8, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 2.8, "z": 0, "rot": 90, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 0, "z": -2.8, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.8, "z": -0, "rot": 270, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -0, "z": 2.8, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 3.041, "z": -3.041, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -3.041, "z": -3.041, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": -3.041, "z": 3.041, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Lantern_01.fbx", "x": 3.041, "z": 3.041, "rot": 225, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -1.639, "z": 5.758, "rot": 45.44, "scale": 1.016, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": -3.176, "z": -5.885, "rot": 65.85, "scale": 0.853, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": 5.471, "z": 1.386, "rot": 283.06, "scale": 1.013, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": -6.462, "z": 0.002, "rot": 312.69, "scale": 0.853, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -2.114, "z": -6.186, "rot": 322.13, "scale": 1.114, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -5.505, "z": 3.283, "rot": 324.86, "scale": 0.949, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": 6.914, "z": -0.46, "rot": 248.22, "scale": 0.981, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -6.485, "z": -2.52, "rot": 20.97, "scale": 0.999, "block": 0 }
+  ]
+}

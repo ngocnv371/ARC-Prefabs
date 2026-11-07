@@ -19,8 +19,12 @@ Set `GODOT` to use another Godot 4.7 .NET editor and `PREFABS_NOBUILD=1` to skip
 The project has its own data and nothing points at a game:
 
 - `data/biomes.json` lists the biomes, their ground and the props each may use (the palette).
+  Five are overland (meadow, pinewood, fen, frost, cinder) and five are dungeon floors for the
+  roguelike deep: `crypt` (Hollow Crypts), `warrens` (Goblin Warrens), `caverns` (Glimmer
+  Caverns), `forge` (Molten Deep) and `halls` (Fallen Halls), bare stone with no grass.
 - `data/setpieces/*.json` are the pieces. Their optional `tags` are lowercase words for finding
-  them in Browse (games ignore them). Saving writes `data/setpieces/name.json` here, and
+  them in Browse, and their optional `lore` a line or two on who made the place and what
+  happened there, to steer how it is dressed (games ignore both). Saving writes `data/setpieces/name.json` here, and
   beside it `name.png`, a 1024×768 picture from the game camera's angle on the biome's
   ground, so tools without Godot can see what a piece looks like. `run.cmd --render` redraws
   every picture (`--render=name` one) and quits.
@@ -36,7 +40,7 @@ it on the first launch with `tools/fetch_synty.py` from your own packs
 
 The left panel is the palette, pictures of the props `data/biomes.json` lists for that biome
 (or for every biome; hover one for its name), so nothing off-atlas gets in. The right panel
-holds the piece's name, its tags (commas or spaces between them), New, Undo and Save.
+holds the piece's name, its tags (commas or spaces between them), its lore, New, Undo and Save.
 
 WASD pans and the wheel zooms; click places, shift-drag paints, right-click or right-drag
 erases, alt-click picks up a placed prop; Q/E turn, Z/X scale, R toggles a random turn and
@@ -53,16 +57,18 @@ Selected props are outlined in blue.
 ## Browsing
 
 The Browse tab (B, or the tab at the top; B or Esc goes back) covers the painter with every
-saved piece as a card: its picture, biomes, prop count, clear radius, weight and tags. At the
-side, a search box matches names and tags, biome filters add up (a piece in any chosen biome
+saved piece as a card: its picture, biomes, prop count, clear radius, weight, tags and lore. At
+the side, a search box matches names, tags and lore, biome filters add up (a piece in any chosen biome
 shows) and tag filters narrow (a piece needs every chosen tag); each filter shows how many
 pieces it would leave. Click a card to open it in the painter (twice if the open piece is
 unsaved).
 
-Tags in use: kind (`camp`, `ruin`, `shrine`, `grove`, `remains`, `ritual`, `tavern`, `fort`),
-what's in it (`building`, `walls`, `pillars`, `paving`, `gate`, `statue`, `tents`, `bones`,
-`water`, `goblins`, `graveyard`, `tower`, `palisade`, `arcane`) and shape (`ring`, laid out round a centre). Reuse these before making
-new ones.
+Tags in use: kind (`camp`, `ruin`, `shrine`, `grove`, `remains`, `ritual`, `tavern`, `fort`,
+`crypt`, `cavern`, `forge`, `mine`, `prison`, `trap`, `library`, `hall`), what's in it
+(`building`, `walls`, `pillars`, `paving`, `gate`, `statue`, `tents`, `bones`, `water`,
+`goblins`, `graveyard`, `tower`, `palisade`, `arcane`, `tomb`, `candles`, `throne`, `treasure`,
+`rocks`, `crystals`, `mushrooms`, `machinery`, `lava`) and shape (`ring`, laid out round a
+centre). Reuse these before making new ones.
 
 Walls (the Dungeon pack's `SM_Env_Wall_*`) need two things the painter does not do for you.
 Obstacles in the game are circles, so a wall blocks nothing itself: line it with

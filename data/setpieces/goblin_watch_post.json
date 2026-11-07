@@ -1,0 +1,27 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "tower", "palisade", "ring"],
+  "lore": "A rickety tower behind a ring of fence, where the youngest goblin is made to watch the tunnel. He is very good at it; he is very afraid.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Tower_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 1.4 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": 3.236, "z": 2.351, "rot": 324, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": 4, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": 3.236, "z": -2.351, "rot": 36, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": 1.236, "z": -3.804, "rot": 72, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": -1.236, "z": -3.804, "rot": 108, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": -3.236, "z": -2.351, "rot": 144, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": -4, "z": -0, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": -3.236, "z": 2.351, "rot": 216, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": -1.236, "z": 3.804, "rot": 252, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": 1.2, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": -1.2, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Spear_01.fbx", "x": 2.2, "z": 1.8, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": -2.2, "z": 1.8, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 2.994, "z": 4.184, "rot": 91.61, "scale": 1.077, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 5.058, "z": -1.92, "rot": 245.87, "scale": 1.057, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -4.748, "z": -2.076, "rot": 252.96, "scale": 0.853, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 1.695, "z": 4.769, "rot": 159.46, "scale": 1.03, "block": 0 }
+  ]
+}

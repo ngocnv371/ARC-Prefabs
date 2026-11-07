@@ -1,0 +1,33 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "shrine", "candles", "statue"],
+  "lore": "The chapel where the crypt's priests read the names of the dead each dusk. The benches still face the altar, and on quiet nights the reading still happens.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Alter_01.fbx", "x": 0, "z": -5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Rug_02.fbx", "x": 0, "z": 0.3, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.1, "z": -1.5, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.1, "z": 1.2, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.1, "z": 3.9, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.4, "z": -4.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": -5.2, "z": -5.4, "rot": 43.92, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": -4.6, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": -4.6, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": -4.6, "z": 5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 2.1, "z": -1.5, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 2.1, "z": 1.2, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 2.1, "z": 3.9, "rot": 180, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.4, "z": -4.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": 5.2, "z": -5.4, "rot": 316.08, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": 4.6, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": 4.6, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Round_Simple_02.fbx", "x": 4.6, "z": 5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 0.952, "z": -1.918, "rot": 16.5, "scale": 0.946, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -0.254, "z": -2.626, "rot": 285.41, "scale": 1.061, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 0.198, "z": -2.831, "rot": 20.43, "scale": 0.917, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -0.502, "z": -3.827, "rot": 185.26, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 1.167, "z": -3.874, "rot": 76.03, "scale": 0.88, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.039, "z": -3.313, "rot": 306.02, "scale": 1.066, "block": 0 }
+  ]
+}

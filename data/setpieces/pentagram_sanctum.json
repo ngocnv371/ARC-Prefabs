@@ -1,0 +1,31 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["arcane", "ritual", "ring", "shrine"],
+  "lore": "A pentagram floor where the court sorcerer called up the thing the king bargained with. The sacrifice is still in the middle of the star.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Tiles_Pentagram_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 3.7, "z": 0, "rot": 270, "scale": 1.202, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 3.334, "z": -1.605, "rot": 295.71, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 2.307, "z": -2.893, "rot": 321.43, "scale": 1.043, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 0.823, "z": -3.607, "rot": 347.14, "scale": 1.276, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -0.823, "z": -3.607, "rot": 12.86, "scale": 0.996, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -2.307, "z": -2.893, "rot": 38.57, "scale": 1.282, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -3.334, "z": -1.605, "rot": 64.29, "scale": 1.214, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -3.7, "z": -0, "rot": 90, "scale": 1.261, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -3.334, "z": 1.605, "rot": 115.71, "scale": 1.07, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -2.307, "z": 2.893, "rot": 141.43, "scale": 1.125, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -0.823, "z": 3.607, "rot": 167.14, "scale": 1.295, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 0.823, "z": 3.607, "rot": 192.86, "scale": 1.018, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 2.307, "z": 2.893, "rot": 218.57, "scale": 1.199, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 3.334, "z": 1.605, "rot": 244.29, "scale": 1.278, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_01.fbx", "x": 0, "z": -4.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_02.fbx", "x": -4.375, "z": -1.421, "rot": 72, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": -2.704, "z": 3.721, "rot": 144, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": 2.704, "z": 3.721, "rot": 216, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_05.fbx", "x": 4.375, "z": -1.421, "rot": 288, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_GlowingOrb_04.fbx", "x": 0, "z": -1.6, "rot": 0, "scale": 1, "block": 0 }
+  ]
+}

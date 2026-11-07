@@ -1,0 +1,27 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "camp"],
+  "lore": "The off-shift sleeps here in stolen beds, on stolen sacks, under a stolen lantern. Wake them at your peril; they bite before they think.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": -2.4, "z": -1.6, "rot": 20, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 0, "z": -1.6, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 2.4, "z": -1.6, "rot": 345, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_02.fbx", "x": 4.8, "z": 1, "rot": 260, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 1.1, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -1.954, "z": 3.24, "rot": 99.83, "scale": 1.022, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": -2.567, "z": 2.665, "rot": 110.52, "scale": 1.118, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -3.635, "z": 2.863, "rot": 135.15, "scale": 1.142, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -1.1, "z": -0.631, "rot": 351.32, "scale": 0.886, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -2.236, "z": 0.268, "rot": 343.9, "scale": 1.056, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -1.158, "z": 3.912, "rot": 52.34, "scale": 0.851, "block": 0 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_03.fbx", "x": -4.6, "z": -2.4, "rot": 30, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -5.983, "z": 0.725, "rot": 32.65, "scale": 0.989, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": -2.657, "z": -3.69, "rot": 302.47, "scale": 1.06, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -5.708, "z": -1.935, "rot": 242.67, "scale": 1.062, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": -1.946, "z": -4.683, "rot": 344.89, "scale": 1.008, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_01.fbx", "x": -1.638, "z": 4.663, "rot": 60.89, "scale": 0.864, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -4.343, "z": -2.869, "rot": 135.97, "scale": 0.985, "block": 0 }
+  ]
+}

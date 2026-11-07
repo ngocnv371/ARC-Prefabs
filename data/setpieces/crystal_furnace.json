@@ -1,0 +1,26 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery", "crystals", "arcane"],
+  "lore": "A furnace that burns crystal instead of coal, charged by four pylons. It runs hotter than anything in the deep, and it hums.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_Chamber_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.75 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": 1.838, "z": -1.838, "rot": 315, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": -1.838, "z": -1.838, "rot": 45, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": -1.838, "z": 1.838, "rot": 135, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": 1.838, "z": 1.838, "rot": 225, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": 3.8, "z": 0, "rot": 270, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": 0, "z": -3.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": -3.8, "z": -0, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": -0, "z": 3.8, "rot": 180, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_SwitchBoard_01.fbx", "x": 0, "z": -4.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_02.fbx", "x": -1.4, "z": -3.4, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -0.896, "z": 0.515, "rot": 208.31, "scale": 1.075, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 1.749, "z": -0.045, "rot": 260.8, "scale": 0.933, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -1.205, "z": -1.127, "rot": 272.81, "scale": 1.137, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -1.513, "z": 0.302, "rot": 292.67, "scale": 1.053, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 0.751, "z": -1.257, "rot": 221.22, "scale": 1.11, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -0.357, "z": 1.216, "rot": 247.78, "scale": 0.944, "block": 0 }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "shrine", "statue"],
+  "lore": "A shrine to the smith-god, kept with braziers and coin. Smiths leave their first hammer here when they become masters.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 0, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2.4, "z": -1, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_04.fbx", "x": -3.8, "z": -3.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2.4, "z": -1, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_04.fbx", "x": 3.8, "z": -3.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_01.fbx", "x": -1.039, "z": 0.6, "rot": 120, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_03.fbx", "x": 1.039, "z": 0.6, "rot": 240, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_05.fbx", "x": 0, "z": -1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": -0.441, "z": 0.909, "rot": 320.41, "scale": 1.141, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 0.149, "z": 1.717, "rot": 251.41, "scale": 0.858, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 0.907, "z": 0.505, "rot": 297.53, "scale": 1.099, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": -0.964, "z": 1.523, "rot": 92.18, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_01.fbx", "x": 1.351, "z": 0.99, "rot": 135.2, "scale": 0.903, "block": 0 }
+  ]
+}

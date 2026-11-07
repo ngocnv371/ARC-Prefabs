@@ -1,0 +1,28 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "arcane", "rocks", "ring"],
+  "lore": "A great glowing bloom cradled in standing stones, grown from a seed someone dropped long ago. It turns slowly to face whoever comes near.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_GlowingOrb_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": 2.252, "z": -1.3, "rot": 30, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_03.fbx", "x": 0, "z": -2.6, "rot": 90, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": -2.252, "z": -1.3, "rot": 150, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_03.fbx", "x": -2.252, "z": 1.3, "rot": 210, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": -0, "z": 2.6, "rot": 270, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Pillar_03.fbx", "x": 2.252, "z": 1.3, "rot": 330, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -1.283, "z": 4.742, "rot": 322.19, "scale": 0.911, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 1.245, "z": 2.999, "rot": 153.78, "scale": 1.002, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": -2.714, "z": 4.431, "rot": 244.26, "scale": 1.126, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 4.669, "z": -2.62, "rot": 122.04, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 4.174, "z": 1.638, "rot": 61.39, "scale": 1.129, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -2.397, "z": -3.182, "rot": 343.32, "scale": 1.079, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": -5.039, "z": -1.416, "rot": 172.77, "scale": 0.989, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 4.846, "z": -1.041, "rot": 307.08, "scale": 1.111, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": 1.288, "z": -4.963, "rot": 357.09, "scale": 1.147, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": -2.877, "z": 2.835, "rot": 290.51, "scale": 0.984, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": -3.813, "z": -3.299, "rot": 294.33, "scale": 0.878, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -1.711, "z": 3.72, "rot": 137.81, "scale": 1.039, "block": 0 }
+  ]
+}

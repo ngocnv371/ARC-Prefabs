@@ -1,0 +1,28 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery", "ruin"],
+  "lore": "Where broken machines are left to rust once the engine-wrights have taken what is useful. Something is still ticking in the heap.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_Chamber_Broken_01.fbx", "x": -1.4, "z": -1.6, "rot": 20, "scale": 1, "block": 0.75 },
+    { "mesh": "dungeon/SM_Env_Wood_Construction_Wheel_04.fbx", "x": 2.4, "z": -1, "rot": 60, "scale": 0.7, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 2.4, "z": -1, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": -4.197, "z": 2.309, "rot": 235.08, "scale": 1.335, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": 1.609, "z": 1.315, "rot": 301.47, "scale": 1.388, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": -4.23, "z": -0.753, "rot": 11.22, "scale": 1.799, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": -4.035, "z": 1.068, "rot": 223.74, "scale": 1.479, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": -3.112, "z": 4.528, "rot": 78.83, "scale": 0.843, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_02.fbx", "x": 0.665, "z": 2.848, "rot": 110.97, "scale": 1.695, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": 0.99, "z": 3.986, "rot": 317.47, "scale": 1.041, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": 1.681, "z": 3.021, "rot": 119.83, "scale": 1.745, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": -1.729, "z": -5.128, "rot": 160.88, "scale": 1.761, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": 3.824, "z": -0.081, "rot": 4.7, "scale": 0.914, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": -0.507, "z": 3.868, "rot": 220.26, "scale": 1.115, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 3.546, "z": -4.776, "rot": 49.71, "scale": 1.002, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 1.196, "z": 3.878, "rot": 305.78, "scale": 1.028, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 5.837, "z": 0.595, "rot": 323.5, "scale": 1.117, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Plank_02.fbx", "x": -2.743, "z": 0.555, "rot": 98.75, "scale": 0.954, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 0.654, "z": -2.05, "rot": 89.69, "scale": 0.867, "block": 0 }
+  ]
+}

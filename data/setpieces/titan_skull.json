@@ -1,0 +1,32 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "bones", "remains"],
+  "lore": "The first delvers dug into this skull and thought it was a cave. Whatever it belonged to was buried, not killed, and its horns are still warm.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Bone_Skull_01.fbx", "x": 0, "z": -1, "rot": 20, "scale": 0.8, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -2.2, "z": -3.5, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": -4.5, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 2.4, "z": -3.2, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -3.2, "z": -0.5, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 3.2, "z": 0, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -2, "z": 2.5, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 2.2, "z": 2.6, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -5, "z": 3, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Horn_01.fbx", "x": 5.2, "z": -3.6, "rot": 200, "scale": 0.5, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -1.755, "z": 5.408, "rot": 134.48, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 2.996, "z": -5.421, "rot": 115.46, "scale": 1.065, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_05.fbx", "x": 4.071, "z": -4.338, "rot": 337.42, "scale": 1.034, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 1.212, "z": -6.808, "rot": 353.93, "scale": 1.036, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_05.fbx", "x": -3.746, "z": 4.696, "rot": 265.73, "scale": 0.857, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 4.875, "z": -5.932, "rot": 355.25, "scale": 0.982, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 5.313, "z": -1.956, "rot": 36.43, "scale": 0.897, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -6.426, "z": -2.764, "rot": 33.49, "scale": 0.988, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -3.53, "z": 6.741, "rot": 187.87, "scale": 1.136, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -1.668, "z": 4.726, "rot": 122.17, "scale": 0.97, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 1.177, "z": 4.855, "rot": 160.47, "scale": 1.098, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 2.187, "z": 4.6, "rot": 47.63, "scale": 1.012, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0.114, "z": 5.162, "rot": 128.87, "scale": 0.903, "block": 0 }
+  ]
+}

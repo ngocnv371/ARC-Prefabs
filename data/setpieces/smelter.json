@@ -1,0 +1,25 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "mine"],
+  "lore": "Three stoves in a row to melt the ore the carts bring up from the warrens. The cauldron catches what runs off, mostly.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Fireplace_01.fbx", "x": -2.4, "z": -2, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Fireplace_01.fbx", "x": 0, "z": -2, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Fireplace_01.fbx", "x": 2.4, "z": -2, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": 0, "z": 0.2, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": -3.6, "z": 1.2, "rot": 70, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": 3.2, "z": 0.6, "rot": 20, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": 3.8, "z": 1.6, "rot": 50, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": -1.8, "z": 2.6, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 4.736, "z": -1.647, "rot": 68.05, "scale": 1.1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": 1.014, "z": 5.826, "rot": 212.5, "scale": 0.857, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": 2.113, "z": 2.21, "rot": 113.84, "scale": 1.04, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": -2.276, "z": 3.17, "rot": 359.09, "scale": 1.073, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_02.fbx", "x": -0.343, "z": 4.287, "rot": 35.25, "scale": 1.144, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_02.fbx", "x": -4.346, "z": -2.962, "rot": 318.33, "scale": 1.149, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -3.573, "z": -0.76, "rot": 2.96, "scale": 1.124, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 1.789, "z": -4.868, "rot": 250.43, "scale": 0.952, "block": 0 }
+  ]
+}

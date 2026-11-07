@@ -1,0 +1,30 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "crystals", "shrine", "arcane"],
+  "lore": "Four rune posts set round a crystal by a forgotten order of light-keepers. They charged it with prayer, and it still holds the charge.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Gem_Spike_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.5, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": -3, "z": -3, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": -1.65, "z": -1.65, "rot": 0, "scale": 0.8, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": 3, "z": -3, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": 1.65, "z": -1.65, "rot": 0, "scale": 0.8, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": 3, "z": 3, "rot": 225, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": 1.65, "z": 1.65, "rot": 0, "scale": 0.8, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_03.fbx", "x": -3, "z": 3, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": -1.65, "z": 1.65, "rot": 0, "scale": 0.8, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_02.fbx", "x": 4.2, "z": 0, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_04.fbx", "x": 0, "z": -4.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_02.fbx", "x": -4.2, "z": -0, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_04.fbx", "x": -0, "z": 4.2, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 1.449, "z": 0.626, "rot": 144.43, "scale": 1.015, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -1.275, "z": -0.745, "rot": 293.94, "scale": 0.94, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 1.001, "z": 1.156, "rot": 52.29, "scale": 1.077, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": -0.174, "z": 1.979, "rot": 170.59, "scale": 1.017, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 1.854, "z": 0.129, "rot": 195.57, "scale": 0.963, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -1.766, "z": 1.06, "rot": 351.83, "scale": 0.886, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": 0.321, "z": 1.418, "rot": 56.11, "scale": 0.986, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 0.25, "z": -1.806, "rot": 245.22, "scale": 1.097, "block": 0 }
+  ]
+}

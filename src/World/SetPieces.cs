@@ -14,13 +14,16 @@ public sealed record SetPieceProp(string Mesh, Vector2 Offset, float Rotation, f
 /// A hand-made layout of props (data/setpieces/*.json, painted with ARC-Prefabs) that
 /// regions of its biomes drop into the field. <see cref="Clear"/> is the radius kept free of the
 /// random scatter; <see cref="Turn"/> lets each placement face a random way. <see cref="Tags"/>
-/// are lowercase words for finding pieces in the browser; games ignore them.
+/// are lowercase words for finding pieces in the browser, and <see cref="Lore"/> a line or two on
+/// who made the place and what happened there, to steer how it is dressed; games ignore both.
 /// </summary>
 public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Turn, float Clear, SetPieceProp[] Props)
 {
     private const float Margin = 2f; // scatter stays this far outside the outermost prop
 
     public string[] Tags { get; init; } = [];
+
+    public string Lore { get; init; } = "";
 
     /// <summary>Tags typed as free text: split at commas and spaces, lowercased, each once, in order.</summary>
     public static string[] ParseTags(string text) =>
@@ -55,6 +58,7 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
         )
         {
             Tags = root.TryGetValue("tags", out var tags) ? ParseTags(string.Join(",", tags.AsGodotArray().Select(t => t.AsString()))) : [],
+            Lore = root.TryGetValue("lore", out var lore) ? lore.AsString().Trim() : "",
         };
     }
 
@@ -67,6 +71,10 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
         json.Append($"  \"biomes\": [{string.Join(", ", Biomes.Select(b => $"\"{b}\""))}],\n");
         json.Append($"  \"weight\": {F(Weight)},\n");
         json.Append($"  \"turn\": {(Turn ? "true" : "false")},\n");
+        if (Tags.Length > 0)
+            json.Append($"  \"tags\": [{string.Join(", ", Tags.Select(t => Json.Stringify(t)))}],\n");
+        if (Lore.Length > 0)
+            json.Append($"  \"lore\": {Json.Stringify(Lore)},\n");
         json.Append("  \"props\": [\n");
         for (var i = 0; i < Props.Length; i++)
         {

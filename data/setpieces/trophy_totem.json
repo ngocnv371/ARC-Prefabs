@@ -1,0 +1,27 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "bones", "ritual"],
+  "lore": "Each branch carries the bones of a foe worth boasting about. The shaman reads omens in which way they rattle.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Branch_02.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.2, "block": 0.3 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Branch_01.fbx", "x": -0.8, "z": 0.5, "rot": 60, "scale": 1, "block": 0.25 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Branch_03.fbx", "x": 0.9, "z": 0.3, "rot": 200, "scale": 1, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_02.fbx", "x": 2.125, "z": -0.569, "rot": 105, "scale": 0.981, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_03.fbx", "x": 0.569, "z": -2.125, "rot": 165, "scale": 0.898, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_02.fbx", "x": -1.556, "z": -1.556, "rot": 225, "scale": 0.929, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_03.fbx", "x": -2.125, "z": 0.569, "rot": 285, "scale": 0.9, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_02.fbx", "x": -0.569, "z": 2.125, "rot": 345, "scale": 0.964, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_Bone_Spike_03.fbx", "x": 1.556, "z": 1.556, "rot": 45, "scale": 0.787, "block": 0.35 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 2.718, "z": 1.011, "rot": 236.93, "scale": 1.11, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -2.903, "z": 1.389, "rot": 228.25, "scale": 0.942, "block": 0 },
+    { "mesh": "nature/SM_Prop_Skull_01.fbx", "x": 0.786, "z": -2.82, "rot": 6.05, "scale": 1, "block": 0 },
+    { "mesh": "nature/SM_Prop_Skull_01.fbx", "x": -1, "z": 3.411, "rot": 42.17, "scale": 1.136, "block": 0 },
+    { "mesh": "nature/SM_Prop_Skull_01.fbx", "x": -1.27, "z": 0.332, "rot": 267.4, "scale": 1.149, "block": 0 },
+    { "mesh": "nature/SM_Prop_Skull_01.fbx", "x": 0.639, "z": -3.868, "rot": 169.26, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -2.82, "z": -2.355, "rot": 319.75, "scale": 1.056, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 0.4, "z": 1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Drum_01.fbx", "x": -2.8, "z": 2.3, "rot": 0, "scale": 1, "block": 0.4 }
+  ]
+}

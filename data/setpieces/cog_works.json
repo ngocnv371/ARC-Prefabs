@@ -1,0 +1,27 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery"],
+  "lore": "Great wheels turning in slots in the floor, gearing the engine to the lifts above. Step carefully; the cogs do not stop for anyone.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Wood_Construction_Wheel_02.fbx", "x": 0, "z": -1.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": -4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": -2.5, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": 0.5, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": 1, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": 2.2, "z": -0.6, "rot": 0, "scale": 1.6, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_02.fbx", "x": 3.6, "z": -1.6, "rot": 90, "scale": 2, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": -2.4, "z": 0.2, "rot": 0, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Conveyor_01.fbx", "x": -2.4, "z": 2.6, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": 2, "z": 2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pole_01.fbx", "x": -4, "z": -2.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -0.517, "z": 5.112, "rot": 68.54, "scale": 1.125, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -0.104, "z": 4.226, "rot": 81.89, "scale": 0.907, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": 1.399, "z": 3.542, "rot": 22.22, "scale": 0.998, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": 3.308, "z": 3.926, "rot": 278.82, "scale": 1.057, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": -1.744, "z": 3.438, "rot": 229.6, "scale": 1.124, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bolt_01.fbx", "x": 3.871, "z": 1.889, "rot": 60.9, "scale": 1.064, "block": 0 }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "camp"],
+  "lore": "The yard behind the forge where the smiths finished their work: benches, a cask of water for quenching, tools put down mid-job.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": -2, "z": -1, "rot": 10, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 2.2, "z": -1.6, "rot": 345, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Large_01.fbx", "x": -5.2, "z": -3, "rot": 90, "scale": 1, "block": 1.8 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 0, "z": 1.6, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_01.fbx", "x": -1.5, "z": 0.6, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_02.fbx", "x": 2.6, "z": -0.2, "rot": 120, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -2.6, "z": 0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": 2.8, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Cutlass_01.fbx", "x": 0.819, "z": 3.386, "rot": 326.35, "scale": 1.135, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Straightsword_01.fbx", "x": 2.79, "z": 2.339, "rot": 231.13, "scale": 1.046, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Cutlass_01.fbx", "x": -2.551, "z": 2.72, "rot": 83.14, "scale": 0.999, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_GreatSword_01.fbx", "x": -1.566, "z": 2.97, "rot": 333.71, "scale": 1.044, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Straightsword_01.fbx", "x": -3.721, "z": 2.018, "rot": 184.27, "scale": 1.103, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 4.4, "z": 0.6, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Barrel_03.fbx", "x": 4.8, "z": -0.4, "rot": 0, "scale": 1, "block": 0.37 }
+  ]
+}

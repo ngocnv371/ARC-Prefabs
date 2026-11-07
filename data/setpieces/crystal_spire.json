@@ -1,0 +1,30 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "crystals"],
+  "lore": "A spire of crystal taller than a house, still growing a finger's width a year. The pieces at its foot fell from the top when it rang.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Gem_Spike_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 2.6, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": 2.51, "z": -0.528, "rot": 100, "scale": 1.666, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": 0.798, "z": -2.618, "rot": 160, "scale": 1.327, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": -1.688, "z": -2.216, "rot": 220, "scale": 1.42, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": -2.315, "z": 0.511, "rot": 280, "scale": 1.568, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": -0.91, "z": 2.205, "rot": 340, "scale": 1.722, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": 1.83, "z": 2.235, "rot": 40, "scale": 1.431, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 2.225, "z": 5.701, "rot": 298.48, "scale": 1.005, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 1.023, "z": -4.8, "rot": 158.24, "scale": 0.948, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 4.218, "z": -2.842, "rot": 81.66, "scale": 0.994, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": -3.195, "z": 5.621, "rot": 156.62, "scale": 0.917, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 3.002, "z": -3.396, "rot": 91.01, "scale": 1.092, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 0.366, "z": -5.516, "rot": 215.66, "scale": 0.897, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -0.177, "z": 3.796, "rot": 28.97, "scale": 1.018, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 4.641, "z": -1.609, "rot": 120.06, "scale": 1.067, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -0.642, "z": -4.89, "rot": 336.79, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": 1.385, "z": -3.71, "rot": 108.24, "scale": 0.871, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Gem_Large_02.fbx", "x": 1.749, "z": 3.556, "rot": 191.38, "scale": 1.068, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -3.856, "z": -1.449, "rot": 233.07, "scale": 0.975, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 4.935, "z": 3.632, "rot": 331.7, "scale": 0.998, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 3.944, "z": 0.779, "rot": 215.57, "scale": 1.054, "block": 0 }
+  ]
+}
