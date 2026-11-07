@@ -81,8 +81,11 @@ is at one end, as is a paving tile's at a corner.
 
 ## Showcase
 
-`run.cmd --showcase` shows the pieces off: an endless dungeon of walled rooms, one piece in
-each, joined by torch-lit corridors, with a camera gliding just over the wall tops. The biome
+`run.cmd --showcase` shows the pieces off: an endless dungeon of walled rooms, one piece in the
+middle of each with twice its span around it (the open floor a game would spawn monsters on,
+strewn with the biome's loose clutter), joined by torch-lit corridors, with a camera gliding
+just over the wall tops. Every room has two exits besides the way in: the camera picks one at
+random, and the other leads down a short corridor to a shut door. The biome
 changes every few rooms, and each room's biome, name and lore show at the foot of the screen.
 Space pauses, Up and Down change speed, Right skips to the next room, H hides the text and Esc
 quits. `--seed=N` picks another dungeon and `--biomes=crypt,forge` its biomes (the five dungeon

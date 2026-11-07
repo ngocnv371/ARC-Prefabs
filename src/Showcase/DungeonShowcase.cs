@@ -6,9 +6,11 @@ using ArcPrefabs.World;
 namespace ArcPrefabs.Showcase;
 
 /// <summary>
-/// The set pieces on show: an endless dungeon of walled rooms, one piece in each, joined by
-/// torch-lit corridors, with a camera gliding through it just over the wall tops, rising over
-/// the bigger rooms, so it looks down into each room without running into the props. Each room's biome, name and lore show
+/// The set pieces on show: an endless dungeon of walled rooms, one piece in the middle of each
+/// with open floor round it, joined by torch-lit corridors, with a camera gliding through it
+/// just over the wall tops, rising over the bigger rooms, so it looks down into each room
+/// without running into the props. Each room has a second exit the camera passes up, down a
+/// short corridor to a shut door (see <see cref="DungeonLayout"/>). Each room's biome, name and lore show
 /// at the foot of the screen. Rooms are built a few ahead of the camera and dropped behind it.
 /// Space pauses, Up and Down change speed, Right skips to the next room, H hides the text and
 /// Esc quits. With <see cref="Capture"/> set it instead photographs that many rooms and quits.
@@ -21,6 +23,7 @@ public partial class DungeonShowcase : Node3D
 
     private static readonly string WallMesh = "dungeon/SM_Env_Wall_01.fbx";
     private static readonly string DoorMesh = "dungeon/SM_Env_Wall_Archway_01.fbx";
+    private static readonly string SealedMesh = "dungeon/SM_Env_Wall_DoorFrame_Double_Round_01.fbx";
     private static readonly string CornerMesh = "dungeon/SM_Env_Wall_Pillar_Large_01.fbx";
     private static readonly string TorchMesh = "dungeon/SM_Prop_Torch_Ornate_01.fbx";
 
@@ -117,7 +120,7 @@ public partial class DungeonShowcase : Node3D
     {
         Extend();
         var at = PathAt(_s);
-        var ahead = PathAt(_s + 9f);
+        var ahead = PathAt(_s + 13f);
         // Look ahead and down to the floor.
         var target = new Vector3(ahead.X, 0.5f, ahead.Z);
         var want = Transform3D.Identity.LookingAt(target - at, Vector3.Up).Basis;
@@ -162,7 +165,7 @@ public partial class DungeonShowcase : Node3D
     private static Vector3 Flat(Vector2 p, float y) => new(p.X, y, p.Y);
 
     /// <summary>How high the camera flies over a room's middle: higher over bigger rooms, to take them in.</summary>
-    private static float RoomHeight(DungeonRoom r) => CorridorHeight + 1f + r.Span * 0.6f;
+    private static float RoomHeight(DungeonRoom r) => CorridorHeight + 1f + r.Span * 0.45f;
 
     private void AddPoint(Vector3 p)
     {
@@ -230,41 +233,36 @@ public partial class DungeonShowcase : Node3D
         var lights = new List<DungeonLight>();
         var floor = ArcMaterials.FloorLit(room.Biome.Lush, room.Biome.Deep, room.Biome.Dry);
 
-        // The floor and the walls, a doorway in the middle of each side the path crosses.
+        // The floor and the walls: an archway in the middle of each side with a way through, and a
+        // shut door where the second exit has no room for a corridor.
         Floor(root, room.Centre, new Vector2(room.Half * 2f, room.Half * 2f), floor);
         foreach (var dir in DungeonLayout.Directions)
         {
             var side = new Vector2I(dir.Y, -dir.X);
             var a = room.Door(dir) + (Vector2)side * room.Half;
             var b = room.Door(dir) - (Vector2)side * room.Half;
-            var door = dir == room.Out || (room.Index > 0 && dir == room.In) ? room.Span / 2 : -1;
-            WallRun(root, a, b, room.Span, door);
+            var open = dir == room.Out || (room.Index > 0 && dir == room.In) || (dir == room.Branch && room.BranchLength > 0);
+            var shut = dir == room.Branch && room.BranchLength == 0;
+            WallRun(root, a, b, room.Span, open || shut ? room.Span / 2 : -1, shut ? SealedMesh : DoorMesh);
+            if (shut)
+                ShutDoor(root, room.Door(dir), b - a);
             Add(root, CornerMesh, a, 0f, 1f, 0f);
         }
 
-        // The corridor to the next room: floor, walls both sides, torches.
-        var from = room.Door(room.Out);
-        var to = next.Door(next.In);
-        var along = (to - from).Normalized();
-        var across = new Vector2(along.Y, -along.X);
-        var length = from.DistanceTo(to);
+        // The corridor on to the next room, and the one down the other exit to a shut door.
         var nextFloor = ArcMaterials.FloorLit(next.Biome.Lush, next.Biome.Deep, next.Biome.Dry);
-        Floor(root, (from + to) / 2f, new Vector2(Mathf.Abs(along.X) * length + Mathf.Abs(across.X) * DungeonRoom.Wall, Mathf.Abs(along.Y) * length + Mathf.Abs(across.Y) * DungeonRoom.Wall), nextFloor);
-        var segments = room.Corridor;
-        foreach (var s in new[] { -1f, 1f })
+        Corridor(root, lights, room.Door(room.Out), room.Out, room.Corridor, nextFloor);
+        if (room.BranchLength > 0)
         {
-            var off = across * s * DungeonRoom.Wall / 2f;
-            WallRun(root, from + off, to + off, segments, -1);
-            for (var i = 0; i < segments; i++)
-            {
-                if ((i + (s > 0 ? 0 : 1)) % 2 != 0)
-                    continue;
-                var spot = from + along * (i + 0.5f) * DungeonRoom.Wall + across * s * (DungeonRoom.Wall / 2f - 0.45f);
-                var face = Mathf.Atan2(-across.X * s, -across.Y * s);
-                Add(root, TorchMesh, spot, face, 1f, 2.6f);
-                Emit(root, lights, TorchMesh, new Vector3(spot.X, 2.6f, spot.Y), 1f);
-            }
+            var end = room.Door(room.Branch) + (Vector2)room.Branch * room.BranchLength * DungeonRoom.Wall;
+            Corridor(root, lights, room.Door(room.Branch), room.Branch, room.BranchLength, floor);
+            var across = new Vector2(room.Branch.Y, -room.Branch.X) * DungeonRoom.Wall / 2f;
+            WallRun(root, end + across, end - across, 1, 0, SealedMesh);
+            ShutDoor(root, end, -across);
         }
+
+        // The biome's loose clutter over the open floor round the piece.
+        Clutter(root, room);
 
         // The set piece, turned as planned, and the lights it gives.
         foreach (var prop in room.Piece.Props)
@@ -278,9 +276,71 @@ public partial class DungeonShowcase : Node3D
             var at = room.Centre + light.Offset.Rotated(-room.Turn);
             lights.Add(new DungeonLight(new Vector3(at.X, light.Height, at.Y), light.Color, light.Range, light.Energy));
         }
+        // A soft fill over the middle and each quarter, so the open floor is never black.
         if (_lights.Fills.TryGetValue(room.Biome.Id, out var fill))
-            lights.Add(new DungeonLight(Flat(room.Centre, 3f), fill.Fill, room.Half * 1.5f, fill.Energy));
+        {
+            lights.Add(new DungeonLight(Flat(room.Centre, 3f), fill.Fill, room.Half * 1.2f, fill.Energy));
+            foreach (var (qx, qz) in new[] { (-1, -1), (1, -1), (-1, 1), (1, 1) })
+                lights.Add(new DungeonLight(Flat(room.Centre + new Vector2(qx, qz) * room.Half * 0.5f, 3f), fill.Fill, room.Half * 0.8f, fill.Energy * 0.7f));
+        }
         return (root, lights);
+    }
+
+    /// <summary>A corridor of <paramref name="segments"/> wall lengths from <paramref name="from"/> toward <paramref name="dir"/>: floor, walls both sides, torches.</summary>
+    private void Corridor(Node3D root, List<DungeonLight> lights, Vector2 from, Vector2I dir, int segments, Material floor)
+    {
+        var along = (Vector2)dir;
+        var across = new Vector2(along.Y, -along.X);
+        var length = segments * DungeonRoom.Wall;
+        var to = from + along * length;
+        Floor(root, (from + to) / 2f, new Vector2(Mathf.Abs(along.X) * length + Mathf.Abs(across.X) * DungeonRoom.Wall, Mathf.Abs(along.Y) * length + Mathf.Abs(across.Y) * DungeonRoom.Wall), floor);
+        foreach (var s in new[] { -1f, 1f })
+        {
+            var off = across * s * DungeonRoom.Wall / 2f;
+            WallRun(root, from + off, to + off, segments, -1, DoorMesh);
+            for (var i = 0; i < segments; i++)
+            {
+                if ((i + (s > 0 ? 0 : 1)) % 2 != 0)
+                    continue;
+                var spot = from + along * (i + 0.5f) * DungeonRoom.Wall + across * s * (DungeonRoom.Wall / 2f - 0.45f);
+                var face = Mathf.Atan2(-across.X * s, -across.Y * s);
+                Add(root, TorchMesh, spot, face, 1f, 2.6f);
+                Emit(root, lights, TorchMesh, new Vector3(spot.X, 2.6f, spot.Y), 1f);
+            }
+        }
+    }
+
+    /// <summary>A closed double door in the door frame centred on <paramref name="centre"/>, its wall running along <paramref name="wall"/>.</summary>
+    private void ShutDoor(Node3D root, Vector2 centre, Vector2 wall)
+    {
+        var u = wall.Normalized();
+        var rot = Mathf.Atan2(-u.Y, u.X);
+        Add(root, "dungeon/SM_Env_DoorDouble_Round_01.fbx", centre - u * 1.32f, rot, 1f, 0f);
+        Add(root, "dungeon/SM_Env_DoorDouble_Round_02.fbx", centre + u * 1.32f, rot, 1f, 0f);
+    }
+
+    /// <summary>
+    /// Scatters the biome's loose props (its scatter in data/biomes.json: rubble, bones, pebbles,
+    /// stalagmites...) over the room's open floor, clear of the piece, the walls and the doorways.
+    /// </summary>
+    private void Clutter(Node3D root, DungeonRoom room)
+    {
+        if (!room.Biome.Props.Any(p => p.Weight > 0f))
+            return;
+        var rng = new RandomNumberGenerator { Seed = Seed * 7919 + (ulong)room.Index };
+        var inner = room.Half - 2.5f;
+        var count = Math.Min(140, (int)(inner * inner * 4f / 26f));
+        var doors = DungeonLayout.Directions.Select(room.Door).ToArray();
+        for (var i = 0; i < count; i++)
+        {
+            var at = room.Centre + new Vector2(rng.RandfRange(-inner, inner), rng.RandfRange(-inner, inner));
+            if (at.DistanceTo(room.Centre) < room.Piece.Clear || doors.Any(d => d.DistanceTo(at) < 5f))
+                continue;
+            var prop = room.Biome.Pick(rng);
+            // A biome prop's scale already has its pack's unit in it; Add puts the unit on again.
+            var unit = Map.Pack(prop.Mesh).Unit;
+            Add(root, prop.Mesh, at, rng.Randf() * Mathf.Tau, rng.RandfRange(prop.MinScale, prop.MaxScale) / unit, 0f);
+        }
     }
 
     /// <summary>Lights a prop that burns or glows (data/lights.json), with a marker where the light is.</summary>
@@ -303,13 +363,13 @@ public partial class DungeonShowcase : Node3D
     }
 
     /// <summary>A straight wall of <paramref name="count"/> wall lengths from a to b, each twinned so both faces show, with an archway at segment <paramref name="door"/>.</summary>
-    private void WallRun(Node3D root, Vector2 a, Vector2 b, int count, int door)
+    private void WallRun(Node3D root, Vector2 a, Vector2 b, int count, int door, string doorMesh)
     {
         var step = (b - a) / count;
         var rot = Mathf.Atan2(-step.Y, step.X);
         for (var i = 0; i < count; i++)
         {
-            var mesh = i == door ? DoorMesh : WallMesh;
+            var mesh = i == door ? doorMesh : WallMesh;
             Add(root, mesh, a + step * i, rot, 1f, 0f);
             Add(root, mesh, a + step * (i + 1), rot + Mathf.Pi, 1f, 0f);
         }
@@ -402,7 +462,7 @@ public partial class DungeonShowcase : Node3D
 
         for (var i = 0; i < Capture; i++)
         {
-            _s = CentreAlong(i + 1) - _layout.Rooms[i + 1].Half * 1.1f;
+            _s = CentreAlong(i + 1) - _layout.Rooms[i + 1].Half * 0.8f;
             Follow(1f);
             eye.GlobalTransform = _camera.GlobalTransform;
             // A minimised window (run.cmd --capture) only rarely draws, so draw a few frames here;
@@ -412,7 +472,8 @@ public partial class DungeonShowcase : Node3D
                 RenderingServer.ForceDraw(false);
             var path = $"{dir}/showcase_{i + 1:00}.png";
             view.GetTexture().GetImage().SavePng(path);
-            GD.Print($"captured {path} ({_layout.Rooms[_room].Biome.Id}/{_layout.Rooms[_room].Piece.Id})");
+            var shot = _layout.Rooms[_room];
+            GD.Print($"captured {path} ({shot.Biome.Id}/{shot.Piece.Id}, {shot.Span}x{shot.Span} walls, in {shot.In}, on {shot.Out}, branch {shot.Branch} x{shot.BranchLength})");
         }
         GetTree().Quit();
     }

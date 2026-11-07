@@ -2,8 +2,8 @@
   "_doc": "How the showcase (run.cmd --showcase) lights the dungeon. ARC's shaders are unlit, so the showcase bakes these lights into a map under the camera (src/Showcase/DungeonLights.cs). 'ambient' is the light everywhere (1 is fully lit), and things fade to black between 'fadeStart' and 'fadeEnd' metres from the camera; 'flicker' is how much the light wavers. Each biome adds a soft 'fill' light over every room of it. 'emitters' light props by mesh: the first whose 'match' is in a prop's file name wins; the light sits 'y' metres above the prop's foot (times its scale), reaches 'range' metres with 'energy', and 'glow' is the size in metres of the marker that shows where it comes from (0 for none). A piece can also place lights of its own in its JSON ('lights').",
 
   "ambient": 0.24,
-  "fadeStart": 30,
-  "fadeEnd": 70,
+  "fadeStart": 42,
+  "fadeEnd": 100,
   "flicker": 0.18,
 
   "biomes": {

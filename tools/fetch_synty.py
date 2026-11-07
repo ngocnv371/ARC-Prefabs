@@ -186,6 +186,8 @@ DUNGEON_MESHES = [
     "SM_Wep_Ornate_Axe_02", "SM_Wep_Ornate_Sword_02", "SM_Wep_Shield_Gravestone_01", "SM_Wep_Shield_Heater_01", "SM_Wep_Shield_Heater_02",
     "SM_Wep_Shield_Ornate_01", "SM_Wep_Shield_Ornate_02", "SM_Wep_Shield_Plank_01", "SM_Wep_Shield_Round_01", "SM_Wep_Shield_Skull_01",
     "SM_Wep_Shield_Spike_01", "SM_Wep_Spear_01", "SM_Wep_Spear_02", "SM_Wep_Straightsword_01",
+    # The showcase's own (src/Showcase): the torches on its corridor walls.
+    "SM_Prop_Torch_Ornate_01",
 ]
 
 # (zip, path inside the zip, destination under assets/synty)
