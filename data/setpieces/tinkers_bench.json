@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "machinery"],
+  "themes": ["engine_deep"],
   "lore": "A tinker's bench strewn with parts, scales and potions, and a lever that does nothing anyone can tell. The tinker said he would be right back.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": -1.4, "rot": 0, "scale": 1, "block": 0.9 },

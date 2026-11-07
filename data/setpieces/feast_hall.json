@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "tavern"],
+  "themes": ["last_court"],
   "lore": "The feasting hall, where the king's last feast was laid for guests who never arrived. The casks are full, the benches are empty.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": -2.95, "z": 0, "rot": 0, "scale": 1, "block": 0.9 },

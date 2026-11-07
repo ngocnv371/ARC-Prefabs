@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "camp"],
+  "themes": ["smiths"],
   "lore": "The yard behind the forge where the smiths finished their work: benches, a cask of water for quenching, tools put down mid-job.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": -2, "z": -1, "rot": 10, "scale": 1, "block": 0.9 },

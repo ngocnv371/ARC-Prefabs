@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["library", "arcane"],
+  "themes": ["kings_bargain"],
   "lore": "The court alchemist's den, where the king's elixirs were brewed. The cauldron is still on the boil and the vials are labelled in his cramped hand.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.3, "block": 0.45 },

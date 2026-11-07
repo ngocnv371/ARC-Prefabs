@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "statue"],
+  "themes": ["last_court"],
   "lore": "A gallery of statues of the kings who came before, facing each other across a red runner. They seem to be arguing about the last one.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Rug_01.fbx", "x": 0, "z": 0, "rot": 90, "scale": 1, "block": 0 },

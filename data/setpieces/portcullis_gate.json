@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["gate", "walls", "fort", "tower"],
+  "themes": ["wardens", "battlefield"],
   "lore": "The keep's main gate between two towers, its portcullis down. The banners show the old king's colours; the braziers say someone still keeps them.",
   "props": [
     { "mesh": "dungeon/SM_Env_Portcullis_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },

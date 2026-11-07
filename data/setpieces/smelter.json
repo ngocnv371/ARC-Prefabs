@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "mine"],
+  "themes": ["smiths"],
   "lore": "Three stoves in a row to melt the ore the carts bring up from the warrens. The cauldron catches what runs off, mostly.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Fireplace_01.fbx", "x": -2.4, "z": -2, "rot": 0, "scale": 1, "block": 0.4 },

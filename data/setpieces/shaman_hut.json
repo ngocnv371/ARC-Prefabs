@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "arcane", "tents", "ritual"],
+  "themes": ["hovels"],
   "lore": "The shaman brews his visions in a pot ringed with rune stones he cannot read. Some of his potions work; he does not know which.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": 0, "z": -2.6, "rot": 0, "scale": 1, "block": 1.6 },

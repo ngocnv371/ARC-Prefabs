@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["mine", "goblins", "rocks"],
+  "themes": ["lost_delve"],
   "lore": "The goblins took this mine from the dwarves and work it badly: props too far apart, carts overloaded. It is a matter of time before the roof agrees.",
   "props": [
     { "mesh": "dungeon/SM_Env_Minetrack_Straight_01.fbx", "x": -2.5, "z": -7.5, "rot": 0, "scale": 1, "block": 0 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "bones", "remains"],
+  "themes": ["plague"],
   "lore": "In the plague year the bodies came faster than coffins could be made, so they were tipped in here from the cart. The cart is still waiting for its next load.",
   "props": [
     { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 3.604, "z": -0.523, "rot": 10, "scale": 0.979, "block": 0.6 },

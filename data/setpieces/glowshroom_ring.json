@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "mushrooms", "ring"],
+  "themes": ["bloom"],
   "lore": "A fairy ring of giant caps grown round a buried crystal that feeds them light. Step inside and the spores whisper your name back to you.",
   "props": [
     { "mesh": "dungeon/SM_Env_Gem_Large_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },

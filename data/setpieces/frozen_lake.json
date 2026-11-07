@@ -1,0 +1,32 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "water", "remains"],
+  "themes": ["frosted_veins"],
+  "lore": "An underground lake froze in a single night with the fishermen still on it. Their lantern is under the ice now, and it is still lit.",
+  "props": [
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": -1.8, "z": -0.6, "rot": 10, "scale": 2.2, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": 1.6, "z": 0.4, "rot": 130, "scale": 2.4, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": 0, "z": -2.4, "rot": 250, "scale": 1.8, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": -0.4, "z": 1.8, "rot": 70, "scale": 1.9, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": 2.167, "z": 6.065, "rot": 351.71, "scale": 0.33, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": -1.949, "z": 4.733, "rot": 21.24, "scale": 0.384, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": 3.218, "z": -5.503, "rot": 203.56, "scale": 0.4, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": 4.459, "z": 4.548, "rot": 174.09, "scale": 0.302, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": -5.309, "z": -3.748, "rot": 254.93, "scale": 0.397, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": 0.447, "z": 4.992, "rot": 213.26, "scale": 0.365, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": -5.782, "z": -0.801, "rot": 7.69, "scale": 0.362, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": -5.261, "z": 3.684, "rot": 2.83, "scale": 0.476, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": 0.316, "z": -5.183, "rot": 10.99, "scale": 0.442, "block": 0 },
+    { "mesh": "adventure/SM_Env_Rock_03_Snow.fbx", "x": -5.586, "z": -3.755, "rot": 168.9, "scale": 0.951, "block": 0.8 },
+    { "mesh": "adventure/SM_Env_Rock_05_Snow.fbx", "x": -5.331, "z": 0.912, "rot": 214.29, "scale": 0.829, "block": 0.8 },
+    { "mesh": "adventure/SM_Env_Rock_05_Snow.fbx", "x": -0.622, "z": 6.162, "rot": 128.21, "scale": 1.082, "block": 0.8 },
+    { "mesh": "adventure/SM_Env_Rock_04_Snow.fbx", "x": 0.109, "z": -5.248, "rot": 286.7, "scale": 0.98, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 4.4, "z": 2.6, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_02.fbx", "x": 4.8, "z": 3.6, "rot": 30, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 0.6, "z": -0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": -3.4, "z": 3.4, "rot": 60, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -4.2, "z": 2.6, "rot": 0, "scale": 1, "block": 0 }
+  ]
+}

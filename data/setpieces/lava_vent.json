@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "lava", "rocks"],
+  "themes": ["molten_heart"],
   "lore": "A vent where the rock still runs hot, cracked open when the forges dug too deep. The smiths use it to light their fires; the fires use it to spread.",
   "props": [
     { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.2, "block": 1.8 },

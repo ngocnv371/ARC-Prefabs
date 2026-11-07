@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "fort", "walls", "statue"],
+  "themes": ["last_court", "battlefield"],
   "lore": "Trophies of old wars along a wall: banners, shields and the blades of defeated kings. The champion's statue stands guard in the middle.",
   "lights": [
     { "x": 0, "z": -1.5, "y": 3, "color": [1, 0.78, 0.5], "range": 7, "energy": 0.8 }

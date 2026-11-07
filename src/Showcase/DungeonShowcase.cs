@@ -10,8 +10,10 @@ namespace ArcPrefabs.Showcase;
 /// with open floor round it, joined by torch-lit corridors, with a camera gliding through it
 /// just over the wall tops, rising over the bigger rooms, so it looks down into each room
 /// without running into the props. Each room has a second exit the camera passes up, down a
-/// short corridor to a shut door (see <see cref="DungeonLayout"/>). Each room's biome, name and lore show
-/// at the foot of the screen. Rooms are built a few ahead of the camera and dropped behind it.
+/// short corridor to a shut door (see <see cref="DungeonLayout"/>). Rooms come in runs of a theme
+/// (data/themes.json), which may recolour their floors, tint their light and strew its own clutter;
+/// a card names the theme as its run begins. Each room's theme, biome, name and lore show at the
+/// foot of the screen. Rooms are built a few ahead of the camera and dropped behind it.
 /// Space pauses, Up and Down change speed, Right skips to the next room, H hides the text and
 /// Esc quits. With <see cref="Capture"/> set it instead photographs that many rooms and quits.
 /// </summary>
@@ -40,13 +42,18 @@ public partial class DungeonShowcase : Node3D
     private int _room = -1;
     private bool _relight = true;
     private Label _biomeLabel = null!, _nameLabel = null!, _loreLabel = null!;
-    private Control _hud = null!;
+    private Label _themeName = null!, _themeLore = null!;
+    private Control _hud = null!, _themeCard = null!;
+    private float _cardTime; // seconds the theme card has been up
 
     public required WorldMap Map { get; init; }
     public ulong Seed { get; init; } = 1;
 
     /// <summary>Biomes to draw rooms from (ids); empty means the dungeon ones.</summary>
     public string[] Biomes { get; init; } = [];
+
+    /// <summary>Themes to draw runs from (ids in data/themes.json); empty means all.</summary>
+    public string[] Themes { get; init; } = [];
 
     /// <summary>When above 0, photograph this many rooms into <see cref="CaptureDir"/> and quit.</summary>
     public int Capture { get; init; }
@@ -74,7 +81,7 @@ public partial class DungeonShowcase : Node3D
         _lights.Apply();
         var ids = Biomes.Length > 0 ? Biomes : DungeonBiomes;
         var biomes = Map.Biomes.Where(b => ids.Contains(b.Id)).ToArray();
-        _layout = new DungeonLayout(SetPieces.ReadAll(), biomes, Seed);
+        _layout = new DungeonLayout(SetPieces.ReadAll(), biomes, SetPieceThemes.Load(Map), Seed, Themes);
 
         _camera = new Camera3D { Fov = 62f, Near = 0.1f, Far = 220f };
         AddChild(_camera);
@@ -96,6 +103,9 @@ public partial class DungeonShowcase : Node3D
         if (!_paused)
             _s += _speed * (float)delta;
         Follow((float)delta);
+        // The theme card fades out a few seconds after a run begins.
+        _cardTime += (float)delta;
+        _themeCard.Modulate = Colors.White with { A = Mathf.Clamp((7f - _cardTime) / 1.5f, 0f, 1f) };
     }
 
     public override void _UnhandledInput(InputEvent e)
@@ -231,7 +241,7 @@ public partial class DungeonShowcase : Node3D
         var root = new Node3D { Name = $"Room{room.Index}_{room.Piece.Id}" };
         AddChild(root);
         var lights = new List<DungeonLight>();
-        var floor = ArcMaterials.FloorLit(room.Biome.Lush, room.Biome.Deep, room.Biome.Dry);
+        var floor = FloorFor(room);
 
         // The floor and the walls: an archway in the middle of each side with a way through, and a
         // shut door where the second exit has no room for a corridor.
@@ -250,7 +260,7 @@ public partial class DungeonShowcase : Node3D
         }
 
         // The corridor on to the next room, and the one down the other exit to a shut door.
-        var nextFloor = ArcMaterials.FloorLit(next.Biome.Lush, next.Biome.Deep, next.Biome.Dry);
+        var nextFloor = FloorFor(next);
         Corridor(root, lights, room.Door(room.Out), room.Out, room.Corridor, nextFloor);
         if (room.BranchLength > 0)
         {
@@ -276,9 +286,11 @@ public partial class DungeonShowcase : Node3D
             var at = room.Centre + light.Offset.Rotated(-room.Turn);
             lights.Add(new DungeonLight(new Vector3(at.X, light.Height, at.Y), light.Color, light.Range, light.Energy));
         }
-        // A soft fill over the middle and each quarter, so the open floor is never black.
-        if (_lights.Fills.TryGetValue(room.Biome.Id, out var fill))
+        // A soft fill over the middle and each quarter, so the open floor is never black: the
+        // theme's tint if it has one, else the biome's.
+        if (room.Theme?.Fill is { } tint || _lights.Fills.TryGetValue(room.Biome.Id, out tint))
         {
+            var fill = (Fill: tint.Item1, Energy: tint.Item2);
             lights.Add(new DungeonLight(Flat(room.Centre, 3f), fill.Fill, room.Half * 1.2f, fill.Energy));
             foreach (var (qx, qz) in new[] { (-1, -1), (1, -1), (-1, 1), (1, 1) })
                 lights.Add(new DungeonLight(Flat(room.Centre + new Vector2(qx, qz) * room.Half * 0.5f, 3f), fill.Fill, room.Half * 0.8f, fill.Energy * 0.7f));
@@ -319,13 +331,21 @@ public partial class DungeonShowcase : Node3D
         Add(root, "dungeon/SM_Env_DoorDouble_Round_02.fbx", centre + u * 1.32f, rot, 1f, 0f);
     }
 
+    /// <summary>The room's floor: its theme's ground colours if it has some, else its biome's.</summary>
+    private static Material FloorFor(DungeonRoom room) => room.Theme?.Ground is { } g
+        ? ArcMaterials.FloorLit(g.Lush, g.Deep, g.Dry)
+        : ArcMaterials.FloorLit(room.Biome.Lush, room.Biome.Deep, room.Biome.Dry);
+
     /// <summary>
-    /// Scatters the biome's loose props (its scatter in data/biomes.json: rubble, bones, pebbles,
-    /// stalagmites...) over the room's open floor, clear of the piece, the walls and the doorways.
+    /// Scatters loose props over the room's open floor, clear of the piece, the walls and the
+    /// doorways: the biome's (its scatter in data/biomes.json: rubble, bones, pebbles,
+    /// stalagmites...), with its theme's clutter in place of a share of them.
     /// </summary>
     private void Clutter(Node3D root, DungeonRoom room)
     {
-        if (!room.Biome.Props.Any(p => p.Weight > 0f))
+        var theme = room.Theme is { Clutter.Length: > 0 } t ? t : null;
+        var biome = room.Biome.Props.Any(p => p.Weight > 0f);
+        if (theme == null && !biome)
             return;
         var rng = new RandomNumberGenerator { Seed = Seed * 7919 + (ulong)room.Index };
         var inner = room.Half - 2.5f;
@@ -336,7 +356,7 @@ public partial class DungeonShowcase : Node3D
             var at = room.Centre + new Vector2(rng.RandfRange(-inner, inner), rng.RandfRange(-inner, inner));
             if (at.DistanceTo(room.Centre) < room.Piece.Clear || doors.Any(d => d.DistanceTo(at) < 5f))
                 continue;
-            var prop = room.Biome.Pick(rng);
+            var prop = theme != null && (!biome || rng.Randf() < theme.Share) ? theme.PickClutter(rng) : room.Biome.Pick(rng);
             // A biome prop's scale already has its pack's unit in it; Add puts the unit on again.
             var unit = Map.Pack(prop.Mesh).Unit;
             Add(root, prop.Mesh, at, rng.Randf() * Mathf.Tau, rng.RandfRange(prop.MinScale, prop.MaxScale) / unit, 0f);
@@ -424,6 +444,24 @@ public partial class DungeonShowcase : Node3D
         column.AddChild(_nameLabel);
         column.AddChild(_loreLabel);
 
+        // The theme card, at the top as a run of a theme begins.
+        var card = new PanelContainer { MouseFilter = Control.MouseFilterEnum.Ignore };
+        card.AddThemeStyleboxOverride("panel", UiStyle.Box(UiStyle.Panel with { A = 0.55f }, UiStyle.Border with { A = 0.3f }, 8, 1));
+        card.CustomMinimumSize = new Vector2(640f, 0f);
+        _hud.AddChild(card);
+        card.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.CenterTop, Control.LayoutPresetMode.Minsize, 28);
+        card.GrowHorizontal = Control.GrowDirection.Both;
+        var cardColumn = new VBoxContainer();
+        cardColumn.AddThemeConstantOverride("separation", 4);
+        card.AddChild(cardColumn);
+        _themeName = UiStyle.Label("", 28, UiStyle.Text, HorizontalAlignment.Center);
+        _themeLore = UiStyle.Label("", 15, UiStyle.Dim, HorizontalAlignment.Center, wrap: true);
+        _themeLore.CustomMinimumSize = new Vector2(640f, 0f);
+        cardColumn.AddChild(_themeName);
+        cardColumn.AddChild(_themeLore);
+        _themeCard = card;
+        _themeCard.Modulate = Colors.Transparent;
+
         if (Capture > 0)
             return;
         var keys = UiStyle.Label("Space pause · Up/Down speed · Right next room · H hide text · Esc quit", 12, UiStyle.Dim, HorizontalAlignment.Right);
@@ -436,7 +474,19 @@ public partial class DungeonShowcase : Node3D
 
     private void ShowRoom(DungeonRoom room)
     {
-        _biomeLabel.Text = room.Biome.Name.ToUpperInvariant();
+        _biomeLabel.Text = (room.Theme != null ? $"{room.Theme.Name} · {room.Biome.Name}" : room.Biome.Name).ToUpperInvariant();
+        if (room.FirstOfRun && room.Theme != null)
+        {
+            _themeName.Text = room.Theme.Name;
+            _themeLore.Text = room.Theme.Lore;
+            _themeLore.Visible = room.Theme.Lore.Length > 0;
+            _cardTime = 0f;
+            _themeCard.Modulate = Colors.White;
+        }
+        else if (Capture > 0)
+        {
+            _themeCard.Modulate = Colors.Transparent;
+        }
         _nameLabel.Text = room.Piece.Id.Replace('_', ' ');
         _loreLabel.Text = room.Piece.Lore;
         _loreLabel.Visible = room.Piece.Lore.Length > 0;
@@ -473,7 +523,7 @@ public partial class DungeonShowcase : Node3D
             var path = $"{dir}/showcase_{i + 1:00}.png";
             view.GetTexture().GetImage().SavePng(path);
             var shot = _layout.Rooms[_room];
-            GD.Print($"captured {path} ({shot.Biome.Id}/{shot.Piece.Id}, {shot.Span}x{shot.Span} walls, in {shot.In}, on {shot.Out}, branch {shot.Branch} x{shot.BranchLength})");
+            GD.Print($"captured {path} ({shot.Theme?.Id ?? "-"}{(shot.FirstOfRun ? "*" : "")} {shot.Biome.Id}/{shot.Piece.Id}, {shot.Span}x{shot.Span} walls, in {shot.In}, on {shot.Out}, branch {shot.Branch} x{shot.BranchLength})");
         }
         GetTree().Quit();
     }

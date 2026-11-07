@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "walls", "tomb", "building"],
+  "themes": ["plague"],
   "lore": "The embalmers' guild worked here, salting and wrapping the rich for their long sleep. Their last two clients are still on the tables, half-finished.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -5.24, "z": -4, "rot": 0, "scale": 1, "block": 0 },

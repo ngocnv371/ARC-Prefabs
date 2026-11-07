@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "gate", "walls"],
+  "themes": ["mourning"],
   "lore": "The iron-bound gate between the common graves and the noble vaults. One door hangs open; the braziers either side are burning, and no one keeps them.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_01.fbx", "x": -7.86, "z": -1.5, "rot": 0, "scale": 1, "block": 0 },

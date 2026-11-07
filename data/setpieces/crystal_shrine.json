@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "crystals", "shrine", "arcane"],
+  "themes": ["singing_veins"],
   "lore": "Four rune posts set round a crystal by a forgotten order of light-keepers. They charged it with prayer, and it still holds the charge.",
   "props": [
     { "mesh": "dungeon/SM_Env_Gem_Spike_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.5, "block": 1 },

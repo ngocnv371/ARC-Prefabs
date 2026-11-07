@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "palisade", "camp"],
+  "themes": ["warband"],
   "lore": "The clan's store yard: barrels of grog, crates of loot and a tower to keep the other clans out of both.",
   "lights": [
     { "x": 3.2, "z": -3.2, "y": 4, "color": [1, 0.5, 0.18], "range": 7, "energy": 0.9 }

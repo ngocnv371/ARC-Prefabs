@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "machinery"],
+  "themes": ["engine_deep"],
   "lore": "Great wheels turning in slots in the floor, gearing the engine to the lifts above. Step carefully; the cogs do not stop for anyone.",
   "lights": [
     { "x": 0, "z": -1.5, "y": 2, "color": [1, 0.5, 0.18], "range": 6, "energy": 0.8 }

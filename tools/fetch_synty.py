@@ -186,6 +186,10 @@ DUNGEON_MESHES = [
     "SM_Wep_Ornate_Axe_02", "SM_Wep_Ornate_Sword_02", "SM_Wep_Shield_Gravestone_01", "SM_Wep_Shield_Heater_01", "SM_Wep_Shield_Heater_02",
     "SM_Wep_Shield_Ornate_01", "SM_Wep_Shield_Ornate_02", "SM_Wep_Shield_Plank_01", "SM_Wep_Shield_Round_01", "SM_Wep_Shield_Skull_01",
     "SM_Wep_Shield_Spike_01", "SM_Wep_Spear_01", "SM_Wep_Spear_02", "SM_Wep_Straightsword_01",
+    # The themed pieces: the battlefield's fallen weapons and arrows, the burning's beams.
+    "SM_Wep_Axe_01", "SM_Wep_Banner_01", "SM_Wep_BrokenSword_01", "SM_Wep_Greatsword_Straight_01",
+    "SM_Wep_Ornate_Spear_01", "SM_item_Arrow_01", "SM_Prop_Log_Spike_04",
+    "SM_Env_ReinforedPole_01", "SM_Env_Wood_Pole_01",
     # The showcase's own (src/Showcase): the torches on its corridor walls.
     "SM_Prop_Torch_Ornate_01",
 ]

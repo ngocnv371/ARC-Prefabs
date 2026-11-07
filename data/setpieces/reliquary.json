@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "shrine", "treasure", "statue"],
+  "themes": ["mourning"],
   "lore": "The finger-bone of a saint and the gifts of a thousand pilgrims, kept behind a rail under her statue. Pilgrims stopped coming; the gifts did not leave.",
   "props": [
     { "mesh": "dungeon/SM_Env_Railing_03.fbx", "x": -2.5, "z": 2.5, "rot": 0, "scale": 1, "block": 0 },

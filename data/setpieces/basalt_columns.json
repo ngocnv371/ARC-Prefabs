@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "rocks", "lava"],
+  "themes": ["molten_heart"],
   "lore": "Basalt columns cooled from an old lava flow, standing like a crowd that froze mid-step. The vent that made them is still breathing nearby.",
   "props": [
     { "mesh": "dungeon/SM_Env_Rock_Rectangle_01.fbx", "x": -2.065, "z": 3.525, "rot": 235.96, "scale": 2.262, "block": 0.4 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "tomb", "paving", "candles"],
+  "themes": ["mourning", "plague"],
   "lore": "Paupers' coffins laid out on the flags for a burial that never came; the bell-ringer died the same week. Some lids have been pushed aside from within.",
   "props": [
     { "mesh": "dungeon/SM_Env_Tiles_02.fbx", "x": -5, "z": -5, "rot": 0, "scale": 1, "block": 0 },

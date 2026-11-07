@@ -30,6 +30,12 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
 
     public string[] Tags { get; init; } = [];
 
+    /// <summary>
+    /// The themes the piece belongs to (ids in data/themes.json): stories that run over several
+    /// rooms, so a game places pieces of one theme near each other. Games without themes ignore them.
+    /// </summary>
+    public string[] Themes { get; init; } = [];
+
     public string Lore { get; init; } = "";
 
     public SetPieceLight[] Lights { get; init; } = [];
@@ -67,6 +73,7 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
         )
         {
             Tags = root.TryGetValue("tags", out var tags) ? ParseTags(string.Join(",", tags.AsGodotArray().Select(t => t.AsString()))) : [],
+            Themes = root.TryGetValue("themes", out var themes) ? ParseTags(string.Join(",", themes.AsGodotArray().Select(t => t.AsString()))) : [],
             Lore = root.TryGetValue("lore", out var lore) ? lore.AsString().Trim() : "",
             Lights = root.TryGetValue("lights", out var lights) ? lights.AsGodotArray().Select(v =>
             {
@@ -94,6 +101,8 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
         json.Append($"  \"turn\": {(Turn ? "true" : "false")},\n");
         if (Tags.Length > 0)
             json.Append($"  \"tags\": [{string.Join(", ", Tags.Select(t => Json.Stringify(t)))}],\n");
+        if (Themes.Length > 0)
+            json.Append($"  \"themes\": [{string.Join(", ", Themes.Select(t => Json.Stringify(t)))}],\n");
         if (Lore.Length > 0)
             json.Append($"  \"lore\": {Json.Stringify(Lore)},\n");
         if (Lights.Length > 0)

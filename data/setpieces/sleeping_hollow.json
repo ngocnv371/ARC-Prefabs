@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "camp"],
+  "themes": ["hovels"],
   "lore": "The off-shift sleeps here in stolen beds, on stolen sacks, under a stolen lantern. Wake them at your peril; they bite before they think.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": -2.4, "z": -1.6, "rot": 20, "scale": 1, "block": 0.7 },

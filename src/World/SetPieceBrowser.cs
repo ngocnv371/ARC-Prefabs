@@ -6,8 +6,8 @@ namespace ArcPrefabs.World;
 /// <summary>
 /// The painter's Browse tab: every piece in data/setpieces as a card in a grid filling the
 /// window (its picture from the game's camera, biome, prop count, clear radius, weight, tags and lore),
-/// with a search box and biome and tag filters at the side. Biomes add up (a piece in any chosen
-/// biome shows); tags narrow (a piece needs every chosen tag); the search matches a name, a tag or
+/// with a search box and biome, theme and tag filters at the side. Biomes add up (a piece in any chosen
+/// biome shows), and so do themes; tags narrow (a piece needs every chosen tag); the search matches a name, a tag or
 /// the lore. Each tag shows how many pieces the other filters leave it. Clicking a card asks
 /// <see cref="Open"/> to open it in the painter.
 /// </summary>
@@ -19,12 +19,15 @@ public partial class SetPieceBrowser : PanelContainer
     private readonly GridContainer _grid = new();
     private readonly ScrollContainer _scroll = new() { SizeFlagsHorizontal = SizeFlags.ExpandFill, SizeFlagsVertical = SizeFlags.ExpandFill, HorizontalScrollMode = ScrollContainer.ScrollMode.Disabled };
     private readonly HFlowContainer _biomeChips = new();
+    private readonly HFlowContainer _themeChips = new();
     private readonly HFlowContainer _tagChips = new();
     private readonly LineEdit _search = new() { PlaceholderText = "search names, tags and lore", ClearButtonEnabled = true };
     private readonly Label _count = UiStyle.Label("", 13, UiStyle.Dim);
     private readonly Label _notice = UiStyle.Label("", 13, UiStyle.Accent, wrap: true);
     private readonly HashSet<string> _biomes = [];
+    private readonly HashSet<string> _themes = [];
     private readonly HashSet<string> _tags = [];
+    private IReadOnlyList<SetPieceTheme> _themeList = [];
     private readonly Dictionary<string, (DateTime Stamp, Texture2D Texture)> _pictures = [];
     private IReadOnlyList<SetPiece> _pieces = [];
     private string? _current;
@@ -71,12 +74,15 @@ public partial class SetPieceBrowser : PanelContainer
         side.AddChild(_search);
         side.AddChild(UiStyle.Label("BIOMES", 13, UiStyle.Dim));
         side.AddChild(_biomeChips);
+        side.AddChild(UiStyle.Label("THEMES", 13, UiStyle.Dim));
+        side.AddChild(_themeChips);
         side.AddChild(UiStyle.Label("TAGS", 13, UiStyle.Dim));
         side.AddChild(_tagChips);
         var clear = new Button { Text = "Clear filters", FocusMode = FocusModeEnum.None };
         clear.Pressed += () =>
         {
             _biomes.Clear();
+            _themes.Clear();
             _tags.Clear();
             _search.Text = "";
             Fill();
@@ -100,6 +106,7 @@ public partial class SetPieceBrowser : PanelContainer
     {
         var before = _pieces;
         _pieces = DirAccess.DirExistsAbsolute(SetPieces.Folder) ? SetPieces.ReadAll() : [];
+        _themeList = SetPieceThemes.Load(Map).All;
         foreach (var gone in before.Where(old => _pieces.All(p => p.Id != old.Id)))
         {
             Studio.ForgetPiece(gone.Id);
@@ -109,9 +116,11 @@ public partial class SetPieceBrowser : PanelContainer
         Fill();
     }
 
-    private bool Matches(SetPiece piece, bool tags = true, bool biomes = true)
+    private bool Matches(SetPiece piece, bool tags = true, bool biomes = true, bool themes = true)
     {
         if (biomes && _biomes.Count > 0 && !piece.Biomes.Any(_biomes.Contains))
+            return false;
+        if (themes && _themes.Count > 0 && !piece.Themes.Any(_themes.Contains))
             return false;
         if (tags && !_tags.All(piece.Tags.Contains))
             return false;
@@ -123,13 +132,21 @@ public partial class SetPieceBrowser : PanelContainer
     {
         foreach (var child in _grid.GetChildren())
             child.QueueFree();
-        foreach (var child in _biomeChips.GetChildren().Concat(_tagChips.GetChildren()))
+        foreach (var child in _biomeChips.GetChildren().Concat(_themeChips.GetChildren()).Concat(_tagChips.GetChildren()))
             child.QueueFree();
 
         foreach (var biome in Map.Biomes)
         {
             var count = _pieces.Count(p => p.Biomes.Contains(biome.Id) && Matches(p, biomes: false));
             _biomeChips.AddChild(Chip($"{biome.Name} {count}", _biomes.Contains(biome.Id), count > 0, () => Toggle(_biomes, biome.Id)));
+        }
+        // Themes the file names, then any a piece names that it does not.
+        var named = _themeList.Select(t => (t.Id, t.Name)).ToList();
+        named.AddRange(_pieces.SelectMany(p => p.Themes).Distinct().Where(id => named.All(n => n.Id != id)).Order().Select(id => (id, id)));
+        foreach (var (id, name) in named)
+        {
+            var count = _pieces.Count(p => p.Themes.Contains(id) && Matches(p, themes: false));
+            _themeChips.AddChild(Chip($"{name} {count}", _themes.Contains(id), count > 0, () => Toggle(_themes, id)));
         }
         foreach (var tag in _pieces.SelectMany(p => p.Tags).Distinct().Order())
         {
@@ -205,6 +222,13 @@ public partial class SetPieceBrowser : PanelContainer
         column.AddChild(Ignore(UiStyle.Label(piece.Id, 15, current ? UiStyle.Accent : UiStyle.Text)));
         column.AddChild(Ignore(UiStyle.Label($"{biomes} · {piece.Props.Length} props · {piece.Clear:0.#} m", 12, UiStyle.Dim)));
         column.AddChild(Ignore(UiStyle.Label($"weight {piece.Weight:0.##} · {(piece.Turn ? "turns" : "fixed")}", 12, UiStyle.Dim)));
+        if (piece.Themes.Length > 0)
+        {
+            var names = piece.Themes.Select(id => _themeList.FirstOrDefault(t => t.Id == id)?.Name ?? id);
+            var themes = Ignore(UiStyle.Label(string.Join(" · ", names), 12, UiStyle.Accent, wrap: true));
+            themes.CustomMinimumSize = new Vector2(Thumb.X, 0f);
+            column.AddChild(themes);
+        }
         var tags = Ignore(UiStyle.Label(piece.Tags.Length > 0 ? string.Join("  ", piece.Tags.Select(t => "#" + t)) : "no tags", 12, piece.Tags.Length > 0 ? UiStyle.Xp : UiStyle.Dim, wrap: true));
         tags.CustomMinimumSize = new Vector2(Thumb.X, 0f);
         column.AddChild(tags);

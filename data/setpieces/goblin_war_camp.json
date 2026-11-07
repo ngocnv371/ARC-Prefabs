@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "camp", "tower", "palisade"],
+  "themes": ["warband"],
   "lore": "War-chief Skrag's lookout, flagged with the colours of three warbands he has beaten. The drums by the tower call the others when strangers come.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Tower_01.fbx", "x": 0, "z": -3.5, "rot": 0, "scale": 1, "block": 1.4 },

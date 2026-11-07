@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["mine", "camp"],
+  "themes": ["lost_delve"],
   "lore": "Where the miners stop to eat between the seams and the surface: a table, some stools and a cart left with its handbrake on.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.65 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "tomb", "ring", "arcane"],
+  "themes": ["dead_god", "kings_bargain"],
   "lore": "Six heretics buried feet-first round an obelisk to pin their souls to the ground. The rune stones are the priests' signature on the job.",
   "props": [
     { "mesh": "dungeon/SM_Env_Obelisk_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },

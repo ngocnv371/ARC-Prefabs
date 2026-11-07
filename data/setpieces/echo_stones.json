@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "rocks", "ring", "ritual"],
+  "themes": ["singing_veins", "untrodden"],
   "lore": "Standing stones that hum when you pass, each with a note of its own. Someone once played a song on them, and the song opened something.",
   "props": [
     { "mesh": "dungeon/SM_Env_Rock_Rectangle_01.fbx", "x": 4.924, "z": -0.868, "rot": 10, "scale": 1.719, "block": 0.55 },

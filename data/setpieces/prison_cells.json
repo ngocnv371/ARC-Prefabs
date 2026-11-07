@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["prison", "walls", "remains"],
+  "themes": ["wardens"],
   "lore": "Three cells for the king's enemies. One door stands open; the prisoner it held did not walk out.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -7.86, "z": -4, "rot": 0, "scale": 1, "block": 0 },

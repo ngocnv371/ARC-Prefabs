@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "tower", "palisade", "ring"],
+  "themes": ["warband"],
   "lore": "A rickety tower behind a ring of fence, where the youngest goblin is made to watch the tunnel. He is very good at it; he is very afraid.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Tower_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 1.4 },

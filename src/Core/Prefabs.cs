@@ -10,7 +10,7 @@ namespace ArcPrefabs.Core;
 /// (open data/setpieces/name.json), <c>--biome=id</c> (start a new piece in that biome),
 /// <c>--seed=N</c> (which map to find regions on), <c>--browse</c> (start on the Browse tab), <c>--render[=name]</c> (write the pictures
 /// next to the pieces' JSON, or one piece's, and quit). <c>--showcase</c> flies through a dungeon built from the pieces
-/// instead (<c>--seed=N</c> picks the dungeon, <c>--biomes=a,b</c> its biomes, <c>--capture=N</c> photographs N rooms
+/// instead (<c>--seed=N</c> picks the dungeon, <c>--biomes=a,b</c> its biomes, <c>--themes=a,b</c> its themes, <c>--capture=N</c> photographs N rooms
 /// into captures/ and quits).
 /// </summary>
 public partial class Prefabs : Node3D
@@ -46,6 +46,7 @@ public partial class Prefabs : Node3D
                 Map = map,
                 Seed = (ulong)Math.Max(seed, 1),
                 Biomes = values.GetValueOrDefault("biomes", "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
+                Themes = values.GetValueOrDefault("themes", "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
                 Capture = int.TryParse(values.GetValueOrDefault("capture"), out var shots) ? shots : 0,
             });
             return;
@@ -66,12 +67,13 @@ public partial class Prefabs : Node3D
         });
     }
 
-    /// <summary>Writes the picture next to every piece's JSON (or only <paramref name="only"/>'s), then quits.</summary>
+    /// <summary>Writes the picture next to every piece's JSON (or only those named in <paramref name="only"/>, commas between), then quits.</summary>
     private async Task Render(WorldMap map, string only)
     {
         var studio = new ThumbnailStudio { Name = "Thumbnails", Map = map };
         AddChild(studio);
-        foreach (var piece in SetPieces.ReadAll().Where(p => only.Length == 0 || p.Id == only))
+        var names = only.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        foreach (var piece in SetPieces.ReadAll().Where(p => names.Length == 0 || names.Contains(p.Id)))
         {
             var biome = map.Biomes.FirstOrDefault(b => piece.Biomes.Contains(b.Id)) ?? map.Biomes[0];
             var path = SetPieces.Folder + piece.Id + ".png";

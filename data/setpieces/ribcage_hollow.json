@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "bones", "remains", "ritual"],
+  "themes": ["dead_god"],
   "lore": "A cult of bone-readers made camp inside the ribs of a dead god, reading the future in the marrow. Their fire has gone out, and so have they.",
   "props": [
     { "mesh": "dungeon/SM_Env_Bone_Ribcage_01.fbx", "x": 0, "z": 0, "rot": 90, "scale": 0.7, "block": 0 },

@@ -1,0 +1,38 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "rocks", "grove"],
+  "themes": ["frosted_veins"],
+  "lore": "Snow falls here through a crack in the roof, a thousand feet below the sky. It has been falling for a hundred years, and a dead tree still reaches for the light.",
+  "lights": [
+    { "x": 0, "z": -0.6, "y": 9, "color": [0.75, 0.85, 1], "range": 9, "energy": 1 }
+  ],
+  "props": [
+    { "mesh": "adventure/SM_Env_TreeDead_02_Snow.fbx", "x": 0, "z": -0.6, "rot": 30, "scale": 0.9, "block": 0.5 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": 1.534, "z": -5.231, "rot": 152.01, "scale": 0.497, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": 4.676, "z": 5.111, "rot": 160.85, "scale": 0.466, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": 0.965, "z": -2.672, "rot": 197.05, "scale": 0.397, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": 6.173, "z": 3.178, "rot": 302.8, "scale": 0.325, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": -1.172, "z": 3.061, "rot": 278.8, "scale": 0.359, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": 5.051, "z": 2.007, "rot": 265.75, "scale": 0.384, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": 1.563, "z": 0.79, "rot": 220.28, "scale": 0.325, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_02.fbx", "x": -1.547, "z": 0.862, "rot": 266.46, "scale": 0.33, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": 1.086, "z": 5.759, "rot": 84.49, "scale": 0.396, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": 0.646, "z": 2.099, "rot": 351.36, "scale": 0.416, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": -6.068, "z": -0.287, "rot": 295.72, "scale": 0.328, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_03.fbx", "x": -5.034, "z": 3.06, "rot": 260.22, "scale": 0.418, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": -2.36, "z": -5.144, "rot": 58.07, "scale": 0.463, "block": 0 },
+    { "mesh": "adventure/SM_Env_SnowPile_01.fbx", "x": -0.863, "z": 5.473, "rot": 243.03, "scale": 0.332, "block": 0 },
+    { "mesh": "adventure/SM_Env_Rock_05_Snow.fbx", "x": 3.445, "z": -4.286, "rot": 74.75, "scale": 1.239, "block": 0.9 },
+    { "mesh": "adventure/SM_Env_Rock_03_Snow.fbx", "x": 3.472, "z": 0.432, "rot": 174.67, "scale": 1.146, "block": 0.9 },
+    { "mesh": "adventure/SM_Env_Rock_05_Snow.fbx", "x": -0.78, "z": 6.512, "rot": 5.74, "scale": 1.076, "block": 0.9 },
+    { "mesh": "adventure/SM_Env_Rock_04_Snow.fbx", "x": -4.089, "z": -2.392, "rot": 212.19, "scale": 0.936, "block": 0.9 },
+    { "mesh": "adventure/SM_Env_Rock_03_Snow.fbx", "x": -2.698, "z": 2.444, "rot": 244.82, "scale": 0.91, "block": 0.9 },
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": -4.088, "z": -2.299, "rot": 20.85, "scale": 0.936, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_02.fbx", "x": 1.025, "z": 3.2, "rot": 204.4, "scale": 1.025, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_01.fbx", "x": -1.598, "z": -4.149, "rot": 223.19, "scale": 0.937, "block": 0 },
+    { "mesh": "adventure/SM_Env_Ice_01.fbx", "x": -5.353, "z": -0.226, "rot": 101.78, "scale": 0.809, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 1.8, "z": 1.4, "rot": 200, "scale": 1, "block": 0 }
+  ]
+}

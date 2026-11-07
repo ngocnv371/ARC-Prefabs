@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "rocks"],
+  "themes": ["untrodden"],
   "lore": "A forest of stone teeth, each one ten thousand years of dripping. Things nest between them that do not like being stepped on.",
   "lights": [
     { "x": 0, "z": 0, "y": 3, "color": [0.35, 0.85, 1], "range": 9, "energy": 0.6 },

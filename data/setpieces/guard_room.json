@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["fort", "camp"],
+  "themes": ["wardens"],
   "lore": "The guards played dice on this table between rounds, and a game is still in play. The off watch sleeps on, in beds they never left.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.65 },

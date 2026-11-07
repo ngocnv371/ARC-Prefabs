@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "machinery", "crystals", "arcane"],
+  "themes": ["singing_veins", "engine_deep"],
   "lore": "A furnace that burns crystal instead of coal, charged by four pylons. It runs hotter than anything in the deep, and it hums.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Tech_Chamber_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.75 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "statue", "ruin"],
+  "themes": ["last_court"],
   "lore": "A grand stair rising to a hall that is no longer there, guarded at its foot by stone sentries. Climb it and you can see across the whole deep.",
   "props": [
     { "mesh": "dungeon/SM_Env_Stairs_Large_01.fbx", "x": 0, "z": -2.4, "rot": 0, "scale": 1, "block": 0 },

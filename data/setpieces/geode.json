@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "crystals", "rocks", "ring"],
+  "themes": ["singing_veins"],
   "lore": "A hollow stone the size of a house, cracked open by the cave's slow shifting. The crystal heart inside has never seen a lamp until now.",
   "props": [
     { "mesh": "dungeon/SM_Env_Rock_Rectangle_01.fbx", "x": 4.2, "z": 0, "rot": 0, "scale": 1.035, "block": 0.45 },

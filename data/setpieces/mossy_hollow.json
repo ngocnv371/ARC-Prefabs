@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "grove", "rocks"],
+  "themes": ["bloom", "untrodden"],
   "lore": "A soft hollow of moss and slabs where water seeps up from below. Wounded beasts come here to lie down; not all of them get up.",
   "lights": [
     { "x": 0, "z": 0, "y": 1, "color": [0.5, 1, 0.6], "range": 7, "energy": 0.6 }

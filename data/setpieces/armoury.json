@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "fort"],
+  "themes": ["smiths"],
   "lore": "The deep smiths' armoury: racks of blades, rows of shields and crates of iron behind a rail. Whatever army it was meant for never came to collect.",
   "lights": [
     { "x": 0, "z": -1, "y": 3, "color": [1, 0.78, 0.5], "range": 7, "energy": 0.8 }

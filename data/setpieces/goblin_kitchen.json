@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "camp"],
+  "themes": ["hovels"],
   "lore": "The cook roasts whatever the hunters bring back, and does not ask what it was. The table is for the chief; everyone else eats off the floor.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Rotisserie_Meat_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.8 },

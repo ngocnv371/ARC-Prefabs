@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "shrine", "arcane", "ring"],
+  "themes": ["dead_god"],
   "lore": "Five rune stones mark the place where the dead come up to remember being alive. The pale flower at the centre only blooms when they are near.",
   "props": [
     { "mesh": "dungeon/SM_Env_GlowingOrb_02.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },

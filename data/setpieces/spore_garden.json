@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "mushrooms"],
+  "themes": ["bloom"],
   "lore": "A garden of glowing spores and tiny lights, tended by no one. Breathe too deep and you will see things that are not there; some of them are.",
   "props": [
     { "mesh": "nature/SM_Plant_Mushrooms_05.fbx", "x": -2.673, "z": 3.697, "rot": 306.89, "scale": 0.907, "block": 0 },

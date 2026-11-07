@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "walls", "treasure"],
+  "themes": ["great_burning"],
   "lore": "The ashes of the Ember Order, a pot each, filed in rows like a library. Thieves broke in looking for gold and found only dust, which did not like being disturbed.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -3.93, "z": -3.93, "rot": 0, "scale": 1, "block": 0 },

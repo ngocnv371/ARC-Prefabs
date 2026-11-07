@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["treasure", "walls"],
+  "themes": ["last_court", "wardens"],
   "lore": "The royal treasury behind thick walls and a stout door. The chests are open and the coin is scattered, but no one ever carried any of it out.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -3.93, "z": -3.93, "rot": 0, "scale": 1, "block": 0 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "ritual", "ring"],
+  "themes": ["warband"],
   "lore": "Six drums round a fire for the war dance before a raid. The beat carries through the rock for miles, and everything that lives down here knows what it means.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Bonfire_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.7 },

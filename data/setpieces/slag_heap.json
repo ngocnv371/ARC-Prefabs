@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "rocks", "mine"],
+  "themes": ["smiths", "molten_heart"],
   "lore": "Where the carts tip the slag from the smelters. Picked over a hundred times, it still turns up a lump of iron or a lost tool now and then.",
   "lights": [
     { "x": 0, "z": 0, "y": 0.6, "color": [1, 0.4, 0.1], "range": 6, "energy": 1 }

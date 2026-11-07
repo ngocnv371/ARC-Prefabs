@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["fort", "camp", "walls"],
+  "themes": ["wardens"],
   "lore": "Two ranks of beds with a chest at each foot, for the king's guard. The chests hold what each soldier could not bear to leave behind.",
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -7.86, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },

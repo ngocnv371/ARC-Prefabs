@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "crystals"],
+  "themes": ["singing_veins"],
   "lore": "A spire of crystal taller than a house, still growing a finger's width a year. The pieces at its foot fell from the top when it rang.",
   "props": [
     { "mesh": "dungeon/SM_Env_Gem_Spike_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 2.6, "block": 1.6 },

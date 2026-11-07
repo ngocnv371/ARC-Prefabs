@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "grove", "remains"],
+  "themes": ["bloom"],
   "lore": "Thorned vines that grow toward warmth, which is why they keep growing over the travellers who rest here.",
   "lights": [
     { "x": 0, "z": 0, "y": 1.5, "color": [0.6, 1, 0.4], "range": 6, "energy": 0.5 }

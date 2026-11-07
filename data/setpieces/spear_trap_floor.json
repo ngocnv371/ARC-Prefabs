@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["trap", "paving"],
+  "themes": ["wardens"],
   "lore": "A floor of grates with spears waiting underneath. Every third grate has fired; the engineer who knew the safe path took it with him.",
   "lights": [
     { "x": 0, "z": 0, "y": 3, "color": [0.55, 0.72, 1], "range": 6, "energy": 0.6 }

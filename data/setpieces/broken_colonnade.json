@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "pillars", "paving", "ruin"],
+  "themes": ["last_court"],
   "lore": "A colonnade over cracked flags, half its pillars fallen. The halls were grand once; this is what grand looks like after a thousand years.",
   "lights": [
     { "x": 0, "z": 0, "y": 8, "color": [0.55, 0.72, 1], "range": 8, "energy": 0.9 }

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["crypt", "ruin", "walls", "tomb"],
+  "themes": ["great_burning"],
   "lore": "The ceiling came down on a grave-robber mid-theft, and his lamp oil set the rest burning. The coffin he was after lies open and empty.",
   "lights": [
     { "x": 1, "z": 0, "y": 6, "color": [1, 0.95, 0.78], "range": 6, "energy": 0.7 }

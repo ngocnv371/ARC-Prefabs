@@ -80,6 +80,7 @@ public partial class SetPiecePainter : Node3D
     private ThumbnailStudio _studio = null!;
     private LineEdit _name = null!;
     private LineEdit _tags = null!;
+    private LineEdit _themes = null!;
     private TextEdit _lore = null!;
     private SetPieceLight[] _lights = []; // kept through a save; the painter does not edit them yet
     private OptionButton _biomes = null!;
@@ -165,6 +166,7 @@ public partial class SetPiecePainter : Node3D
     {
         _name.Text = piece.Id;
         _tags.Text = string.Join(", ", piece.Tags);
+        _themes.Text = string.Join(", ", piece.Themes);
         _lore.Text = piece.Lore;
         _lights = piece.Lights;
         _browser.Current = piece.Id;
@@ -730,11 +732,12 @@ public partial class SetPiecePainter : Node3D
         }
         DirAccess.MakeDirRecursiveAbsolute(ProjectSettings.GlobalizePath(SetPieces.Folder));
         var props = _props.ToArray();
-        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text), Lore = _lore.Text.Trim(), Lights = _lights };
+        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text), Themes = SetPiece.ParseTags(_themes.Text), Lore = _lore.Text.Trim(), Lights = _lights };
         piece.Write(SetPieces.Folder + name + ".json");
         _ = _studio.SavePiece(piece, _biome, SetPieces.Folder + name + ".png", ThumbnailStudio.PieceImage);
         _name.Text = name;
         _tags.Text = string.Join(", ", piece.Tags);
+        _themes.Text = string.Join(", ", piece.Themes);
         _dirty = false;
         _message = $"saved data/setpieces/{name}.json and .png";
         _browser.Current = name;
@@ -895,6 +898,16 @@ public partial class SetPiecePainter : Node3D
         _tags.TextSubmitted += _ => _tags.ReleaseFocus();
         _tags.TextChanged += _ => _dirty = true;
         piece.AddChild(_tags);
+        var themes = SetPieceThemes.Load(Map).All;
+        _themes = new LineEdit
+        {
+            PlaceholderText = "themes: battlefield, great_burning",
+            TooltipText = "Themes the piece belongs to (data/themes.json), so it turns up in runs of rooms with others of them:\n"
+                + string.Join("\n", themes.Select(t => $"{t.Id}: {t.Name}")),
+        };
+        _themes.TextSubmitted += _ => _themes.ReleaseFocus();
+        _themes.TextChanged += _ => _dirty = true;
+        piece.AddChild(_themes);
         _lore = new TextEdit
         {
             PlaceholderText = "lore: who made this place, what happened here",
@@ -917,6 +930,7 @@ public partial class SetPiecePainter : Node3D
             Rebuild();
             _name.Text = "";
             _tags.Text = "";
+            _themes.Text = "";
             _lore.Text = "";
             _lights = [];
             _weight = 1f;

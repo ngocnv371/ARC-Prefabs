@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["goblins", "palisade", "gate"],
+  "themes": ["warband"],
   "lore": "A wall of sharpened stakes thrown across the tunnel, with one way through for the goblins who know it. Torches light the gap so they can find it running.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Goblin_Spikes_01.fbx", "x": -6.4, "z": 0, "rot": 0, "scale": 1, "block": 0 },

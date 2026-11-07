@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["forge", "building"],
+  "themes": ["smiths", "molten_heart"],
   "lore": "The great forge of the deep smiths, where the dungeon's iron was born. The fire has never gone out; the smiths left it burning when they fled.",
   "props": [
     { "mesh": "dungeon/SM_Prop_Forge_FirePit_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 1.4 },

@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["hall", "throne", "pillars", "statue"],
+  "themes": ["last_court", "kings_bargain"],
   "lore": "The empty seat of the last Deep King, who went down to bargain with what lived below and never came back up. His banners still hang behind the throne.",
   "props": [
     { "mesh": "dungeon/SM_Env_Stone_Throne_01.fbx", "x": 0, "z": -6.4, "rot": 0, "scale": 1.5, "block": 0.7 },

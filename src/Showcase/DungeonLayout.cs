@@ -9,10 +9,14 @@ namespace ArcPrefabs.Showcase;
 /// entered from <see cref="In"/> (grid directions, x and z) and has two ways on: <see cref="Out"/>,
 /// the one the camera takes, with a corridor of <see cref="Corridor"/> wall lengths to the next
 /// room, and <see cref="Branch"/>, a corridor of <see cref="BranchLength"/> lengths that ends in a
-/// shut door (0: the door is in the room's wall), so every room offers a choice.
+/// shut door (0: the door is in the room's wall), so every room offers a choice. <see cref="Theme"/>
+/// is the theme of the run of rooms it belongs to, if any, and <see cref="FirstOfRun"/> marks a run's first room.
 /// </summary>
 public sealed record DungeonRoom(int Index, Vector2 Centre, int Span, SetPiece Piece, Biome Biome, float Turn)
 {
+    public SetPieceTheme? Theme { get; init; }
+    public bool FirstOfRun { get; init; }
+
     /// <summary>The length of one wall mesh (SM_Env_Wall_01), the dungeon's grid.</summary>
     public const float Wall = 5.24f;
 
@@ -31,35 +35,69 @@ public sealed record DungeonRoom(int Index, Vector2 Centre, int Span, SetPiece P
 }
 
 /// <summary>
-/// Plans an endless chain of rooms: each holds one set piece of the current biome and has two
-/// exits besides the way in; one leads on down a straight corridor to the next room, picked at
-/// random, and the other down a short one to a shut door. Nothing crosses anything already laid,
-/// and the biome changes every few rooms. The same seed gives the same dungeon.
+/// Plans an endless chain of rooms: each holds one set piece and has two exits besides the way in;
+/// one leads on down a straight corridor to the next room, picked at random, and the other down a
+/// short one to a shut door. Nothing crosses anything already laid. Rooms come in runs of one theme
+/// (data/themes.json: a few in a row, each a different piece of it, and the room's biome is its
+/// piece's); without themes they come in runs of one biome. The same seed gives the same dungeon.
 /// </summary>
 public sealed class DungeonLayout
 {
     private static readonly Vector2I[] Dirs = [new(1, 0), new(0, 1), new(-1, 0), new(0, -1)];
     private const int Keep = 60; // how many laid rooms and corridors new ones keep clear of
 
+    /// <summary>A run of rooms: a theme's pieces, or (without themes) a biome's.</summary>
+    private sealed record Section(SetPieceTheme? Theme, Biome? Biome, SetPiece[] Pool);
+
     private readonly RandomNumberGenerator _rng;
-    private readonly Dictionary<string, SetPiece[]> _byBiome;
     private readonly Biome[] _biomes;
+    private readonly Section[] _sections;
+    private readonly Vector2I _run;
     private readonly List<string> _recent = [];
+    private readonly List<Section> _recentSections = [];
     private readonly List<Rect2> _taken = []; // rooms and corridors already laid
-    private Biome _biome;
-    private int _zoneLeft;
+    private Section? _section;
+    private int _left; // rooms left in the current run
+    private bool _fresh; // the next room starts a run
 
     public List<DungeonRoom> Rooms { get; } = [];
 
-    public DungeonLayout(IReadOnlyList<SetPiece> pieces, IEnumerable<Biome> biomes, ulong seed)
+    /// <param name="only">Theme ids to draw from; empty means all.</param>
+    public DungeonLayout(IReadOnlyList<SetPiece> pieces, IEnumerable<Biome> biomes, SetPieceThemes themes, ulong seed, string[]? only = null)
     {
         _rng = new RandomNumberGenerator { Seed = seed };
-        _byBiome = biomes.ToDictionary(b => b.Id, b => pieces.Where(p => p.Biomes.Contains(b.Id) && p.Props.Length > 0).ToArray());
-        _biomes = biomes.Where(b => _byBiome[b.Id].Length > 0).ToArray();
-        if (_biomes.Length == 0)
+        _biomes = biomes.ToArray();
+        var ids = _biomes.Select(b => b.Id).ToHashSet();
+        var usable = pieces.Where(p => p.Props.Length > 0 && p.Biomes.Any(ids.Contains)).ToArray();
+        // A theme needs two pieces at least to make a run.
+        _sections = themes.All
+            .Where(t => only is not { Length: > 0 } || only.Contains(t.Id))
+            .Select(t => new Section(t, null, usable.Where(p => p.Themes.Contains(t.Id)).ToArray()))
+            .Where(s => s.Pool.Length >= 2)
+            .ToArray();
+        _run = themes.Run;
+        if (_sections.Length == 0)
+        {
+            _sections = _biomes.Select(b => new Section(null, b, usable.Where(p => p.Biomes.Contains(b.Id)).ToArray())).Where(s => s.Pool.Length > 0).ToArray();
+            _run = new Vector2I(4, 7);
+        }
+        if (_sections.Length == 0)
             throw new InvalidOperationException("no set pieces in the showcase's biomes");
-        _biome = _biomes[_rng.RandiRange(0, _biomes.Length - 1)];
-        _zoneLeft = _rng.RandiRange(4, 7);
+    }
+
+    /// <summary>Moves on to a section not seen in the last few, for a run of a few rooms.</summary>
+    private void NextSection()
+    {
+        var fresh = _sections.Where(s => !_recentSections.Contains(s)).ToArray();
+        var pool = fresh.Length > 0 ? fresh : _sections.Where(s => s != _section).DefaultIfEmpty(_sections[0]).ToArray();
+        _section = pool[_rng.RandiRange(0, pool.Length - 1)];
+        _recentSections.Add(_section);
+        if (_recentSections.Count > Math.Min(4, _sections.Length - 1))
+            _recentSections.RemoveAt(0);
+        // A theme's run never repeats a piece, so it is no longer than the theme has pieces.
+        var length = _rng.RandiRange(_run.X, _run.Y);
+        _left = _section.Theme != null ? Math.Min(length, _section.Pool.Length) : length;
+        _fresh = true;
     }
 
     /// <summary>Plans rooms until there are at least <paramref name="count"/>.</summary>
@@ -71,13 +109,15 @@ public sealed class DungeonLayout
 
     private void PlanNext()
     {
-        if (_zoneLeft-- <= 0 && _biomes.Length > 1)
-        {
-            var others = _biomes.Where(b => b != _biome).ToArray();
-            _biome = others[_rng.RandiRange(0, others.Length - 1)];
-            _zoneLeft = _rng.RandiRange(4, 7) - 1;
-        }
-        var piece = PickPiece(_biome);
+        if (_section == null || _left <= 0)
+            NextSection();
+        _left--;
+        var section = _section!;
+        var piece = PickPiece(section);
+        var biome = section.Biome ?? _biomes.First(b => piece.Biomes.Contains(b.Id));
+        var theme = section.Theme;
+        var opens = _fresh;
+        _fresh = false;
         // Twice the piece's own span (rounded up to an odd number of wall lengths, so a doorway
         // sits in the middle of each side): room round the piece for a game to spawn monsters in.
         var fit = Mathf.Clamp((int)Mathf.Ceil(2f * (piece.Clear - 1f) / DungeonRoom.Wall), 3, 7);
@@ -87,7 +127,7 @@ public sealed class DungeonLayout
 
         if (Rooms.Count == 0)
         {
-            var first = new DungeonRoom(0, Vector2.Zero, span, piece, _biome, turn) { In = new Vector2I(0, 1) };
+            var first = new DungeonRoom(0, Vector2.Zero, span, piece, biome, turn) { In = new Vector2I(0, 1), Theme = theme, FirstOfRun = opens };
             Rooms.Add(first);
             _taken.Add(first.Bounds.Grow(-0.1f));
             return;
@@ -115,7 +155,7 @@ public sealed class DungeonLayout
                 _taken.Add(hall);
                 _taken.Add(room.Grow(-0.1f));
                 PlanBranch(last, sides.Where(s => s != dir));
-                Rooms.Add(new DungeonRoom(Rooms.Count, centre, span, piece, _biome, turn) { In = -dir });
+                Rooms.Add(new DungeonRoom(Rooms.Count, centre, span, piece, biome, turn) { In = -dir, Theme = theme, FirstOfRun = opens });
                 return;
             }
         }
@@ -123,7 +163,7 @@ public sealed class DungeonLayout
         last.Out = forward;
         last.Corridor = 8;
         var far = last.Door(forward) + (Vector2)forward * (8 * DungeonRoom.Wall + half);
-        var placed = new DungeonRoom(Rooms.Count, far, span, piece, _biome, turn) { In = -forward };
+        var placed = new DungeonRoom(Rooms.Count, far, span, piece, biome, turn) { In = -forward, Theme = theme, FirstOfRun = opens };
         _taken.Add(placed.Bounds.Grow(-0.1f));
         PlanBranch(last, sides.Where(s => s != forward));
         Rooms.Add(placed);
@@ -172,16 +212,21 @@ public sealed class DungeonLayout
         return false;
     }
 
-    /// <summary>A piece of <paramref name="biome"/> not seen lately, by weight.</summary>
-    private SetPiece PickPiece(Biome biome)
+    /// <summary>A piece of <paramref name="section"/> not seen lately, by weight (in a theme's run, never one already in it).</summary>
+    private SetPiece PickPiece(Section section)
     {
-        var all = _byBiome[biome.Id];
+        var all = section.Pool;
+        if (section.Theme != null)
+        {
+            var inRun = Rooms.TakeLast(_run.Y).Where(r => r.Theme == section.Theme).Select(r => r.Piece.Id).ToHashSet();
+            all = all.Where(p => !inRun.Contains(p.Id)).DefaultIfEmpty(all[0]).ToArray();
+        }
         var fresh = all.Where(p => !_recent.Contains(p.Id)).ToArray();
         var pool = fresh.Length > 0 ? fresh : all;
         var roll = _rng.Randf() * pool.Sum(p => p.Weight);
         var piece = pool.FirstOrDefault(p => (roll -= p.Weight) <= 0f) ?? pool[^1];
         _recent.Add(piece.Id);
-        if (_recent.Count > Math.Max(4, all.Length * 2 / 3))
+        if (_recent.Count > 16) // about the last four runs
             _recent.RemoveAt(0);
         return piece;
     }

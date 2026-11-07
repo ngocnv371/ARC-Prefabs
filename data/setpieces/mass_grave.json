@@ -1,0 +1,33 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["battle", "graveyard", "bones", "remains"],
+  "themes": ["battlefield"],
+  "lore": "When the fighting stopped the gravediggers dug one pit for both sides, and gave up halfway. The officers got swords for headstones; everyone else got the pit.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_BonePile_03.fbx", "x": -1.2, "z": -0.4, "rot": 20, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_BonePile_03.fbx", "x": 1.4, "z": 0.6, "rot": 200, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_BonePile_02.fbx", "x": 0.2, "z": -1.8, "rot": 100, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -3.6, "z": -2.4, "rot": 82.72, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 3.8, "z": -2.2, "rot": 198.47, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -4.2, "z": 1.8, "rot": 26.49, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 4, "z": 2.4, "rot": 240.07, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Straightsword_01.fbx", "x": -3, "z": 3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_01.fbx", "x": -2.6, "z": 3.8, "rot": 3.86, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_GreatSword_01.fbx", "x": -1, "z": 3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": -0.6, "z": 3.8, "rot": 12.01, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_BrokenSword_01.fbx", "x": 1, "z": 3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Round_01.fbx", "x": 1.4, "z": 3.8, "rot": 2.65, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Greatsword_Straight_01.fbx", "x": 3, "z": 3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Plank_01.fbx", "x": 3.4, "z": 3.8, "rot": 13.19, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Cart_02.fbx", "x": -5.4, "z": -0.8, "rot": 100, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 4.8, "z": -0.6, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -4.483, "z": 0.304, "rot": 151.71, "scale": 0.946, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_BrokenSword_01.fbx", "x": -0.813, "z": -3.062, "rot": 226.56, "scale": 0.944, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -2.872, "z": -2.643, "rot": 250.29, "scale": 0.97, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 3.705, "z": 4.358, "rot": 348.39, "scale": 1.068, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -4.188, "z": -2.686, "rot": 288.86, "scale": 1.083, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 1.012, "z": 4.608, "rot": 158.52, "scale": 1.009, "block": 0 }
+  ]
+}

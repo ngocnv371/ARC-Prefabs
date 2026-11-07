@@ -3,6 +3,7 @@
   "weight": 1,
   "turn": true,
   "tags": ["cavern", "mushrooms"],
+  "themes": ["bloom"],
   "lore": "The oldest mushroom in the caverns, older than the city above. Its children ring it at a respectful distance.",
   "props": [
     { "mesh": "dungeon/SM_Env_Mushroom_Giant_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 2.2, "block": 1.1 },
