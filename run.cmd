@@ -5,6 +5,8 @@ rem   run.cmd                          a new piece in the home biome
 rem   run.cmd --biome=frost            a new piece in Rimefrost
 rem   run.cmd grove                    open data/setpieces/grove.json (other options may follow)
 rem   run.cmd --render[=name]          redraw the pictures next to the pieces, minimised, and quit
+rem   run.cmd --showcase               fly through a dungeon built from the pieces (--seed=N, --biomes=a,b)
+rem   run.cmd --capture=N              photograph N rooms of that dungeon into captures\, minimised, and quit
 rem Set GODOT to use another Godot 4.7 .NET editor; set PREFABS_NOBUILD=1 to skip the C# build.
 if not defined GODOT set "GODOT=D:\installed\godot-4.7.2\Godot_v4.7.2-stable_mono_win64\Godot_v4.7.2-stable_mono_win64_console.exe"
 if not exist "%GODOT%" (
@@ -27,7 +29,7 @@ if defined FRESH (
     "%GODOT%" --headless --path "%~dp0." --import >nul 2>&1
 )
 
-echo.%* | findstr /c:"--render" >nul && goto render
+echo.%* | findstr /c:"--render" /c:"--capture" >nul && goto render
 
 set "PIECE=%~1"
 if not defined PIECE goto launch
@@ -43,7 +45,7 @@ exit /b %errorlevel%
 exit /b %errorlevel%
 
 :render
-rem Rendering the pictures opens its window minimised and never takes focus, so it doesn't
+rem Rendering the pictures (or capturing the showcase) opens its window minimised and never takes focus, so it doesn't
 rem interrupt typing elsewhere: Godot reads override.cfg before it opens the window, and it is
 rem removed again afterwards so the painter opens normally.
 set "OVERRIDE=%~dp0override.cfg"

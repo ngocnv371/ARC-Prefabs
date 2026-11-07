@@ -9,3 +9,4 @@
 /data/setpieces/*.import
 # run.cmd --render writes this while it renders (a minimised, unfocusable window).
 /override.cfg
+/captures/

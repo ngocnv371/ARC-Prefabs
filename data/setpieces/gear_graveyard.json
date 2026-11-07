@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["forge", "machinery", "ruin"],
   "lore": "Where broken machines are left to rust once the engine-wrights have taken what is useful. Something is still ticking in the heap.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [1, 0.6, 0.3], "range": 6, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Prop_Tech_Chamber_Broken_01.fbx", "x": -1.4, "z": -1.6, "rot": 20, "scale": 1, "block": 0.75 },
     { "mesh": "dungeon/SM_Env_Wood_Construction_Wheel_04.fbx", "x": 2.4, "z": -1, "rot": 60, "scale": 0.7, "block": 0 },

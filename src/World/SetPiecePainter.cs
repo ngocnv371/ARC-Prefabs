@@ -81,6 +81,7 @@ public partial class SetPiecePainter : Node3D
     private LineEdit _name = null!;
     private LineEdit _tags = null!;
     private TextEdit _lore = null!;
+    private SetPieceLight[] _lights = []; // kept through a save; the painter does not edit them yet
     private OptionButton _biomes = null!;
     private CheckBox _all = null!;
     private CheckBox _turn = null!;
@@ -165,6 +166,7 @@ public partial class SetPiecePainter : Node3D
         _name.Text = piece.Id;
         _tags.Text = string.Join(", ", piece.Tags);
         _lore.Text = piece.Lore;
+        _lights = piece.Lights;
         _browser.Current = piece.Id;
         _weight = piece.Weight;
         _turn.ButtonPressed = piece.Turn;
@@ -728,7 +730,7 @@ public partial class SetPiecePainter : Node3D
         }
         DirAccess.MakeDirRecursiveAbsolute(ProjectSettings.GlobalizePath(SetPieces.Folder));
         var props = _props.ToArray();
-        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text), Lore = _lore.Text.Trim() };
+        var piece = new SetPiece(name, [_biome.Id], _weight, _turn.ButtonPressed, SetPiece.Footprint(props), props) { Tags = SetPiece.ParseTags(_tags.Text), Lore = _lore.Text.Trim(), Lights = _lights };
         piece.Write(SetPieces.Folder + name + ".json");
         _ = _studio.SavePiece(piece, _biome, SetPieces.Folder + name + ".png", ThumbnailStudio.PieceImage);
         _name.Text = name;
@@ -916,6 +918,7 @@ public partial class SetPiecePainter : Node3D
             _name.Text = "";
             _tags.Text = "";
             _lore.Text = "";
+            _lights = [];
             _weight = 1f;
             _dirty = false;
             _message = "new piece";

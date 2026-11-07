@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["hall", "pillars", "paving", "ruin"],
   "lore": "A colonnade over cracked flags, half its pillars fallen. The halls were grand once; this is what grand looks like after a thousand years.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 8, "color": [0.55, 0.72, 1], "range": 8, "energy": 0.9 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Tiles_03.fbx", "x": -5, "z": -7.5, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Tiles_02.fbx", "x": -5, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },

@@ -11,6 +11,13 @@ namespace ArcPrefabs.World;
 public sealed record SetPieceProp(string Mesh, Vector2 Offset, float Rotation, float Scale, float Block);
 
 /// <summary>
+/// A light the piece's author placed where no prop gives one (a glow in a cave, a shaft of light):
+/// around the piece's centre, <see cref="Height"/> metres up, reaching <see cref="Range"/> metres.
+/// Props that burn or glow light themselves (data/lights.json); games without lighting ignore both.
+/// </summary>
+public sealed record SetPieceLight(Vector2 Offset, float Height, Color Color, float Range, float Energy);
+
+/// <summary>
 /// A hand-made layout of props (data/setpieces/*.json, painted with ARC-Prefabs) that
 /// regions of its biomes drop into the field. <see cref="Clear"/> is the radius kept free of the
 /// random scatter; <see cref="Turn"/> lets each placement face a random way. <see cref="Tags"/>
@@ -24,6 +31,8 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
     public string[] Tags { get; init; } = [];
 
     public string Lore { get; init; } = "";
+
+    public SetPieceLight[] Lights { get; init; } = [];
 
     /// <summary>Tags typed as free text: split at commas and spaces, lowercased, each once, in order.</summary>
     public static string[] ParseTags(string text) =>
@@ -59,6 +68,18 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
         {
             Tags = root.TryGetValue("tags", out var tags) ? ParseTags(string.Join(",", tags.AsGodotArray().Select(t => t.AsString()))) : [],
             Lore = root.TryGetValue("lore", out var lore) ? lore.AsString().Trim() : "",
+            Lights = root.TryGetValue("lights", out var lights) ? lights.AsGodotArray().Select(v =>
+            {
+                var l = v.AsGodotDictionary();
+                var c = l.TryGetValue("color", out var col) ? col.AsGodotArray().Select(x => x.AsSingle()).ToArray() : [1f, 0.8f, 0.6f];
+                return new SetPieceLight(
+                    new Vector2(l["x"].AsSingle(), l["z"].AsSingle()),
+                    l.TryGetValue("y", out var y) ? y.AsSingle() : 2f,
+                    new Color(c[0], c[1], c[2]),
+                    l.TryGetValue("range", out var range) ? range.AsSingle() : 5f,
+                    l.TryGetValue("energy", out var energy) ? energy.AsSingle() : 1f
+                );
+            }).ToArray() : [],
         };
     }
 
@@ -75,6 +96,18 @@ public sealed record SetPiece(string Id, string[] Biomes, float Weight, bool Tur
             json.Append($"  \"tags\": [{string.Join(", ", Tags.Select(t => Json.Stringify(t)))}],\n");
         if (Lore.Length > 0)
             json.Append($"  \"lore\": {Json.Stringify(Lore)},\n");
+        if (Lights.Length > 0)
+        {
+            json.Append("  \"lights\": [\n");
+            for (var i = 0; i < Lights.Length; i++)
+            {
+                var l = Lights[i];
+                json.Append($"    {{ \"x\": {F(l.Offset.X)}, \"z\": {F(l.Offset.Y)}, \"y\": {F(l.Height)}, " +
+                    $"\"color\": [{F(l.Color.R)}, {F(l.Color.G)}, {F(l.Color.B)}], \"range\": {F(l.Range)}, \"energy\": {F(l.Energy)} }}");
+                json.Append(i < Lights.Length - 1 ? ",\n" : "\n");
+            }
+            json.Append("  ],\n");
+        }
         json.Append("  \"props\": [\n");
         for (var i = 0; i < Props.Length; i++)
         {

@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["forge", "machinery"],
   "lore": "An engine of brass and pipes that drives the deep's pumps and wheels. Nobody remembers how to stop it, so nobody tries.",
+  "lights": [
+    { "x": 0, "z": -2, "y": 1.5, "color": [1, 0.5, 0.18], "range": 7, "energy": 1 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Prop_Tech_Engine_01.fbx", "x": 0, "z": -2, "rot": 0, "scale": 1, "block": 1 },
     { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": 3.4, "z": -2.2, "rot": 0, "scale": 1, "block": 0.5 },

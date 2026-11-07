@@ -4,6 +4,11 @@
   "turn": true,
   "tags": ["trap", "walls"],
   "lore": "A corridor of floor saws built to guard the treasury. The mechanism still runs, slowly, on the engine's pull from the deep.",
+  "lights": [
+    { "x": 0, "z": -3, "y": 0.5, "color": [1, 0.5, 0.18], "range": 3, "energy": 0.6 },
+    { "x": 0, "z": 0, "y": 0.5, "color": [1, 0.5, 0.18], "range": 3, "energy": 0.6 },
+    { "x": 0, "z": 3, "y": 0.5, "color": [1, 0.5, 0.18], "range": 3, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -2.6, "z": 5.24, "rot": 90, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Wall_Quarter_01.fbx", "x": -2.6, "z": 2.62, "rot": 270, "scale": 1, "block": 0 },

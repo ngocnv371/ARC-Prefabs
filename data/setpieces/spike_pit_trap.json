@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["trap", "remains"],
   "lore": "A spike pit under a trapdoor in the floor of the old guard road. The door gave way under a careless thief, and he is still down there.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [0.55, 0.72, 1], "range": 6, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Prop_Trap_Pit_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Prop_Trap_Pit_Door_L.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },

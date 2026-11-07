@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "grove", "remains"],
   "lore": "Thorned vines that grow toward warmth, which is why they keep growing over the travellers who rest here.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 1.5, "color": [0.6, 1, 0.4], "range": 6, "energy": 0.5 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Vine_Spikes_01.fbx", "x": -4.136, "z": 2.003, "rot": 122.82, "scale": 0.992, "block": 0.6 },
     { "mesh": "dungeon/SM_Env_Vine_Spikes_02.fbx", "x": -1.834, "z": 2.542, "rot": 337.09, "scale": 1.167, "block": 0.6 },

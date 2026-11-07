@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "rocks"],
   "lore": "Broad slabs that sheared from the roof long ago and settled like steps. The cave's beasts use the top one to sun themselves under the glowshrooms.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 4, "color": [0.9, 0.6, 1], "range": 8, "energy": 0.7 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Rock_Flat_Large_02.fbx", "x": -1, "z": -1.5, "rot": 20, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Rock_Flat_Large_01.fbx", "x": 3, "z": 1.5, "rot": 70, "scale": 1, "block": 0 },

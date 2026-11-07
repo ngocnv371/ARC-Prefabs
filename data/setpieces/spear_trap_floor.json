@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["trap", "paving"],
   "lore": "A floor of grates with spears waiting underneath. Every third grate has fired; the engineer who knew the safe path took it with him.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [0.55, 0.72, 1], "range": 6, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": -2.5, "z": -2.5, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Prop_Trap_Spears_Grate_01.fbx", "x": -2.5, "z": 0, "rot": 0, "scale": 1, "block": 0 },

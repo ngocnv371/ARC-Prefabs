@@ -21,6 +21,9 @@ public static class ArcMaterials
     private static Shader FlatShader => Load("arc_flat");
     private static Shader GroundShader => Load("arc_ground");
     private static Shader GrassShader => Load("arc_grass");
+    private static Shader ModelLitShader => Load("arc_model_lit");
+    private static Shader FloorLitShader => Load("arc_floor_lit");
+    private static Shader GlowShader => Load("arc_glow");
 
     /// <summary>Drops every cached shader and material. Call when the game shuts down.</summary>
     public static void Release()
@@ -113,6 +116,47 @@ public static class ArcMaterials
     }
 
     public static ShaderMaterial Ground() => new() { Shader = GroundShader };
+
+    /// <summary>A Synty atlas lit by the showcase's dungeon lights (arc_lit; the game's props are unlit).</summary>
+    public static ShaderMaterial ModelLit(Texture2D texture, Color accent, float rim)
+    {
+        var key = $"modellit|{texture.GetRid()}|{accent}|{rim}";
+        if (Cache.TryGetValue(key, out var cached))
+            return cached;
+        var material = new ShaderMaterial { Shader = ModelLitShader };
+        material.SetShaderParameter("uTex", texture);
+        material.SetShaderParameter("uAccent", Rgb(accent));
+        material.SetShaderParameter("uRim", rim);
+        Cache[key] = material;
+        return material;
+    }
+
+    /// <summary>The showcase's flagstone floor in a biome's ground colours, lit by the dungeon lights.</summary>
+    public static ShaderMaterial FloorLit(Vector3 lush, Vector3 deep, Vector3 dry)
+    {
+        var key = $"floorlit|{lush}|{deep}|{dry}";
+        if (Cache.TryGetValue(key, out var cached))
+            return cached;
+        var material = new ShaderMaterial { Shader = FloorLitShader };
+        material.SetShaderParameter("uLush", lush);
+        material.SetShaderParameter("uDeep", deep);
+        material.SetShaderParameter("uDry", dry);
+        Cache[key] = material;
+        return material;
+    }
+
+    /// <summary>A light's marker in the showcase: an additive disc facing the camera.</summary>
+    public static ShaderMaterial Glow(Color color, float strength = 1f)
+    {
+        var key = $"glow|{color}|{strength}";
+        if (Cache.TryGetValue(key, out var cached))
+            return cached;
+        var material = new ShaderMaterial { Shader = GlowShader };
+        material.SetShaderParameter("uColor", Rgb(color));
+        material.SetShaderParameter("uStrength", strength);
+        Cache[key] = material;
+        return material;
+    }
 
     /// <summary>The grass blades' material; the field gives it the same maps as the ground.</summary>
     public static ShaderMaterial Grass() => new() { Shader = GrassShader };

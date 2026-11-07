@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["forge", "rocks", "mine"],
   "lore": "Where the carts tip the slag from the smelters. Picked over a hundred times, it still turns up a lump of iron or a lost tool now and then.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 0.6, "color": [1, 0.4, 0.1], "range": 6, "energy": 1 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.6, "block": 1.4 },
     { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 2.6, "z": 1.2, "rot": 70, "scale": 1.2, "block": 1 },

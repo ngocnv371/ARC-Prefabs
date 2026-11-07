@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["forge", "machinery"],
   "lore": "Great wheels turning in slots in the floor, gearing the engine to the lifts above. Step carefully; the cogs do not stop for anyone.",
+  "lights": [
+    { "x": 0, "z": -1.5, "y": 2, "color": [1, 0.5, 0.18], "range": 6, "energy": 0.8 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Wood_Construction_Wheel_02.fbx", "x": 0, "z": -1.5, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": 0, "z": -4, "rot": 0, "scale": 1, "block": 0.6 },

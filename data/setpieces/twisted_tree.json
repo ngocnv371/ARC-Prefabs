@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "grove"],
   "lore": "A tree that found a crack of daylight a thousand feet up and grew toward it anyway. Ferns and flowers have gathered in its shade like pilgrims.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 8, "color": [1, 0.95, 0.78], "range": 7, "energy": 1.1 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Tree_Twisted_01.fbx", "x": 0, "z": 0, "rot": 30, "scale": 1.2, "block": 0.6 },
     { "mesh": "dungeon/SM_Env_Roots_01.fbx", "x": 1.504, "z": -0.547, "rot": 110, "scale": 1.329, "block": 0 },

@@ -4,6 +4,10 @@
   "turn": true,
   "tags": ["cavern", "rocks"],
   "lore": "A forest of stone teeth, each one ten thousand years of dripping. Things nest between them that do not like being stepped on.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [0.35, 0.85, 1], "range": 9, "energy": 0.6 },
+    { "x": 4, "z": -3, "y": 1.5, "color": [0.35, 0.85, 1], "range": 4, "energy": 0.5 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -4.491, "z": 4.021, "rot": 183.57, "scale": 1.892, "block": 0.3 },
     { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 4.771, "z": -3.972, "rot": 250.54, "scale": 1.314, "block": 0.3 },

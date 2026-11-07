@@ -22,13 +22,14 @@ public static class SyntyModels
 
     /// <summary>A fresh copy of <paramref name="path"/> (relative to assets/synty) with ARC materials.</summary>
     /// <remarks><paramref name="scenery"/> props cannot flash or fade, which keeps them out of
-    /// the shader instance-uniform buffer.</remarks>
-    public static Node3D? Instance(string path, string atlas, float rim = 0.3f, Color? accent = null, bool scenery = false)
+    /// the shader instance-uniform buffer. <paramref name="lit"/> props take the showcase's dungeon
+    /// lights (arc_model_lit) and are always scenery.</remarks>
+    public static Node3D? Instance(string path, string atlas, float rim = 0.3f, Color? accent = null, bool scenery = false, bool lit = false)
     {
-        var key = $"{path}|{atlas}|{rim}|{accent}|{scenery}";
+        var key = $"{path}|{atlas}|{rim}|{accent}|{scenery}|{lit}";
         if (!Prototypes.TryGetValue(key, out var prototype))
         {
-            prototype = Load(path, atlas, rim, accent ?? NeutralRim, scenery);
+            prototype = Load(path, atlas, rim, accent ?? NeutralRim, scenery, lit);
             Prototypes[key] = prototype;
         }
 
@@ -66,7 +67,7 @@ public static class SyntyModels
         return box;
     }
 
-    private static Node3D? Load(string path, string atlas, float rim, Color accent, bool scenery)
+    private static Node3D? Load(string path, string atlas, float rim, Color accent, bool scenery, bool lit)
     {
         var full = Root + path;
         if (!ResourceLoader.Exists(full))
@@ -81,7 +82,7 @@ public static class SyntyModels
             return null;
 
         var texture = GD.Load<Texture2D>(Root + atlas);
-        var material = ArcMaterials.Model(Colors.White, accent, rim, texture, scenery: scenery);
+        var material = lit ? ArcMaterials.ModelLit(texture, accent, rim) : ArcMaterials.Model(Colors.White, accent, rim, texture, scenery: scenery);
         foreach (var mesh in scene.FindChildren("*", nameof(MeshInstance3D), true, false).Cast<MeshInstance3D>())
         {
             mesh.CastShadow = GeometryInstance3D.ShadowCastingSetting.Off;

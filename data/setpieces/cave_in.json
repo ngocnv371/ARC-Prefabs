@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "rocks", "ruin"],
   "lore": "The roof came down here last spring and the rock is still settling. Listen and you can hear it deciding whether to come down again.",
+  "lights": [
+    { "x": 0, "z": 2, "y": 3, "color": [1, 0.95, 0.78], "range": 6, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": 0, "z": -1, "rot": 15, "scale": 1, "block": 1.2 },
     { "mesh": "dungeon/SM_Env_RockPile_Square_04.fbx", "x": -2.6, "z": 0.8, "rot": 80, "scale": 1, "block": 1 },

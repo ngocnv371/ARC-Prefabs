@@ -1,5 +1,6 @@
 using Godot;
 using ArcPrefabs.Render;
+using ArcPrefabs.Showcase;
 using ArcPrefabs.World;
 
 namespace ArcPrefabs.Core;
@@ -8,7 +9,9 @@ namespace ArcPrefabs.Core;
 /// Opens the <see cref="SetPiecePainter"/>. Options (after <c>--</c>): <c>--paint=name</c>
 /// (open data/setpieces/name.json), <c>--biome=id</c> (start a new piece in that biome),
 /// <c>--seed=N</c> (which map to find regions on), <c>--browse</c> (start on the Browse tab), <c>--render[=name]</c> (write the pictures
-/// next to the pieces' JSON, or one piece's, and quit).
+/// next to the pieces' JSON, or one piece's, and quit). <c>--showcase</c> flies through a dungeon built from the pieces
+/// instead (<c>--seed=N</c> picks the dungeon, <c>--biomes=a,b</c> its biomes, <c>--capture=N</c> photographs N rooms
+/// into captures/ and quits).
 /// </summary>
 public partial class Prefabs : Node3D
 {
@@ -35,6 +38,18 @@ public partial class Prefabs : Node3D
             },
         });
         var map = WorldMap.Load(int.TryParse(values.GetValueOrDefault("seed"), out var seed) ? seed : 1);
+        if (values.ContainsKey("showcase") || values.ContainsKey("capture"))
+        {
+            AddChild(new DungeonShowcase
+            {
+                Name = "Showcase",
+                Map = map,
+                Seed = (ulong)Math.Max(seed, 1),
+                Biomes = values.GetValueOrDefault("biomes", "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries),
+                Capture = int.TryParse(values.GetValueOrDefault("capture"), out var shots) ? shots : 0,
+            });
+            return;
+        }
         if (values.TryGetValue("render", out var render))
         {
             _ = Render(map, render);

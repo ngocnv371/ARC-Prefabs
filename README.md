@@ -9,6 +9,7 @@ run.cmd                        # a new piece in the home biome
 run.cmd --biome=frost          # a new piece in Rimefrost
 run.cmd grove                  # open data/setpieces/grove.json (other options may follow)
 run.cmd --browse               # start on the Browse tab
+run.cmd --showcase             # fly through a dungeon built from the pieces
 ```
 
 Set `GODOT` to use another Godot 4.7 .NET editor and `PREFABS_NOBUILD=1` to skip the C# build.
@@ -23,8 +24,9 @@ The project has its own data and nothing points at a game:
   roguelike deep: `crypt` (Hollow Crypts), `warrens` (Goblin Warrens), `caverns` (Glimmer
   Caverns), `forge` (Molten Deep) and `halls` (Fallen Halls), bare stone with no grass.
 - `data/setpieces/*.json` are the pieces. Their optional `tags` are lowercase words for finding
-  them in Browse, and their optional `lore` a line or two on who made the place and what
-  happened there, to steer how it is dressed (games ignore both). Saving writes `data/setpieces/name.json` here, and
+  them in Browse, their optional `lore` a line or two on who made the place and what
+  happened there, to steer how it is dressed, and their optional `lights` the lights the
+  author placed where no prop burns or glows (games ignore all three). Saving writes `data/setpieces/name.json` here, and
   beside it `name.png`, a 1024×768 picture from the game camera's angle on the biome's
   ground, so tools without Godot can see what a piece looks like. `run.cmd --render` redraws
   every picture (`--render=name` one) and quits.
@@ -77,10 +79,28 @@ Obstacles in the game are circles, so a wall blocks nothing itself: line it with
 turned round over the same span (the two broken edges are each other's mirror). A wall's pivot
 is at one end, as is a paving tile's at a corner.
 
+## Showcase
+
+`run.cmd --showcase` shows the pieces off: an endless dungeon of walled rooms, one piece in
+each, joined by torch-lit corridors, with a camera gliding just over the wall tops. The biome
+changes every few rooms, and each room's biome, name and lore show at the foot of the screen.
+Space pauses, Up and Down change speed, Right skips to the next room, H hides the text and Esc
+quits. `--seed=N` picks another dungeon and `--biomes=crypt,forge` its biomes (the five dungeon
+ones by default). `run.cmd --capture=N` photographs the first N rooms into `captures/` (a
+minimised window that never takes focus) and quits.
+
+ARC's shaders are unlit, so the showcase lights the dungeon itself: every light near the camera
+is baked into a map over the ground that lit copies of the prop and floor shaders read
+(`shaders/arc_lit.gdshaderinc`; the game's shaders are untouched). `data/lights.json` sets the
+dark, the fade with distance, a soft fill per biome, and which props give light (braziers,
+candles, torches, fires, lava, crystals, glowing orbs...), each with a glowing marker where its
+light comes from. A piece with nothing that glows gets `lights` of its own in its JSON; the
+painter keeps them when it saves but does not edit them yet.
+
 ## Code
 
 `src/World/SetPiecePainter.cs` is the painter, `SetPieceBrowser.cs` its Browse tab and
-`ThumbnailStudio.cs` the pictures. The field (`Field.cs`, `WorldMap.cs`, `Grass.cs`,
+`ThumbnailStudio.cs` the pictures; `src/Showcase` is the showcase. The field (`Field.cs`, `WorldMap.cs`, `Grass.cs`,
 `GroundMarks.cs`), camera (`CameraRig.cs`), set piece format (`SetPieces.cs`), Synty loading
 and ARC materials (`src/Render`) and `shaders/arc_*` started as copies of Rogue Guys'; when a
 game changes how the ground or a piece looks or reads, bring the change here too.

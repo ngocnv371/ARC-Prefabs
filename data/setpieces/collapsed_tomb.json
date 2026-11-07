@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["crypt", "ruin", "walls", "tomb"],
   "lore": "The ceiling came down on a grave-robber mid-theft, and his lamp oil set the rest burning. The coffin he was after lies open and empty.",
+  "lights": [
+    { "x": 1, "z": 0, "y": 6, "color": [1, 0.95, 0.78], "range": 6, "energy": 0.7 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Wall_01.fbx", "x": -5.24, "z": -3, "rot": 0, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Wall_01.fbx", "x": 0, "z": -3, "rot": 180, "scale": 1, "block": 0 },

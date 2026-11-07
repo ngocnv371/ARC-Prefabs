@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "bones", "remains"],
   "lore": "The spine of a beast long dead, laid bare in the rock where the floor wore away. Scholars argue about its head; the head is not saying.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 1, "color": [0.5, 0.8, 1], "range": 8, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Bone_Spine_01.fbx", "x": 0, "z": 0, "rot": 90, "scale": 0.45, "block": 0 },
     { "mesh": "dungeon/SM_Env_Brick_Rubble_05.fbx", "x": -4.5, "z": 0, "rot": 0, "scale": 1, "block": 1 },

@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["cavern", "grove", "rocks"],
   "lore": "A soft hollow of moss and slabs where water seeps up from below. Wounded beasts come here to lie down; not all of them get up.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 1, "color": [0.5, 1, 0.6], "range": 7, "energy": 0.6 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Rock_Flat_02.fbx", "x": -2, "z": -1, "rot": 39.81, "scale": 1, "block": 0 },
     { "mesh": "dungeon/SM_Env_Rock_Flat_04.fbx", "x": 2.2, "z": 0.4, "rot": 342.48, "scale": 1, "block": 0 },

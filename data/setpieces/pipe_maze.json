@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["forge", "machinery"],
   "lore": "A tangle of pipes, valves and a turbine that carries steam from the deep vents to the engine. The levers are labelled in a language no one reads anymore.",
+  "lights": [
+    { "x": -2, "z": -1.4, "y": 1, "color": [1, 0.5, 0.18], "range": 6, "energy": 0.8 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": -4, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },
     { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": -2, "z": -1.4, "rot": 90, "scale": 1, "block": 0.4 },

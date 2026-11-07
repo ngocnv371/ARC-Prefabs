@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["goblins", "rocks"],
   "lore": "A ring of boulders where the goblins hide to wait for travellers. The chest in the middle is bait, and it is empty.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 2, "color": [0.8, 0.6, 0.4], "range": 5, "energy": 0.5 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_RockPile_Pillar_01.fbx", "x": 3.682, "z": -0.583, "rot": 10, "scale": 0.953, "block": 0.85 },
     { "mesh": "dungeon/SM_Env_RockPile_Pillar_02.fbx", "x": 1.786, "z": -3.401, "rot": 61.43, "scale": 1.287, "block": 0.45 },

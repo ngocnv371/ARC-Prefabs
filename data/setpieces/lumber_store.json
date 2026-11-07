@@ -4,6 +4,9 @@
   "turn": true,
   "tags": ["mine", "camp"],
   "lore": "Every prop in the warren comes from this pile of timber, dragged down from the forests above. The goblins use the platform as a stage on feast nights.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 2.5, "color": [1, 0.78, 0.5], "range": 6, "energy": 0.7 }
+  ],
   "props": [
     { "mesh": "dungeon/SM_Env_Wood_Platform_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 1.5 },
     { "mesh": "adventure/SM_Prop_Logpile_01.fbx", "x": -3.6, "z": -1.2, "rot": 90, "scale": 1, "block": 0.9 },
