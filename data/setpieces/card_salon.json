@@ -1,0 +1,33 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["hall", "tavern"],
+  "themes": ["last_court"],
+  "lore": "The courtiers played cards here for land, titles and each other's daughters. One game is still in play; the dealer is waiting for a player to take the empty seat.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": -2.6, "z": -1.6, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -1.647, "z": -2.15, "rot": 281.7, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": -3.553, "z": -2.15, "rot": 210.31, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": -2.6, "z": -0.5, "rot": 140.25, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -2.6, "z": -1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": -2.3, "z": -1.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 2.4, "z": -1.4, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 3.353, "z": -1.95, "rot": 103.73, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": 1.447, "z": -1.95, "rot": 33.96, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": 2.4, "z": -0.3, "rot": 118.89, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 2.4, "z": -1.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 2.7, "z": -1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": 0, "z": 2, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 0.953, "z": 1.45, "rot": 345.26, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": -0.953, "z": 1.45, "rot": 16.56, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": -0, "z": 3.1, "rot": 22.04, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0, "z": 2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_01.fbx", "x": 0.3, "z": 2.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bookcase_01.fbx", "x": -4.6, "z": 1, "rot": 90, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Bookcase_02.fbx", "x": 4.6, "z": 1, "rot": 270, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -4.4, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 4.4, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.fbx", "x": 0.9, "z": 2.8, "rot": 160, "scale": 1, "block": 0 }
+  ]
+}

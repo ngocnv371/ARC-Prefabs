@@ -34,7 +34,8 @@ The project has its own data and nothing points at a game:
 - `data/themes.json` lists the themes: stories that run over several rooms, so a run meets a few
   rooms of one in a row before moving on, such as the Forgotten Battlefield, the Frosted Veins
   (cold, ice and snow), the Great Burning (the aftermath of a fire), the Plague Year or Skrag's
-  Warband. There are 18, each with 5 to 9 pieces, and a piece may be in several; its biome still
+  Warband, the Wyrm's Hoard, the Undermarket, the Red Eye Cult, the Pilgrims' Road or the
+  Rootworks. There are 23, each with 8 to 16 pieces, and a piece may be in several; its biome still
   sets its floor and walls. A theme can also dress its rooms: recolour the floor, tint the light and
   strew its own clutter. Games ignore themes for now. A game that uses them should place pieces of
   one theme near each other.

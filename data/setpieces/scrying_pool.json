@@ -1,0 +1,33 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["arcane", "water", "ring"],
+  "themes": ["kings_bargain"],
+  "lore": "The king's seers watched the deep in this water and told him what they saw. They saw what they were shown, and they were shown what it wanted the king to hear.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 1.4, "color": [0.55, 0.45, 1], "range": 6, "energy": 0.9 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Vessel_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.6, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_01.fbx", "x": 2.4, "z": 0, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_03.fbx", "x": 1.2, "z": -2.078, "rot": 330, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_02.fbx", "x": -1.2, "z": -2.078, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_05.fbx", "x": -2.4, "z": -0, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Rounded_04.fbx", "x": -1.2, "z": 2.078, "rot": 150, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_02.fbx", "x": 1.2, "z": 2.078, "rot": 210, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.546, "z": -2.546, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.546, "z": -2.546, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.546, "z": 2.546, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.546, "z": 2.546, "rot": 225, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": 0, "z": -5, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": -4.33, "z": 2.5, "rot": 120, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Rune_Pillar_04.fbx", "x": 4.33, "z": 2.5, "rot": 240, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Bookcase_03.fbx", "x": -4.6, "z": 1.6, "rot": 70, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_StoneChair_01.fbx", "x": 0, "z": 1.8, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Vial_01.fbx", "x": 1.064, "z": 2.714, "rot": 291.95, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Vial_01.fbx", "x": 0.211, "z": 2.005, "rot": 276.61, "scale": 1.071, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": -1.135, "z": 2.138, "rot": 190.16, "scale": 0.988, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Book_01.fbx", "x": -1.987, "z": 0.92, "rot": 218.23, "scale": 1.095, "block": 0 }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "grove", "arcane", "ring"],
+  "themes": ["rootworks", "bloom"],
+  "lore": "The taproot of the forest above ends here, and it glows. Every root in the deep runs back to this tree, and it knows who walks on them.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [0.6, 1, 0.5], "range": 7, "energy": 0.8 }
+  ],
+  "props": [
+    { "mesh": "nature/SM_Tree_Swamp_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.5, "block": 1.2 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": 2.167, "z": -0.382, "rot": 10, "scale": 2.953, "block": 0.6 },
+    { "mesh": "nature/SM_Swamp_Root_02.fbx", "x": 0.752, "z": -2.067, "rot": 70, "scale": 2.911, "block": 0.6 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": -1.414, "z": -1.685, "rot": 130, "scale": 2.723, "block": 0.6 },
+    { "mesh": "nature/SM_Swamp_Root_02.fbx", "x": -2.167, "z": 0.382, "rot": 190, "scale": 2.949, "block": 0.6 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": -0.752, "z": 2.067, "rot": 250, "scale": 2.708, "block": 0.6 },
+    { "mesh": "nature/SM_Swamp_Root_02.fbx", "x": 1.414, "z": 1.685, "rot": 310, "scale": 3.332, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_GlowingOrb_03.fbx", "x": 0.8, "z": -1.386, "rot": 60, "scale": 1, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_GlowingOrb_03.fbx", "x": -1.6, "z": -0, "rot": 180, "scale": 1, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_GlowingOrb_03.fbx", "x": 0.8, "z": 1.386, "rot": 300, "scale": 1, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": 4.632, "z": -0.024, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 3.614, "z": -2.764, "rot": 36, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 1.479, "z": -4.304, "rot": 72, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_03.fbx", "x": -1.165, "z": -3.96, "rot": 108, "scale": 1, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -3.774, "z": -2.278, "rot": 144, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": -4.296, "z": -0.218, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": -3.525, "z": 2.348, "rot": 216, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Giant_03.fbx", "x": -0.875, "z": 4.678, "rot": 252, "scale": 1, "block": 0.25 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": 1.74, "z": 4.011, "rot": 288, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 3.689, "z": 2.922, "rot": 324, "scale": 1, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_02.fbx", "x": -5.5, "z": -2.912, "rot": 351.54, "scale": 0.861, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_01.fbx", "x": -3.386, "z": 0.814, "rot": 312.13, "scale": 1.053, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_02.fbx", "x": -3.484, "z": -1.569, "rot": 3.48, "scale": 0.903, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 3.983, "z": 1.286, "rot": 85.56, "scale": 0.866, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_03.fbx", "x": 3.917, "z": 5.469, "rot": 225.66, "scale": 0.934, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_02.fbx", "x": 1.548, "z": 6.718, "rot": 127.35, "scale": 1.125, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_03.fbx", "x": 1.788, "z": -3.116, "rot": 173.02, "scale": 1.084, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_01.fbx", "x": -1.838, "z": -4.738, "rot": 154.75, "scale": 1.1, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_01.fbx", "x": -3.974, "z": 3.162, "rot": 61.92, "scale": 0.963, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -2.685, "z": 4.341, "rot": 86.79, "scale": 0.947, "block": 0 }
+  ]
+}

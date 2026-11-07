@@ -117,7 +117,7 @@ public partial class DungeonShowcase : Node3D
             case Key.Space: _paused = !_paused; break;
             case Key.Up: _speed = Mathf.Min(_speed * 1.25f, 30f); break;
             case Key.Down: _speed = Mathf.Max(_speed / 1.25f, 1f); break;
-            case Key.Right: _s = CentreAlong(_room + 1) - 6f; break;
+            case Key.Right: _s = ViewAlong(_room + 1); break;
             case Key.H: _hud.Visible = !_hud.Visible; break;
             case Key.Escape: GetTree().Quit(); break;
             default: return;
@@ -200,6 +200,14 @@ public partial class DungeonShowcase : Node3D
     {
         var entry = _centres.FirstOrDefault(c => c.Room == room, _centres[^1]);
         return _along[entry.Point];
+    }
+
+    /// <summary>Where along the path the whole of <paramref name="room"/> is in view: just inside its doorway, before the camera rises over its middle.</summary>
+    private float ViewAlong(int room)
+    {
+        Extend();
+        room = Math.Min(room, _layout.Rooms.Count - 2);
+        return CentreAlong(room) - _layout.Rooms[room].Half * 0.8f;
     }
 
     /// <summary>The room whose centre the camera has most recently passed, or is about to reach.</summary>
@@ -512,7 +520,7 @@ public partial class DungeonShowcase : Node3D
 
         for (var i = 0; i < Capture; i++)
         {
-            _s = CentreAlong(i + 1) - _layout.Rooms[i + 1].Half * 0.8f;
+            _s = ViewAlong(i + 1);
             Follow(1f);
             eye.GlobalTransform = _camera.GlobalTransform;
             // A minimised window (run.cmd --capture) only rarely draws, so draw a few frames here;

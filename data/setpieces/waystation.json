@@ -1,0 +1,30 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["camp", "tavern", "building"],
+  "themes": ["pilgrims_road"],
+  "lore": "A well, two tables and a sign that points down. The brothers who kept the station are long gone, but the water is still sweet and someone still trims the lanterns.",
+  "props": [
+    { "mesh": "adventure/SM_Bld_Well_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_StoneTable_01.fbx", "x": -3.4, "z": 1.4, "rot": 90, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -2.3, "z": 1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": -4.5, "z": 1.4, "rot": 270, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": -3.4, "z": 1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_StoneTable_01.fbx", "x": 3.4, "z": 1.4, "rot": 90, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 2.3, "z": 1.4, "rot": 270, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Bench_01.fbx", "x": 4.5, "z": 1.4, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 3.4, "z": 1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Crate_01.fbx", "x": -4.2, "z": -3.2, "rot": 20, "scale": 1, "block": 0.5 },
+    { "mesh": "adventure/SM_Prop_Barrel_01.fbx", "x": -3.2, "z": -3.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "adventure/SM_Prop_Barrel_02.fbx", "x": 4, "z": -3.4, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "adventure/SM_Prop_RoadSign_01.fbx", "x": 2.2, "z": -3, "rot": 340, "scale": 1, "block": 0.2 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": -1.8, "z": -3.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": 1.4, "z": 3.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -5.478, "z": 0.098, "rot": 94.47, "scale": 0.879, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_07.fbx", "x": 5.746, "z": 2.824, "rot": 339.77, "scale": 0.99, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_05.fbx", "x": -2.905, "z": 5.045, "rot": 339.34, "scale": 1.051, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": -0.621, "z": -5.533, "rot": 228.71, "scale": 1.009, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_07.fbx", "x": 5.713, "z": -1.65, "rot": 296.14, "scale": 0.93, "block": 0 }
+  ]
+}

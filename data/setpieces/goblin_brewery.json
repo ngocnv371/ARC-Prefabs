@@ -1,0 +1,31 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "camp", "mushrooms"],
+  "themes": ["hovels"],
+  "lore": "Grog is mushrooms, rainwater and whatever fell in, boiled until it stops moving. The brewer tastes every batch, which is why the brewer keeps changing.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": 0, "z": -0.6, "rot": 0, "scale": 1.3, "block": 0.6 },
+    { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0, "z": -0.6, "rot": 0, "scale": 0.8, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Large_01.fbx", "x": -3.6, "z": -2.6, "rot": 30, "scale": 0.55, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Barrel_03.fbx", "x": 2.6, "z": -2.8, "rot": 77.62, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Barrel_02.fbx", "x": 3.4, "z": -1.8, "rot": 256.79, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": 3, "z": -0.6, "rot": 37.31, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": -1.969, "z": 1.79, "rot": 322.87, "scale": 0.947, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": -3.127, "z": 1.117, "rot": 184.61, "scale": 1.148, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -1.888, "z": 2.676, "rot": 230.22, "scale": 0.967, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": 2.736, "z": 2.095, "rot": 348.15, "scale": 0.91, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 2.033, "z": 2.69, "rot": 87, "scale": 0.906, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -0.562, "z": 2.026, "rot": 218.53, "scale": 1.144, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_03.fbx", "x": 1.625, "z": 1.482, "rot": 245.46, "scale": 0.885, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_01.fbx", "x": 3.718, "z": -0.47, "rot": 314.16, "scale": 1.037, "block": 0.38 },
+    { "mesh": "dungeon/SM_Item_Jar_01.fbx", "x": 1.858, "z": 2.212, "rot": 4.16, "scale": 1.036, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Barrel_Broken_01.fbx", "x": -2.96, "z": -0.886, "rot": 337.79, "scale": 0.924, "block": 0.38 },
+    { "mesh": "dungeon/SM_Item_Jar_02.fbx", "x": -3.876, "z": 0.541, "rot": 57.05, "scale": 0.914, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Jar_01.fbx", "x": 4.47, "z": -1.213, "rot": 13.96, "scale": 1.05, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Table_Round_01.fbx", "x": -2.6, "z": 1.6, "rot": 0, "scale": 1, "block": 0.65 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": -2.6, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.fbx", "x": -3.8, "z": 2.4, "rot": 140, "scale": 1, "block": 0 }
+  ]
+}

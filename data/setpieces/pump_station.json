@@ -1,0 +1,28 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery", "water"],
+  "themes": ["engine_deep"],
+  "lore": "Without these pumps the lower forges would be underwater in a week. They have been running for three hundred years on a mechanism nobody living has seen the inside of.",
+  "lights": [
+    { "x": 0, "z": -2.6, "y": 1.2, "color": [0.4, 0.8, 1], "range": 6, "energy": 0.5 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_Grate_Ground_01.fbx", "x": -2.2, "z": -2.4, "rot": 0, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grate_Ground_01.fbx", "x": 2.2, "z": -2.4, "rot": 0, "scale": 1.4, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stone_Vessel_01.fbx", "x": 0, "z": -2.6, "rot": 0, "scale": 1.4, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": -1.4, "z": 0.6, "rot": 0, "scale": 1.2, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": 1.4, "z": 0.6, "rot": 0, "scale": 1.2, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Tech_Engine_01.fbx", "x": 0, "z": 2.6, "rot": 180, "scale": 0.8, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_02.fbx", "x": -3.4, "z": 1, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 3.4, "z": 1, "rot": 90, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": -3.6, "z": 2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 3.6, "z": 2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_02.fbx", "x": -1.455, "z": 5.605, "rot": 289.26, "scale": 1.001, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": 4.253, "z": 4.591, "rot": 167, "scale": 0.897, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": -4.131, "z": 2.814, "rot": 42.12, "scale": 1.118, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -3.06, "z": 3.997, "rot": 50.55, "scale": 1.055, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": 2.435, "z": 4.379, "rot": 212.11, "scale": 0.919, "block": 0 }
+  ]
+}

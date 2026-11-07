@@ -1,0 +1,28 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["battle", "camp", "tents"],
+  "themes": ["battlefield"],
+  "lore": "The besiegers' camp, pitched for a siege of a week that lasted a year. The fire is still banked, as if someone means to come back to it.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_02.fbx", "x": -3.6, "z": -2.6, "rot": 20, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": 3.4, "z": -2.8, "rot": 335, "scale": 1, "block": 1.6 },
+    { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0, "z": -0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 1.126, "z": -0.65, "rot": 300, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": -0.65, "z": -1.126, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -1.126, "z": 0.65, "rot": 120, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_03.fbx", "x": 0.65, "z": 1.126, "rot": 210, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": -0.2, "z": -3.8, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "adventure/SM_Prop_Cart_02.fbx", "x": 4.6, "z": 1.2, "rot": 270, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_02.fbx", "x": -4.4, "z": 1, "rot": 10, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": -4.8, "z": 2, "rot": 0, "scale": 1, "block": 0.38 },
+    { "mesh": "dungeon/SM_Wep_Banner_01.fbx", "x": -1.6, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_01.fbx", "x": 1.6, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Spear_01.fbx", "x": -1.578, "z": 1.354, "rot": 259.95, "scale": 1.052, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Ornate_Spear_01.fbx", "x": -3.279, "z": 1.532, "rot": 15.59, "scale": 0.955, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": 3.466, "z": 1.636, "rot": 15.92, "scale": 0.904, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": 1.937, "z": 1.618, "rot": 149.1, "scale": 1.143, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 1.8, "z": 2.2, "rot": 40, "scale": 1, "block": 0 }
+  ]
+}

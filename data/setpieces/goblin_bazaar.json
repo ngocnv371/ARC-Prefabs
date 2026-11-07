@@ -1,0 +1,29 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "camp", "tents"],
+  "themes": ["undermarket", "hovels"],
+  "lore": "The goblins hold market day whenever the roast is ready. Everything is for sale, including the stall-keeper's brother.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_01.fbx", "x": -3.6, "z": -2.8, "rot": 20, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": 3.8, "z": -2.4, "rot": 335, "scale": 1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Rotisserie_Meat_01.fbx", "x": 0, "z": -1.2, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "adventure/SM_Prop_Stall_Table_01.fbx", "x": -2.8, "z": 1.6, "rot": 30, "scale": 1, "block": 1 },
+    { "mesh": "adventure/SM_Prop_Stall_Table_01.fbx", "x": 2.8, "z": 1.8, "rot": 330, "scale": 1, "block": 1 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Halberd_01.fbx", "x": -3.426, "z": 1.39, "rot": 269.11, "scale": 1.047, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Club_01.fbx", "x": -2.278, "z": 1.28, "rot": 287.07, "scale": 1.007, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Halberd_01.fbx", "x": -2.437, "z": 1.736, "rot": 106.96, "scale": 0.891, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Spear_01.fbx", "x": -2.584, "z": 2.159, "rot": 357.88, "scale": 0.965, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Meat_01.fbx", "x": 2.477, "z": 2.268, "rot": 337.74, "scale": 0.924, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 2.074, "z": 1.518, "rot": 180.11, "scale": 0.981, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": 3.476, "z": 2.157, "rot": 186.55, "scale": 1.074, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 3.081, "z": 1.98, "rot": 128.3, "scale": 0.894, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_04.fbx", "x": 3.989, "z": 5.678, "rot": 100.45, "scale": 1.086, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_01.fbx", "x": 4.465, "z": 3.015, "rot": 335.53, "scale": 0.985, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_04.fbx", "x": -6.048, "z": -0.42, "rot": 155.93, "scale": 1.125, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_03.fbx", "x": 4.136, "z": -3.512, "rot": 335.2, "scale": 1.083, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_03.fbx", "x": -5.237, "z": -3.397, "rot": 117.36, "scale": 1.108, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Banner_04.fbx", "x": 0, "z": -4.6, "rot": 0, "scale": 1, "block": 0 }
+  ]
+}

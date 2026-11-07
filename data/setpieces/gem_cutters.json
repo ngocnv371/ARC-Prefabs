@@ -1,0 +1,32 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "crystals", "mine", "camp"],
+  "themes": ["singing_veins", "lost_delve"],
+  "lore": "The delvers cut their gems here, by lantern, so they could hear whether a stone was flawed. A cracked crystal sings flat.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": -0.6, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": -0.086, "z": -1.245, "rot": 96.57, "scale": 1.027, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": -0.824, "z": -0.684, "rot": 24.83, "scale": 1.035, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": 0.366, "z": 0.187, "rot": 76.12, "scale": 1.101, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_02.fbx", "x": 0.429, "z": -1.164, "rot": 74.12, "scale": 1.111, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 0.777, "z": -0.772, "rot": 39.2, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": 0.381, "z": -0.352, "rot": 122.08, "scale": 0.901, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": -0.6, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_02.fbx", "x": 0.8, "z": 0.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": -2.8, "z": -1.8, "rot": 20, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": -3.4, "z": -0.6, "rot": 70, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Minecart_01.fbx", "x": 3, "z": -2, "rot": 30, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Gem_Large_01.fbx", "x": 2.6, "z": 1.6, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": -2, "z": 2.4, "rot": 40, "scale": 0.8, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 0.9, "z": -0.9, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": -3, "z": 1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -4.904, "z": -3.393, "rot": 301.36, "scale": 0.865, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -4.462, "z": 0.107, "rot": 80.37, "scale": 0.938, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 5.447, "z": -2.34, "rot": 184.95, "scale": 1.021, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -5.442, "z": -1.85, "rot": 131.1, "scale": 0.858, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 1.143, "z": -4.213, "rot": 110.13, "scale": 0.989, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -5.276, "z": 1.628, "rot": 108.13, "scale": 1.102, "block": 0 }
+  ]
+}

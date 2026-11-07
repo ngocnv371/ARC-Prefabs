@@ -1,0 +1,32 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "bones", "remains", "candles"],
+  "themes": ["dead_god", "pilgrims_road"],
+  "lore": "The pilgrims walk the god's spine from end to end on their knees, a candle at every ninth bone. Those who reach the skull say they hear it think.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Bone_Spine_03.fbx", "x": 0, "z": -4, "rot": 90, "scale": 0.7, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_03.fbx", "x": 0, "z": -1.2, "rot": 90, "scale": 0.7, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_03.fbx", "x": 0, "z": 1.6, "rot": 90, "scale": 0.7, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_03.fbx", "x": 0, "z": 4.4, "rot": 90, "scale": 0.7, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -1.5, "z": -2.6, "rot": 0, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 1.5, "z": -2.6, "rot": 180, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -1.5, "z": 0.2, "rot": 0, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 1.5, "z": 0.2, "rot": 180, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -1.5, "z": 3, "rot": 0, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 1.5, "z": 3, "rot": 180, "scale": 0.5, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.8, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.8, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.8, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.8, "z": 0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2.8, "z": 4.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2.8, "z": 4.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 3.55, "z": -4.134, "rot": 289.38, "scale": 0.856, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -1.141, "z": -5.175, "rot": 159.82, "scale": 1.113, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -3.88, "z": 2.965, "rot": 212.24, "scale": 0.916, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 4.685, "z": 0.77, "rot": 259.57, "scale": 0.865, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -2.849, "z": 4.744, "rot": 102.48, "scale": 0.95, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 0.641, "z": -4.122, "rot": 271.59, "scale": 1.086, "block": 0 }
+  ]
+}

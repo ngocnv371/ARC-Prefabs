@@ -75,6 +75,7 @@ ADVENTURE_MESHES = [
     "SM_Bld_Village_01", "SM_Bld_Village_06", "SM_Bld_Wall_01", "SM_Bld_Wall_02",
     "SM_Bld_Hut_01_Snow", "SM_Bld_Fence_01_Snow",
     "SM_Prop_Barrel_02", "SM_Prop_RoadSign_01", "SM_Prop_Chest_01", "SM_Prop_Crate_02",
+    "SM_Prop_Pot_01",
 ]
 
 # Bones and broken rock for the cinder waste, from the Dungeon pack (Dungeons_Texture_01).
@@ -190,6 +191,17 @@ DUNGEON_MESHES = [
     "SM_Wep_Axe_01", "SM_Wep_Banner_01", "SM_Wep_BrokenSword_01", "SM_Wep_Greatsword_Straight_01",
     "SM_Wep_Ornate_Spear_01", "SM_item_Arrow_01", "SM_Prop_Log_Spike_04",
     "SM_Env_ReinforedPole_01", "SM_Env_Wood_Pole_01",
+    # The second hundred: hoards, markets, cults, pilgrims, roots and the rest.
+    "SM_Env_Bone_Cracked_02", "SM_Env_Bone_Rib_01", "SM_Env_Bone_Spine_03", "SM_Env_Bone_Tail_01",
+    "SM_Env_Grate_Ground_01", "SM_Env_Railing_02", "SM_Env_ReinforedPole_02",
+    "SM_Env_Rock_Flat_Platform_02", "SM_Env_Rock_Flat_Platform_03", "SM_Env_Stairs_02", "SM_Env_Tiles_Rune_02",
+    "SM_Env_Tree_Twisted_02", "SM_Env_Wall_Alcove_01", "SM_Env_Wall_Fireplace_01", "SM_Env_Wood_Bridge_02",
+    "SM_Env_Wood_Construction_02", "SM_Item_Vial_02", "SM_Prop_Bed_02",
+    "SM_Prop_Chain_01", "SM_Prop_Chain_02", "SM_Prop_Chain_03", "SM_Prop_Chain_05",
+    "SM_Prop_Chest_04_Lid", "SM_Prop_Chest_Wood_Lid", "SM_Prop_Jewel_02", "SM_Prop_Jewel_03",
+    "SM_Prop_Table_Round_02", "SM_Prop_Trap_WallArrow_Hole_01", "SM_Prop_Trap_WallArrow_Hole_02",
+    "SM_Wep_Crystal_Axe_Large_01", "SM_Wep_Goblin_Axe_01", "SM_Wep_Goblin_Machete_01",
+    "SM_Wep_Ornate_GreatAxe_01", "SM_Wep_Staff_Gem_01",
     # The showcase's own (src/Showcase): the torches on its corridor walls.
     "SM_Prop_Torch_Ornate_01",
 ]

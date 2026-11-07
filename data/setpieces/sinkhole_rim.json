@@ -1,0 +1,37 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "rocks", "remains"],
+  "themes": ["untrodden"],
+  "lore": "A hole in the floor that goes further down than any rope anyone has brought. Something at the bottom glows, faintly, and the air that comes up is warm.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 0.5, "color": [0.5, 0.7, 0.9], "range": 4, "energy": 0.5 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 3.4, "z": 0, "rot": 0, "scale": 1.056, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": 2.605, "z": -2.185, "rot": 40, "scale": 0.833, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": 0.59, "z": -3.348, "rot": 80, "scale": 0.803, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": -1.7, "z": -2.944, "rot": 120, "scale": 1.065, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_02.fbx", "x": -3.195, "z": -1.163, "rot": 160, "scale": 0.944, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": -3.195, "z": 1.163, "rot": 200, "scale": 0.944, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": -1.7, "z": 2.944, "rot": 240, "scale": 1.087, "block": 1 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_03.fbx", "x": 2.605, "z": 2.185, "rot": 320, "scale": 1.024, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Grate_Ground_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.2, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Ladder_01.fbx", "x": 0.4, "z": 3, "rot": 180, "scale": 0.6, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 1, "z": 4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -0.8, "z": 4.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -3.101, "z": -5.361, "rot": 40.44, "scale": 0.972, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 1.936, "z": -5.82, "rot": 206.79, "scale": 0.894, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -4.426, "z": 2.348, "rot": 160.61, "scale": 0.887, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -3.506, "z": 3.888, "rot": 114.17, "scale": 1.105, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 3.919, "z": 3.437, "rot": 148.88, "scale": 0.863, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 2.76, "z": -4.344, "rot": 78.23, "scale": 1.025, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -5.373, "z": -1.174, "rot": 12.45, "scale": 0.92, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -5.4, "z": 3.359, "rot": 82.94, "scale": 1.077, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": 3.579, "z": 3.316, "rot": 1.06, "scale": 1.09, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -3.611, "z": 4.098, "rot": 126.11, "scale": 0.868, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -2.982, "z": -4.061, "rot": 286.09, "scale": 1.033, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 2.237, "z": 5.401, "rot": 348.02, "scale": 0.895, "block": 0 }
+  ]
+}

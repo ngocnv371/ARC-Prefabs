@@ -1,0 +1,26 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["prison", "remains", "fort"],
+  "themes": ["wardens"],
+  "lore": "Petty offenders were locked in the stocks here for the keep to jeer at. The keep emptied, the stocks did not, and one prisoner is still waiting out his sentence.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Toture_Stocks_01.fbx", "x": -3, "z": -1.6, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Toture_Stocks_01.fbx", "x": 0, "z": -1.6, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Toture_Stocks_01.fbx", "x": 3, "z": -1.6, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Shackles_01.fbx", "x": 0, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Cage_01.fbx", "x": -4.4, "z": 1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Toture_Cage_01.fbx", "x": 4.2, "z": 1.4, "rot": 20, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -1.6, "z": 1.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 1.6, "z": 1.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Banner_02.fbx", "x": 0, "z": -3.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -0.138, "z": -5.156, "rot": 106.48, "scale": 1.095, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": -2.488, "z": 2.814, "rot": 192.84, "scale": 1.12, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": 1.398, "z": 5.03, "rot": 347.72, "scale": 0.877, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -3.705, "z": -0.868, "rot": 185.09, "scale": 1.047, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_04.fbx", "x": -4.671, "z": -3.179, "rot": 80.32, "scale": 1.054, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_Shard_01.fbx", "x": 1.59, "z": -3.701, "rot": 138.18, "scale": 0.961, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -4.399, "z": 1.154, "rot": 142.61, "scale": 1.049, "block": 0 }
+  ]
+}

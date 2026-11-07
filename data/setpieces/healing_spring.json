@@ -1,0 +1,41 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["shrine", "water", "grove"],
+  "themes": ["pilgrims_road", "bloom"],
+  "lore": "Water from this spring closes wounds and mends bones, they say. The pilgrims who were not mended left their staffs behind anyway, to look hopeful.",
+  "lights": [
+    { "x": 0, "z": -0.6, "y": 1, "color": [0.6, 0.9, 1], "range": 5, "energy": 0.7 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Fountain_01.fbx", "x": 0, "z": -0.6, "rot": 0, "scale": 1.4, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Rock_Flat_Platform_03.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_GlowingOrb_03.fbx", "x": 0, "z": -2.4, "rot": 0, "scale": 1, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -4.273, "z": -1.459, "rot": 350.28, "scale": 0.868, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Moss_Patch_01.fbx", "x": 2.536, "z": 4.403, "rot": 302.82, "scale": 0.973, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Moss_Patch_01.fbx", "x": 2.743, "z": -2.299, "rot": 318.35, "scale": 0.961, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_01.fbx", "x": 0.278, "z": -3.074, "rot": 13.17, "scale": 0.923, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": 1.128, "z": 4.757, "rot": 54.84, "scale": 0.911, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_01.fbx", "x": -0.209, "z": 4.217, "rot": 152.89, "scale": 0.922, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": -2.703, "z": -3.472, "rot": 172.73, "scale": 1.021, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 0.17, "z": 5.362, "rot": 42.65, "scale": 0.878, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": 1.744, "z": -1.722, "rot": 268.9, "scale": 0.894, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Moss_Patch_01.fbx", "x": 0.108, "z": -5.198, "rot": 48.97, "scale": 0.938, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": 4.846, "z": 0.322, "rot": 174.54, "scale": 0.889, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -3.233, "z": 4.006, "rot": 209.87, "scale": 1.041, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 3.425, "z": -1.262, "rot": 116.09, "scale": 0.996, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -4.557, "z": 1.447, "rot": 219.56, "scale": 1.006, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": -2.6, "z": 1.6, "rot": 301.61, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 2.4, "z": 1.8, "rot": 53.13, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Vase_01.fbx", "x": -2.033, "z": -3.042, "rot": 238.86, "scale": 0.984, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": 2.621, "z": -3.066, "rot": 145.15, "scale": 1.019, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": -2.163, "z": -1.963, "rot": 4.64, "scale": 0.863, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Staff_Gem_01.fbx", "x": 2.728, "z": -1.687, "rot": 266.98, "scale": 0.958, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_03.fbx", "x": -0.343, "z": -4.423, "rot": 117.08, "scale": 1.071, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": 0.312, "z": 6.302, "rot": 18.7, "scale": 1.139, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -1.063, "z": -6.199, "rot": 314.54, "scale": 1.086, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 6.494, "z": 1.047, "rot": 142.53, "scale": 0.884, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 3.94, "z": -3.219, "rot": 250.48, "scale": 1.107, "block": 0.4 }
+  ]
+}

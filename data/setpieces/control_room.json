@@ -1,0 +1,29 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery", "arcane"],
+  "themes": ["engine_deep", "kings_bargain"],
+  "lore": "Every lever in the deep runs back to this room. The last engine-master pulled one he should not have, and the whole deep has run backwards ever since.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_SwitchBoard_01.fbx", "x": 2.057, "z": -2.451, "rot": 320, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_SwitchBoard_01.fbx", "x": -1.696, "z": -2.714, "rot": 32, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_SwitchBoard_01.fbx", "x": -3.105, "z": 0.774, "rot": 104, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": 1, "z": -1.732, "rot": 330, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -1.732, "z": -1, "rot": 60, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -1, "z": 1.732, "rot": 150, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Crystal_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": -2.8, "z": 1.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Poles_01.fbx", "x": 2.8, "z": 1.8, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_StoneChair_01.fbx", "x": 0, "z": -1.4, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": 2.6, "rot": 0, "scale": 0.8, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0.226, "z": 2.115, "rot": 310.07, "scale": 0.963, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Inkwell_01.fbx", "x": -0.061, "z": 2.94, "rot": 124.11, "scale": 1.115, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -0.432, "z": 2.236, "rot": 155.73, "scale": 0.965, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 1.6, "z": -0.6, "rot": 200, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_04.fbx", "x": 4.91, "z": -0.353, "rot": 88.17, "scale": 1.085, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": -1.706, "z": -4.6, "rot": 344.43, "scale": 0.891, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_01.fbx", "x": 3.119, "z": 2.634, "rot": 307.99, "scale": 1.087, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": -3.72, "z": -4.002, "rot": 322.11, "scale": 1.142, "block": 0 }
+  ]
+}

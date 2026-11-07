@@ -1,0 +1,33 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "lava", "rocks"],
+  "themes": ["molten_heart"],
+  "lore": "A plank bridge over a crack the forges opened. It has burned through and been rebuilt forty times; the smiths keep a tally on the post, and a wager on the forty-first.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": -3.2, "z": 0, "rot": 279.33, "scale": 1.1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 3.2, "z": 0, "rot": 305.64, "scale": 1.1, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Wood_Bridge_02.fbx", "x": -2.5, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Wood_Bridge_02.fbx", "x": 2.4, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": -4.6, "z": -2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": 4.6, "z": 2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 2.098, "z": -6.105, "rot": 51.04, "scale": 1.114, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 4.47, "z": -4.448, "rot": 55.36, "scale": 1.107, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -3.858, "z": -4.155, "rot": 250.96, "scale": 0.98, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -1.512, "z": -3.785, "rot": 287.5, "scale": 0.956, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 0.444, "z": -3.671, "rot": 16.95, "scale": 1.041, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -0.956, "z": -6.036, "rot": 145.66, "scale": 0.924, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -1.689, "z": 4.23, "rot": 334.27, "scale": 1.111, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 1.342, "z": 5.724, "rot": 341.64, "scale": 1.024, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -3.282, "z": 2.938, "rot": 272.79, "scale": 1.033, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 3.273, "z": 4.259, "rot": 348.89, "scale": 1.074, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 5.38, "z": 3.127, "rot": 167.98, "scale": 1.022, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 2.808, "z": 2.417, "rot": 209.41, "scale": 1.041, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 3.873, "z": 1.802, "rot": 3.77, "scale": 1.125, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": 1.099, "z": -1.904, "rot": 5.8, "scale": 1.103, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -1.872, "z": -1.479, "rot": 242.39, "scale": 1.004, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": 0.58, "z": -2.918, "rot": 14.32, "scale": 1.106, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -1.511, "z": -4.758, "rot": 182.1, "scale": 1.052, "block": 0 }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "bones", "remains"],
+  "themes": ["untrodden", "dead_god"],
+  "lore": "Something big sleeps on this heap when it is home. The armour in the pile is dented from the inside, which says a great deal about its manners.",
+  "lights": [
+    { "x": 0, "z": -0.6, "y": 3, "color": [0.85, 0.7, 0.55], "range": 6, "energy": 0.6 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_BonePile_02.fbx", "x": 0, "z": -0.6, "rot": 30, "scale": 0.9, "block": 1 },
+    { "mesh": "dungeon/SM_Env_BonePile_03.fbx", "x": -1.8, "z": 1, "rot": 140, "scale": 0.8, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Bone_Skull_01.fbx", "x": 2, "z": -2, "rot": 220, "scale": 0.35, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": -4.313, "z": 3.324, "rot": 215.1, "scale": 0.934, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_BrokenSword_01.fbx", "x": -3.14, "z": 4.499, "rot": 246.58, "scale": 0.861, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 1.081, "z": 5.39, "rot": 350.59, "scale": 1.096, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_BrokenSword_01.fbx", "x": -1.799, "z": 2.379, "rot": 277, "scale": 0.94, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_BrokenSword_01.fbx", "x": -4.462, "z": -1.829, "rot": 209.98, "scale": 1.114, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_02.fbx", "x": -1.87, "z": -2.366, "rot": 189.2, "scale": 0.85, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 4.616, "z": 2.46, "rot": 37.73, "scale": 0.919, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 3.263, "z": 0.71, "rot": 316.16, "scale": 1.106, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -3.706, "z": 1.396, "rot": 191.81, "scale": 0.984, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_06.fbx", "x": 5.259, "z": -3.977, "rot": 286.54, "scale": 1.201, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 4.297, "z": 1.988, "rot": 161.14, "scale": 1.269, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": 4.87, "z": -0.909, "rot": 205.08, "scale": 1.092, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": -0.001, "z": -4.952, "rot": 255.4, "scale": 1.33, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_01.fbx", "x": 2.969, "z": -3.968, "rot": 24.3, "scale": 1.35, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_02.fbx", "x": -0.318, "z": 5.255, "rot": 56.45, "scale": 1.325, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Stalagmite_05.fbx", "x": -5.734, "z": 2.282, "rot": 323.65, "scale": 1.348, "block": 0.3 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_03.fbx", "x": 3.943, "z": -5.021, "rot": 195.65, "scale": 0.9, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": -3.067, "z": -2.569, "rot": 184.08, "scale": 1.102, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_03.fbx", "x": 0.124, "z": -5.012, "rot": 272.54, "scale": 0.858, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_03.fbx", "x": -4.076, "z": 3.205, "rot": 11.3, "scale": 1, "block": 0.4 }
+  ]
+}

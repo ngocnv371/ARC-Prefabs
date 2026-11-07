@@ -1,0 +1,33 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["throne", "grove", "statue"],
+  "themes": ["rootworks", "last_court"],
+  "lore": "A lord who would not leave his seat, so the forest came to him. The tree has grown up through the throne, and he is somewhere inside it.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Throne_01.fbx", "x": 0, "z": -2.4, "rot": 0, "scale": 1.7, "block": 0.7 },
+    { "mesh": "dungeon/SM_Env_Tree_Twisted_01.fbx", "x": 0.2, "z": -3.8, "rot": 0, "scale": 1.3, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Roots_01.fbx", "x": -0.821, "z": -2.255, "rot": 110, "scale": 2.983, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Roots_02.fbx", "x": -2.078, "z": -1.2, "rot": 150, "scale": 2.727, "block": 0 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": -2.364, "z": 0.417, "rot": 190, "scale": 2.201, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Roots_01.fbx", "x": -1.543, "z": 1.839, "rot": 230, "scale": 2.455, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Roots_02.fbx", "x": -0, "z": 2.4, "rot": 270, "scale": 2.63, "block": 0 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": 1.543, "z": 1.839, "rot": 310, "scale": 2.625, "block": 0 },
+    { "mesh": "nature/SM_Swamp_Root_01.fbx", "x": 0.821, "z": -2.255, "rot": 70, "scale": 2.904, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -2, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 2, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Rug_02.fbx", "x": 0, "z": 0.4, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_03.fbx", "x": -2.823, "z": -2.525, "rot": 117.97, "scale": 1.089, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 4.998, "z": -1.911, "rot": 53.53, "scale": 1.144, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_03.fbx", "x": -0.532, "z": -3.662, "rot": 343.21, "scale": 0.926, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_01.fbx", "x": -2.666, "z": 1.862, "rot": 304.17, "scale": 1.038, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": 5.76, "z": -1.165, "rot": 123.98, "scale": 1.047, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_04.fbx", "x": 1.111, "z": 5.004, "rot": 23.12, "scale": 1.099, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_02.fbx", "x": -5.269, "z": -1.148, "rot": 112.7, "scale": 0.879, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Grass_03.fbx", "x": 1.932, "z": -4.153, "rot": 30.85, "scale": 1.052, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Mushroom_Small_02.fbx", "x": -1.982, "z": -4.303, "rot": 142.17, "scale": 1.093, "block": 0 },
+    { "mesh": "nature/SM_Plant_Fern_02.fbx", "x": -4.375, "z": -2.206, "rot": 250.5, "scale": 0.919, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 1.4, "z": 0.6, "rot": 30, "scale": 1, "block": 0 }
+  ]
+}

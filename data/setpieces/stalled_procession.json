@@ -1,0 +1,31 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "tomb", "candles", "remains"],
+  "themes": ["mourning"],
+  "lore": "The pallbearers set the coffin down to rest and never picked it up again. Their candles have been relit every night since, by someone who still wants to see it buried.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Coffin_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -0.9, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0.9, "z": -1, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -0.9, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0.9, "z": 1, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -0.9, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 0.9, "z": -3.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -0.9, "z": 3.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 0.9, "z": 3.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.fbx", "x": 0, "z": -4.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": -2.186, "z": -1.839, "rot": 290.48, "scale": 0.955, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_02.fbx", "x": 1.604, "z": 0.408, "rot": 267.32, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.096, "z": 2.555, "rot": 350.34, "scale": 0.962, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.91, "z": 1.093, "rot": 280.9, "scale": 1.02, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_01.fbx", "x": 0.213, "z": -1.749, "rot": 65.49, "scale": 0.958, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 0.749, "z": -2.3, "rot": 336.03, "scale": 1.093, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": -0.089, "z": 5.756, "rot": 58.03, "scale": 0.977, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": -4.625, "z": 0.269, "rot": 264.3, "scale": 1.022, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 5.264, "z": -1.774, "rot": 88.73, "scale": 0.852, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_Broken_01.fbx", "x": 2.682, "z": -5.314, "rot": 251.71, "scale": 1.121, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_01.fbx", "x": 3.862, "z": -2.978, "rot": 250.77, "scale": 0.984, "block": 0 }
+  ]
+}

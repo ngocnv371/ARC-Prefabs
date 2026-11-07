@@ -1,0 +1,28 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "shrine", "statue", "lava"],
+  "themes": ["molten_heart"],
+  "lore": "An idol of the fire-mother, older than the smiths who found her. They feed her coin and coal, and the vent at her feet has not erupted since.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Statue_01.fbx", "x": 0, "z": -2.4, "rot": 0, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 0, "z": 1, "rot": 0, "scale": 0.5, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2.546, "z": -2.546, "rot": 315, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2.546, "z": -2.546, "rot": 45, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2.546, "z": 2.546, "rot": 135, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2.546, "z": 2.546, "rot": 225, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Item_Coins_04.fbx", "x": -1.318, "z": 2.164, "rot": 244.2, "scale": 0.897, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 0.032, "z": 2.592, "rot": 228.4, "scale": 1.101, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 1.003, "z": 1.912, "rot": 314.23, "scale": 1.048, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": -1.822, "z": 0.91, "rot": 338.53, "scale": 0.972, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_04.fbx", "x": 0.439, "z": 1.507, "rot": 261.09, "scale": 0.936, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 1.141, "z": 1.179, "rot": 184.68, "scale": 1.139, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 5.409, "z": -1.449, "rot": 15, "scale": 1.062, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 1.449, "z": -5.409, "rot": 75, "scale": 1.257, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -3.96, "z": -3.96, "rot": 135, "scale": 1.291, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -5.409, "z": 1.449, "rot": 195, "scale": 1.269, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -1.449, "z": 5.409, "rot": 255, "scale": 1.259, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 3.96, "z": 3.96, "rot": 315, "scale": 1.081, "block": 0.4 }
+  ]
+}

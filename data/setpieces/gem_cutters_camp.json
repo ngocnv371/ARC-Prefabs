@@ -1,0 +1,33 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "crystals", "camp"],
+  "themes": ["singing_veins", "undermarket"],
+  "lore": "A cutter camps by the vein to work the stones while they still sing; cut later, they go quiet and fetch half the price. She is a little deaf, and does not mind.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Goblin_Tent_03.fbx", "x": -3, "z": -2.2, "rot": 30, "scale": 0.9, "block": 1.4 },
+    { "mesh": "dungeon/SM_Prop_StoneTable_01.fbx", "x": 0.6, "z": -0.6, "rot": 350, "scale": 0.7, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": 0.544, "z": -0.922, "rot": 278.16, "scale": 0.606, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Jewel_01.fbx", "x": 1.016, "z": -0.68, "rot": 94.49, "scale": 0.697, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 0.225, "z": -0.871, "rot": 144.26, "scale": 0.603, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Jewel_03.fbx", "x": 0.446, "z": -0.448, "rot": 91.54, "scale": 0.625, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Jewel_01.fbx", "x": 0.789, "z": -0.094, "rot": 143.94, "scale": 0.657, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Jewel_01.fbx", "x": 0.814, "z": -1.014, "rot": 246.76, "scale": 0.757, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Hammer_Small_02.fbx", "x": 1.2, "z": -0.4, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Stool_01.fbx", "x": 0.6, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 1.4, "z": -1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Gem_Large_01.fbx", "x": 3.6, "z": -2.6, "rot": 130.83, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": 4.4, "z": -0.8, "rot": 217.68, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Large_02.fbx", "x": 2.6, "z": 2.8, "rot": 197.59, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Gem_Spike_02.fbx", "x": -4.2, "z": 2, "rot": 47.28, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Rocks_01.fbx", "x": -1.4, "z": 1.8, "rot": 20, "scale": 1, "block": 0.45 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -2, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_04.fbx", "x": 1.626, "z": -3.039, "rot": 191.19, "scale": 0.67, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_01.fbx", "x": 4.782, "z": -1.666, "rot": 40.63, "scale": 0.763, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 3.622, "z": 1.672, "rot": 83.04, "scale": 0.673, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 4.983, "z": 0.32, "rot": 85.77, "scale": 0.859, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 0.826, "z": 2.131, "rot": 176.39, "scale": 0.717, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -0.432, "z": -5.46, "rot": 75.66, "scale": 0.627, "block": 0 }
+  ]
+}

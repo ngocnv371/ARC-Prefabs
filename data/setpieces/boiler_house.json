@@ -1,0 +1,26 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "machinery"],
+  "themes": ["engine_deep"],
+  "lore": "Three boilers fed by one fire, and one of them has split. Nobody has told the fire, which keeps the other two near bursting.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Tech_Chamber_01.fbx", "x": -2.6, "z": -2.4, "rot": 0, "scale": 1, "block": 0.75 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": -2.6, "z": -0.9, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Chamber_01.fbx", "x": 0, "z": -2.4, "rot": 0, "scale": 1, "block": 0.75 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 0, "z": -0.9, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Tech_Chamber_Broken_01.fbx", "x": 2.6, "z": -2.4, "rot": 0, "scale": 1, "block": 0.75 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_01.fbx", "x": 2.6, "z": -0.9, "rot": 0, "scale": 1, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Forge_FirePit_01.fbx", "x": 0, "z": 1.4, "rot": 0, "scale": 0.8, "block": 1.1 },
+    { "mesh": "dungeon/SM_Prop_Tech_Pipe_02.fbx", "x": -3.8, "z": -0.6, "rot": 90, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Tech_Turbine_01.fbx", "x": 4, "z": -0.4, "rot": 270, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Tech_Lever_01.fbx", "x": -1.4, "z": 3, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 3.835, "z": -2.314, "rot": 20.67, "scale": 0.946, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": 3.605, "z": 1.422, "rot": 35.19, "scale": 0.946, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -4.201, "z": -1.805, "rot": 191.85, "scale": 1.041, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Tech_Cog_03.fbx", "x": 4.241, "z": -4.192, "rot": 188.99, "scale": 1.005, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brick_01.fbx", "x": -0.585, "z": -5.845, "rot": 260.27, "scale": 1.057, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bricks_02.fbx", "x": 3.608, "z": 3.762, "rot": 213.66, "scale": 1.017, "block": 0 }
+  ]
+}

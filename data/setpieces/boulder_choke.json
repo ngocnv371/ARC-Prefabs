@@ -1,0 +1,32 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["cavern", "rocks", "remains"],
+  "themes": ["untrodden"],
+  "lore": "Boulders the size of houses wedged across the passage, with one narrow way between. Someone squeezed through with a pack too big for it.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": -3.2, "z": -1.6, "rot": 351.81, "scale": 1.12, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_02.fbx", "x": -1.2, "z": -2.8, "rot": 115.23, "scale": 0.96, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_RockPile_Rounded_01.fbx", "x": 2.6, "z": -2, "rot": 327.25, "scale": 1.2, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": 3.8, "z": 0.4, "rot": 230.1, "scale": 0.88, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_RockPile_Square_01.fbx", "x": -3.8, "z": 1, "rot": 138.68, "scale": 0.8, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": 4.022, "z": 4.401, "rot": 246.54, "scale": 0.903, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": -4.155, "z": -2.124, "rot": 203.73, "scale": 1.014, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 4.218, "z": 0.36, "rot": 75.93, "scale": 1.072, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_01.fbx", "x": 2.877, "z": -3.524, "rot": 112.56, "scale": 1.124, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": 1.172, "z": 1.761, "rot": 62.56, "scale": 0.915, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_04.fbx", "x": -2.862, "z": 2.042, "rot": 218.78, "scale": 1.095, "block": 0.4 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 0.2, "z": -0.8, "rot": 10, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 0.9, "z": -0.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": -0.6, "z": 0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 6.387, "z": 0.41, "rot": 160.72, "scale": 1.102, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -0.744, "z": 3.36, "rot": 176.31, "scale": 0.975, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 5.673, "z": -1.232, "rot": 179.05, "scale": 1.038, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 5.326, "z": -2.307, "rot": 133.65, "scale": 0.983, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 5.844, "z": 2.254, "rot": 165.43, "scale": 1.087, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": 2.352, "z": 3.264, "rot": 73.53, "scale": 0.921, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_03.fbx", "x": -0.614, "z": 1.859, "rot": 17.41, "scale": 1.075, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_02.fbx", "x": -2.086, "z": -2.99, "rot": 317.12, "scale": 1.143, "block": 0 }
+  ]
+}

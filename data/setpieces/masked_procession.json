@@ -1,0 +1,33 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["ritual", "candles", "statue"],
+  "themes": ["red_cult"],
+  "lore": "Every new moon the faithful walk this aisle to the stone, in masks so the eye cannot tell them apart. Three of last month's walkers never reached it.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Obelisk_01.fbx", "x": 0, "z": -6, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Rug_01.fbx", "x": 0, "z": -0.5, "rot": 90, "scale": 0.9, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -1.9, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 1.9, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -1.9, "z": -1.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 1.9, "z": -1.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -1.9, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 1.9, "z": 1, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -1.9, "z": 3.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 1.9, "z": 3.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -0.5, "z": -2.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0.5, "z": -0.2, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -0.5, "z": 2.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_03.fbx", "x": -3.4, "z": -5.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": -3.6, "z": -1, "rot": 90, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Wep_Banner_03.fbx", "x": 3.4, "z": -5.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Statue_04.fbx", "x": 3.6, "z": -1, "rot": 270, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -5.703, "z": 2.718, "rot": 121.77, "scale": 1.107, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_03.fbx", "x": -4.196, "z": -3.186, "rot": 255.12, "scale": 0.958, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 5.333, "z": -1.353, "rot": 42.29, "scale": 0.966, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rune_Square_03.fbx", "x": 2.312, "z": 4.537, "rot": 182.64, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -5.551, "z": -2.577, "rot": 211.45, "scale": 0.923, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 5.002, "z": 1.121, "rot": 40.35, "scale": 0.948, "block": 0 }
+  ]
+}

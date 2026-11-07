@@ -1,0 +1,30 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "lava", "rocks", "ring"],
+  "themes": ["molten_heart"],
+  "lore": "A pool of rock that never cools, ringed by spires it threw up when it first broke through. The smiths fish it for iron with long chains and short tempers.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": -0.6, "z": -0.4, "rot": 0, "scale": 0.9, "block": 1.5 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 1.6, "z": 1, "rot": 140, "scale": 0.6, "block": 1 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 4.314, "z": -0.227, "rot": 5, "scale": 1.016, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 3.593, "z": -2.757, "rot": 45, "scale": 1.259, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_03.fbx", "x": 0.484, "z": -5.031, "rot": 85, "scale": 1.064, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -2.58, "z": -3.284, "rot": 125, "scale": 1.245, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": -4.047, "z": -0.899, "rot": 165, "scale": 1.11, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_03.fbx", "x": -4.114, "z": 1.956, "rot": 205, "scale": 1.477, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -2.166, "z": 4.184, "rot": 245, "scale": 1.417, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_05.fbx", "x": 0.998, "z": 4.173, "rot": 285, "scale": 1.274, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_03.fbx", "x": 4.123, "z": 2.192, "rot": 325, "scale": 1.39, "block": 0.4 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 3.427, "z": 2.582, "rot": 255.06, "scale": 0.97, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -4.578, "z": -2.228, "rot": 135.19, "scale": 1.146, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 4.732, "z": 1.5, "rot": 297.5, "scale": 1.107, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 1.25, "z": 4.181, "rot": 247.78, "scale": 0.989, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -0.822, "z": -3.508, "rot": 20.24, "scale": 0.923, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": -2.866, "z": -4.436, "rot": 6.57, "scale": 1.131, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 5.227, "z": -3.855, "rot": 175.5, "scale": 0.886, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -3.328, "z": -2.248, "rot": 58.1, "scale": 0.894, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 3.6, "z": -2.4, "rot": 210, "scale": 1, "block": 0 }
+  ]
+}

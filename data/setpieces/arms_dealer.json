@@ -1,0 +1,29 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["fort", "treasure"],
+  "themes": ["undermarket", "smiths"],
+  "lore": "Blades with the smiths' marks filed off, sold to whoever is winning this week. The dealer sells to both sides and has never been on either.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": -2.8, "z": -2.6, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": 0, "z": -2.9, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_WeaponRack_01.fbx", "x": 2.8, "z": -2.6, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": -0.4, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Wep_Straightsword_01.fbx", "x": 0.543, "z": -0.322, "rot": 302.48, "scale": 0.892, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Axe_01.fbx", "x": -0.483, "z": -0.525, "rot": 342.17, "scale": 1.029, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Axe_01.fbx", "x": -0.426, "z": -0.924, "rot": 34.04, "scale": 1.064, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_HandAxe_01.fbx", "x": -0.468, "z": -1.224, "rot": 108.34, "scale": 0.971, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Axe_01.fbx", "x": 0.564, "z": 0.043, "rot": 96.25, "scale": 1.047, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_01.fbx", "x": -3.8, "z": 0.4, "rot": 20, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_Open_01.fbx", "x": -4.2, "z": 1.6, "rot": 70, "scale": 1, "block": 0.55 },
+    { "mesh": "dungeon/SM_Prop_Barrel_03.fbx", "x": 3.8, "z": 0.6, "rot": 0, "scale": 1, "block": 0.37 },
+    { "mesh": "dungeon/SM_Wep_Shield_Round_01.fbx", "x": 2.451, "z": 2.692, "rot": 188.96, "scale": 1.133, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Round_01.fbx", "x": 0.31, "z": 4.429, "rot": 106.32, "scale": 0.882, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Heater_01.fbx", "x": 3.56, "z": 1.484, "rot": 274.9, "scale": 0.879, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Plank_01.fbx", "x": -1.174, "z": 3.305, "rot": 112.76, "scale": 1.142, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Round_01.fbx", "x": -3.081, "z": 1.617, "rot": 94.11, "scale": 0.962, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 3, "z": -1, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -3, "z": -1, "rot": 0, "scale": 1, "block": 0.5 }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "bones", "remains"],
+  "themes": ["plague"],
+  "lore": "Bring out your dead, the carter called, and they did, until he was one of them. His cart is still waiting at the top of the ramp for the last load.",
+  "props": [
+    { "mesh": "adventure/SM_Prop_Cart_01.fbx", "x": 0, "z": -0.6, "rot": 15, "scale": 1, "block": 1.2 },
+    { "mesh": "dungeon/SM_Env_BonePile_01.fbx", "x": 0.2, "z": -0.8, "rot": 30, "scale": 0.6, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_03.fbx", "x": -2.6, "z": 1.6, "rot": 200, "scale": 0.9, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -1.8, "z": -2.4, "rot": 80, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 2.2, "z": 1.2, "rot": 140, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 1, "z": 2.6, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": 2.4, "z": -1.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": -3.4, "z": -1.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -4.975, "z": -2.328, "rot": 85.16, "scale": 1.139, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 5.465, "z": 0.329, "rot": 247.98, "scale": 0.936, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -3.503, "z": -0.925, "rot": 224.41, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 5.456, "z": -0.974, "rot": 205.45, "scale": 0.85, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 3.439, "z": -2.911, "rot": 338.34, "scale": 0.864, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -2.214, "z": -4.381, "rot": 65.82, "scale": 0.964, "block": 0 }
+  ]
+}

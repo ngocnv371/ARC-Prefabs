@@ -1,0 +1,32 @@
+{
+  "biomes": ["forge"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["forge", "shrine", "statue", "lava"],
+  "themes": ["molten_heart", "red_cult"],
+  "lore": "Someone carved the fire a face, and the fire seems to like it. Offerings left in the bowl are gone by morning, and the stone is warm to the touch.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Statue_03.fbx", "x": 0, "z": -2.2, "rot": 0, "scale": 1.2, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 2.1, "z": -3.637, "rot": 60, "scale": 0.55, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": -4.2, "z": -0, "rot": 180, "scale": 0.55, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Volcanic_01.fbx", "x": 2.1, "z": 3.637, "rot": 300, "scale": 0.55, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -1.697, "z": 1.697, "rot": 135, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 1.697, "z": 1.697, "rot": 225, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 1.697, "z": -1.697, "rot": 315, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -1.697, "z": -1.697, "rot": 45, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Stone_Vessel_01.fbx", "x": 0, "z": -0.4, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Gem_03.fbx", "x": 0.39, "z": -0.192, "rot": 93.97, "scale": 0.762, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_04.fbx", "x": -0.417, "z": -1.244, "rot": 38.21, "scale": 0.703, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_02.fbx", "x": 1.05, "z": -0.679, "rot": 203.25, "scale": 0.742, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Gem_05.fbx", "x": 0.091, "z": -1.611, "rot": 321.65, "scale": 0.71, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_01.fbx", "x": -0.983, "z": -0.362, "rot": 311.49, "scale": 0.728, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_02.fbx", "x": -0.034, "z": 0.303, "rot": 290.32, "scale": 0.872, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": -5.238, "z": 2.88, "rot": 273.79, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 2.799, "z": 5.839, "rot": 48.73, "scale": 0.85, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": -5.01, "z": 1.197, "rot": 250.51, "scale": 0.905, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": 5.31, "z": 1.032, "rot": 278.94, "scale": 1.076, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Spike_04.fbx", "x": 0.158, "z": 5.004, "rot": 328.25, "scale": 1.087, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -1.537, "z": 4.707, "rot": 352.16, "scale": 0.954, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_03.fbx", "x": -3.119, "z": 2.046, "rot": 334.95, "scale": 0.909, "block": 0 }
+  ]
+}

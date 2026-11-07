@@ -1,0 +1,30 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["camp", "shrine"],
+  "themes": ["pilgrims_road"],
+  "lore": "Pilgrims camp in threes for safety, and sing so the others know they are still awake. The fire is kept going by whoever comes next.",
+  "props": [
+    { "mesh": "adventure/SM_Env_CampFire_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 1.4, "z": -2.425, "rot": 150, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": -2.8, "z": -0, "rot": 270, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 1.4, "z": 2.425, "rot": 30, "scale": 1, "block": 0.7 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 1.597, "z": -0.581, "rot": 20, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": -0.059, "z": -1.699, "rot": 92, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Basket_01.fbx", "x": -1.634, "z": -0.469, "rot": 164, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_02.fbx", "x": 1.047, "z": 1.34, "rot": 308, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Pot_01.fbx", "x": 0.6, "z": 0.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Staff_01.fbx", "x": -4, "z": 1.6, "rot": 53.88, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Staff_Gem_01.fbx", "x": 3.8, "z": 2.2, "rot": 233.19, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Staff_01.fbx", "x": -1, "z": 4.2, "rot": 140.93, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_02.fbx", "x": -2.6, "z": -2.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Logpile_01.fbx", "x": 3.6, "z": -1.6, "rot": 30, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 3.033, "z": 4.05, "rot": 71.96, "scale": 0.922, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 0.623, "z": 5.77, "rot": 172.25, "scale": 0.941, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -4.833, "z": 3.008, "rot": 227.67, "scale": 1.135, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 1.098, "z": -4.937, "rot": 19.39, "scale": 0.858, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": 3.239, "z": -5.48, "rot": 106.68, "scale": 0.945, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Round_02.fbx", "x": 5.159, "z": 0.988, "rot": 217.62, "scale": 0.944, "block": 0 }
+  ]
+}

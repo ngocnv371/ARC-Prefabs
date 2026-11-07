@@ -1,0 +1,40 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["ritual", "remains", "candles", "ring"],
+  "themes": ["red_cult"],
+  "lore": "The basin is never allowed to run dry. Four tables keep it filled, and the chains are for when the tables run out of volunteers.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 1, "color": [1, 0.22, 0.2], "range": 4.5, "energy": 0.7 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Vessel_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.4, "block": 0.9 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_01.fbx", "x": 2.121, "z": -2.121, "rot": 315, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_02.fbx", "x": -2.121, "z": -2.121, "rot": 45, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_01.fbx", "x": -2.121, "z": 2.121, "rot": 135, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_02.fbx", "x": 2.121, "z": 2.121, "rot": 225, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 1.8, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_Broken_01.fbx", "x": 0, "z": -1.8, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -1.8, "z": -0, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_Broken_01.fbx", "x": -0, "z": 1.8, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 4.4, "z": 0, "rot": 270, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 0, "z": -4.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -4.4, "z": -0, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -0, "z": 4.4, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": 1.298, "z": -0.524, "rot": 22, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 0.547, "z": -1.289, "rot": 67, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -0.524, "z": -1.298, "rot": 112, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": -1.289, "z": -0.547, "rot": 157, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.298, "z": 0.524, "rot": 202, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -0.547, "z": 1.289, "rot": 247, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 0.524, "z": 1.298, "rot": 292, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 1.289, "z": 0.547, "rot": 337, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -4.788, "z": 0.185, "rot": 251.96, "scale": 1.072, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 0.544, "z": -5.239, "rot": 214.28, "scale": 0.897, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 2.343, "z": 3.905, "rot": 187.46, "scale": 0.992, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -1.906, "z": 4.57, "rot": 339.69, "scale": 0.984, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_Broken_01.fbx", "x": 3.179, "z": -5.646, "rot": 171.72, "scale": 1.141, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -0.724, "z": -5.951, "rot": 91.63, "scale": 0.994, "block": 0 }
+  ]
+}

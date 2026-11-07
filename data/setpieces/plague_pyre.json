@@ -1,0 +1,31 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "ritual", "bones"],
+  "themes": ["plague", "great_burning"],
+  "lore": "When the pits filled the priests ordered the dead burned. The fire has not been allowed to go out since, in case they come back for the ones still waiting.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Bonfire_01.fbx", "x": 0, "z": 0, "rot": 0, "scale": 1.6, "block": 1 },
+    { "mesh": "dungeon/SM_Env_BonePile_02.fbx", "x": 2.771, "z": -1.6, "rot": 30, "scale": 0.825, "block": 1 },
+    { "mesh": "dungeon/SM_Env_BonePile_01.fbx", "x": -2.771, "z": -1.6, "rot": 150, "scale": 0.968, "block": 1 },
+    { "mesh": "dungeon/SM_Env_BonePile_03.fbx", "x": -0, "z": 3.2, "rot": 270, "scale": 0.821, "block": 1 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 2, "z": 0, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": 0.618, "z": -1.902, "rot": 72, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": -1.618, "z": -1.176, "rot": 144, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": -1.618, "z": 1.176, "rot": 216, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 0.618, "z": 1.902, "rot": 288, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 3.536, "z": -3.536, "rot": 315, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -3.536, "z": -3.536, "rot": 45, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -3.536, "z": 3.536, "rot": 135, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 3.536, "z": 3.536, "rot": 225, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 6.197, "z": 1.329, "rot": 231.28, "scale": 0.871, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": -3.837, "z": -3.946, "rot": 319.62, "scale": 0.951, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -4.3, "z": -2.363, "rot": 207.71, "scale": 0.9, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -5.911, "z": -0.964, "rot": 309.94, "scale": 0.876, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 4.584, "z": 3.344, "rot": 185.91, "scale": 1.028, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 1.483, "z": -5.12, "rot": 147.58, "scale": 1.063, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 3.351, "z": 2.561, "rot": 121.08, "scale": 1.141, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 5.981, "z": -0.369, "rot": 213.74, "scale": 0.999, "block": 0 }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "biomes": ["halls"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["shrine", "candles", "remains"],
+  "themes": ["pilgrims_road"],
+  "lore": "Pilgrims climb this stair on their knees, a prayer on each step. Not all of them reach the top, and the ones who stopped are still here, praying.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stairs_02.fbx", "x": 2.48, "z": -0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_04.fbx", "x": -3.4, "z": -5, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -3.4, "z": 1.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Pillar_Square_04.fbx", "x": 3.4, "z": -5, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 3.4, "z": 1.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": -1.8, "z": -1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": 1.8, "z": -1.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_03.fbx", "x": -1.8, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_04.fbx", "x": 1.8, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_01.fbx", "x": -1.8, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candles_02.fbx", "x": 1.8, "z": -4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Wall_Sitting_01.fbx", "x": 0.4, "z": 1.4, "rot": 180, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Slave_Lying_01.fbx", "x": -0.6, "z": 2.8, "rot": 20, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_02.fbx", "x": 0.22, "z": 1.608, "rot": 236.92, "scale": 1.084, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": 1.328, "z": 3.514, "rot": 270.57, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": 0.923, "z": 2.739, "rot": 133.43, "scale": 1.095, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_02.fbx", "x": 1.313, "z": 1.588, "rot": 81.98, "scale": 1.036, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Flowers_02.fbx", "x": -0.864, "z": 2.841, "rot": 104.48, "scale": 0.932, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 2.055, "z": 2.586, "rot": 235, "scale": 0.963, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": 1.501, "z": 4.846, "rot": 276.25, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_04.fbx", "x": -1.676, "z": 5.437, "rot": 315.3, "scale": 1.062, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_06.fbx", "x": 5.563, "z": 1.991, "rot": 303.81, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "x": -5.662, "z": 1.022, "rot": 42.98, "scale": 1.062, "block": 0 }
+  ]
+}

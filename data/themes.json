@@ -121,6 +121,30 @@
         { "mesh": "dungeon/SM_Env_Brick_Rubble_03.fbx", "w": 0.8, "scale": [0.8, 1.2] },
         { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "w": 0.4, "scale": [0.8, 1.2] }
       ]
+    },
+    {
+      "id": "wyrm_hoard", "name": "The Wyrm's Hoard",
+      "lore": "A wyrm slept on its gold down here for a thousand years. It is gone now, or sleeping deeper, and the hoard lies scattered through the caves it scorched.",
+      "fill": { "color": [1.0, 0.8, 0.4], "energy": 0.55 }
+    },
+    {
+      "id": "undermarket", "name": "The Undermarket",
+      "lore": "Where smugglers, fences and goblin traders meet to sell what should not be sold. Every stall is a front for another, and everything has a price.",
+      "fill": { "color": [1.0, 0.75, 0.45], "energy": 0.6 }
+    },
+    {
+      "id": "red_cult", "name": "The Red Eye Cult",
+      "lore": "A cult that worships an eye that opened in the dark. Their circles, altars and cells spread through the old halls like a rash.",
+      "fill": { "color": [1.0, 0.3, 0.3], "energy": 0.5 }
+    },
+    {
+      "id": "pilgrims_road", "name": "The Pilgrims' Road",
+      "lore": "The road pilgrims walk down to a saint who is said to sleep at the bottom of the world. Shrines and camps mark the way, and graves for those who did not finish it."
+    },
+    {
+      "id": "rootworks", "name": "The Rootworks",
+      "lore": "The roots of a forest far above have broken through into the halls, and keep coming. Stone gives way to wood, and wood to whatever grows in the dark.",
+      "fill": { "color": [0.6, 0.9, 0.55], "energy": 0.5 }
     }
   ]
 }

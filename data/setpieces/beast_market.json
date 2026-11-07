@@ -1,0 +1,29 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["prison", "remains"],
+  "themes": ["undermarket"],
+  "lore": "Cave beasts, live, for pit fights and rich men's menageries. The cages are sold separately, which is why some of them are empty.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Toture_Cage_01.fbx", "x": -3.6, "z": -2.4, "rot": 7.2, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Cage_01.fbx", "x": -1.2, "z": -3, "rot": 0.8, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Toture_Cage_01.fbx", "x": 1.2, "z": -3, "rot": 359.2, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Cage_01.fbx", "x": 3.6, "z": -2.4, "rot": 3.84, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_01.fbx", "x": -2.4, "z": 0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Fence_02.fbx", "x": 2.4, "z": 0.4, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": 1.6, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Env_Bone_Horn_01.fbx", "x": -0.6, "z": 1.6, "rot": 30, "scale": 0.4, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Lantern_01.fbx", "x": 0.6, "z": 1.5, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": -4.6, "z": 0.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_TorchStick_01.fbx", "x": 4.6, "z": 0.8, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Chain_01.fbx", "x": -2.036, "z": -3.135, "rot": 355.51, "scale": 0.964, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -0.394, "z": -2.521, "rot": 216.24, "scale": 0.968, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": -2.949, "z": -3.779, "rot": 205.59, "scale": 1.074, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 2.624, "z": -1.917, "rot": 75.84, "scale": 1.112, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 2.766, "z": -3.101, "rot": 215.27, "scale": 0.863, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 4.48, "z": 2.074, "rot": 196.71, "scale": 1.058, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": 1.113, "z": 4.681, "rot": 253.3, "scale": 1.133, "block": 0 },
+    { "mesh": "adventure/SM_Prop_Sack_03.fbx", "x": 2.588, "z": 3.768, "rot": 243.06, "scale": 0.918, "block": 0 }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "biomes": ["caverns"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["bones", "remains", "cavern"],
+  "themes": ["dead_god"],
+  "lore": "The god's spine runs through the cave like a road, and the bone-readers walk it barefoot to hear what it still remembers. It remembers falling.",
+  "lights": [
+    { "x": 0, "z": 0, "y": 3, "color": [0.95, 0.85, 0.6], "range": 6, "energy": 0.6 }
+  ],
+  "props": [
+    { "mesh": "dungeon/SM_Env_Bone_Spine_02.fbx", "x": 0, "z": -4, "rot": 82.4, "scale": 0.8, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_02.fbx", "x": 0, "z": -1.6, "rot": 93.23, "scale": 0.8, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_02.fbx", "x": 0, "z": 0.8, "rot": 91.37, "scale": 0.8, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_02.fbx", "x": 0, "z": 3.2, "rot": 97.94, "scale": 0.8, "block": 1.6 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_01.fbx", "x": -2.6, "z": -3, "rot": 270, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_01.fbx", "x": -2.6, "z": 0, "rot": 270, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": -2.6, "z": 3, "rot": 270, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_01.fbx", "x": 2.6, "z": -3, "rot": 90, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_01.fbx", "x": 2.6, "z": 0, "rot": 90, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Rib_02.fbx", "x": 2.6, "z": 3, "rot": 90, "scale": 0.9, "block": 0.5 },
+    { "mesh": "dungeon/SM_Env_Bone_Spine_03.fbx", "x": 0.4, "z": 5, "rot": 70, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Bonfire_01.fbx", "x": -3.6, "z": -4, "rot": 0, "scale": 1, "block": 0.7 },
+    { "mesh": "adventure/SM_Prop_Sack_01.fbx", "x": -4.4, "z": -3.2, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": 2.185, "z": -4.922, "rot": 112.22, "scale": 1.008, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Cracked_02.fbx", "x": -4.299, "z": 0.874, "rot": 43.48, "scale": 0.872, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Cracked_02.fbx", "x": -2.889, "z": 3.445, "rot": 231.17, "scale": 1.014, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -4.898, "z": -3.465, "rot": 95.22, "scale": 0.874, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Bone_Cracked_02.fbx", "x": -6.685, "z": 0.119, "rot": 55.07, "scale": 1.02, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_01.fbx", "x": -3.953, "z": -1.866, "rot": 123.31, "scale": 0.929, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -1.33, "z": 4.809, "rot": 328.85, "scale": 0.97, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rock_Pebble_01.fbx", "x": -4.789, "z": -0.718, "rot": 50.02, "scale": 0.927, "block": 0 },
+    { "mesh": "dungeon/SM_Env_Rubble_Pebbles_02.fbx", "x": 3.297, "z": 2.453, "rot": 206.32, "scale": 1.141, "block": 0 }
+  ]
+}

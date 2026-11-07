@@ -1,0 +1,32 @@
+{
+  "biomes": ["warrens"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["goblins", "throne", "treasure"],
+  "themes": ["hovels", "warband"],
+  "lore": "The chief sits on a stolen throne on a pile of everything else stolen, so the clan can see how much they have stolen. The pile is the chief's to keep; the throne is anyone's who can take it.",
+  "props": [
+    { "mesh": "dungeon/SM_Env_Stone_Throne_01.fbx", "x": 0, "z": -2.2, "rot": 0, "scale": 1.3, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Crate_Wood_02.fbx", "x": -1.4, "z": -2.6, "rot": 20, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Crate_Metal_01.fbx", "x": 1.5, "z": -2.5, "rot": 345, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Barrel_01.fbx", "x": -1, "z": -3.4, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Chest_02.fbx", "x": 1.2, "z": -3.5, "rot": 160, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Plank_01.fbx", "x": -2.2, "z": -1.8, "rot": 40, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Shield_Round_01.fbx", "x": 2.3, "z": -1.7, "rot": 320, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_03.fbx", "x": -0.9, "z": -3, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Banner_01.fbx", "x": 1.6, "z": -3.2, "rot": 10, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Rug_02.fbx", "x": 0, "z": 0.4, "rot": 90, "scale": 0.9, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": -2.4, "z": 0.2, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Spikes_02.fbx", "x": -3.6, "z": -1, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Prop_Brazier_01.fbx", "x": 2.4, "z": 0.2, "rot": 0, "scale": 1, "block": 0.5 },
+    { "mesh": "dungeon/SM_Prop_Goblin_Spikes_04.fbx", "x": 3.6, "z": -1, "rot": 0, "scale": 1, "block": 0.6 },
+    { "mesh": "dungeon/SM_Item_Coins_04.fbx", "x": 0.813, "z": 3.575, "rot": 110.7, "scale": 0.966, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Club_01.fbx", "x": 4.909, "z": 1.266, "rot": 84.93, "scale": 0.868, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_02.fbx", "x": -3.359, "z": -3.141, "rot": 62.76, "scale": 0.966, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Book_01.fbx", "x": -3.447, "z": 1.108, "rot": 175.33, "scale": 0.916, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Vase_02.fbx", "x": -1.782, "z": 3.475, "rot": 307.94, "scale": 0.935, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_01.fbx", "x": 1.745, "z": -4.21, "rot": 65.76, "scale": 1.125, "block": 0 },
+    { "mesh": "dungeon/SM_Wep_Goblin_Club_01.fbx", "x": -4.193, "z": 2.768, "rot": 47.62, "scale": 0.851, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Coins_03.fbx", "x": 3.126, "z": 3.267, "rot": 244.75, "scale": 1.149, "block": 0 }
+  ]
+}

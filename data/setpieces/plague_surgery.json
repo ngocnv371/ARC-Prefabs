@@ -1,0 +1,32 @@
+{
+  "biomes": ["crypt"],
+  "weight": 1,
+  "turn": true,
+  "tags": ["crypt", "remains", "candles"],
+  "themes": ["plague"],
+  "lore": "The plague doctors cut here, looking for where the sickness lived. They never found it, though they looked inside a great many people.",
+  "props": [
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_01.fbx", "x": -1.6, "z": -1.6, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_Table_02.fbx", "x": 1.6, "z": -1.6, "rot": 0, "scale": 1, "block": 0.8 },
+    { "mesh": "dungeon/SM_Prop_Table_01.fbx", "x": 0, "z": 1.4, "rot": 0, "scale": 1, "block": 0.9 },
+    { "mesh": "dungeon/SM_Item_Potion_07.fbx", "x": 0.555, "z": 2.096, "rot": 123.37, "scale": 1.145, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_04.fbx", "x": -0.732, "z": 1.142, "rot": 139.42, "scale": 1.014, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_08.fbx", "x": 0.365, "z": 1.354, "rot": 328.62, "scale": 1.019, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_09.fbx", "x": -0.187, "z": 1.703, "rot": 324.28, "scale": 0.911, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Jar_01.fbx", "x": 0.038, "z": 1.138, "rot": 85.5, "scale": 1.081, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Jar_01.fbx", "x": -0.305, "z": 2.334, "rot": 41.87, "scale": 0.98, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_09.fbx", "x": -0.527, "z": 1.857, "rot": 315.42, "scale": 1.098, "block": 0 },
+    { "mesh": "dungeon/SM_Item_Potion_01.fbx", "x": 0.961, "z": 1.462, "rot": 147.25, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Cauldron_01.fbx", "x": -3.6, "z": 1, "rot": 0, "scale": 1, "block": 0.45 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": -3.4, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Candle_Stand_01.fbx", "x": 3.4, "z": -2.6, "rot": 0, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Prop_Bed_01.fbx", "x": 3.8, "z": 1, "rot": 90, "scale": 1, "block": 0.7 },
+    { "mesh": "dungeon/SM_Prop_Skeleton_01.fbx", "x": 3.8, "z": 1, "rot": 90, "scale": 1, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 2.78, "z": -3.034, "rot": 30.26, "scale": 0.909, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 5.549, "z": -0.451, "rot": 67.86, "scale": 0.877, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -4.886, "z": -1.899, "rot": 180.96, "scale": 0.869, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": -4.107, "z": 4.186, "rot": 345.35, "scale": 0.854, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_01.fbx", "x": 3.985, "z": -4.298, "rot": 61.87, "scale": 0.993, "block": 0 },
+    { "mesh": "dungeon/SM_Env_BonePile_Small_02.fbx", "x": 3.701, "z": 1.788, "rot": 256.78, "scale": 0.909, "block": 0 }
+  ]
+}
